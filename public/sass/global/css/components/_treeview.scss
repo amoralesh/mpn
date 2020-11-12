@@ -1,0 +1,65 @@
+/*----------------------------------------------
+
+START TREEVIEW
+
+------------------------------------------------*/
+
+.jstree-default .jstree-node, .jstree-default .jstree-icon {
+  background-image: url(../../../assets/global/image/32px.png);
+}
+
+.jstree-default .jstree-checkbox {
+  background-position: -164px -4px;
+}
+
+.jstree-default .jstree-themeicon-custom {
+  background-color: transparent;
+  background-image: none;
+  background-position: 0 0;
+}
+
+.jstree-default .jstree-node {
+  background-position: -292px -4px;
+  background-repeat: repeat-y;
+}
+
+.jstree-default .jstree-last {
+  background: transparent;
+}
+
+#searchTree {
+  clear: both;
+}
+
+.form-control:focus {
+  border-color: #d0d0d0;
+}
+
+.jstree-default {
+  .jstree-icon {
+    color: rgb(163, 163, 163);
+  }
+  .jstree-clicked {
+    color: $secondary-text-color;
+    .jstree-icon {
+      color: $secondary-text-color;
+    }
+  }
+  > .jstree-no-dots {
+    .jstree-open {
+      > .jstree-ocl{
+        background-position: -132px -70px;
+      }
+    }
+  }
+}
+
+.vakata-context ul,.vakata-context{
+  z-index: 99;
+}
+
+/*----------------------------------------------
+
+END TREEVIEW
+
+------------------------------------------------*/

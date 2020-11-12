@@ -1,0 +1,511 @@
+/*----------------------------------------------
+
+DASHBOARD 4 PAGE STYLE
+
+------------------------------------------------*/
+.dashboard_v4-page{
+  &.contain-inner{
+    overflow: hidden;
+    padding: 3px;
+  }
+}
+/*dashboard box*/
+.dashboard_v4_box_block {
+  .content{
+    border: none;
+    margin: $spacing-0 $spacing-0 $spacing-20 $spacing-0;
+  }
+}
+.dashboard_v4_box_icon{
+  width: 80px;
+  height: 80px;
+  border-radius: $border-radius-circle;
+  text-align: $text-center;
+  border: 6px solid;
+  i{
+    font-size: 27px;
+    line-height: 70px;
+    color: $white-text-color;
+  }
+  /*&.primary_box{
+    background: $primary-background-color;
+    border-color: $primary-background-hover-light-color;
+  }*/
+  &.success_box{
+    background: $success-background-color;
+    border-color: $success-light-background-color;
+  }
+  &.warning_box{
+    background: $warning-background-color;
+    border-color: $warning-light-background-color;
+  }
+  &.danger_box{
+    background: $danger-background-color;
+    border-color: $danger-light-background-color;
+  }
+}
+.dashboard_v4_box_title{
+  text-align: $text-right;
+  h4{
+    font-weight: $bold-text;
+    color: $small-tag-text-color;
+    margin: $spacing-10 $spacing-0 $spacing-5 $spacing-0;
+  }
+  p{
+    padding-bottom: $spacing-5;
+  }
+}
+/*revenue chart*/
+#dashboard_v4_revenue_chart{
+  height: 333px;
+}
+.dashboard_v4_revenue_block{
+  background: $black-background-color;
+  color: $white-text-color;
+  padding: $spacing-20;
+
+  .revenue_title{
+    padding: $spacing-15 $spacing-25;
+    h4{
+      color: $white-text-color;
+    }
+  }
+}
+.dashboard_v4_revenue_block{
+  margin-left: -$spacing-15;
+  margin-bottom: $spacing-20;
+}
+/*project progress*/
+.dashboard_v4_project_block{
+  table{
+    margin-bottom: $spacing-0;
+    tbody{
+      tr{
+        padding: $spacing-0 $spacing-20;
+        display: block;
+      }
+      td{
+        padding: $spacing-10 + 2;
+        h6{
+          font-size: 15px;
+        }
+        p{
+          font-size: 12px;
+          padding-bottom: $spacing-0;
+        }
+      }
+    }
+  }
+}
+.dashboard_v4_project_main{
+  padding: $spacing-0;
+  border: 1px solid $mail-border-color;
+  margin-bottom: $spacing-20;
+  margin-right: -$spacing-15;
+  .page-content-title{
+    padding: $spacing-20 $spacing-20 $spacing-0 $spacing-20;
+  }
+}
+/*weather*/
+.dashboard_v4_weather{
+  //border: 1px solid $primary-background-color;
+  border-radius: $border-radius-4;
+}
+.weather-block{
+  //background: $primary-background-hover-color;
+  background-image: url("../../../assets/global/image/img_640x430.png");
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  //height: 142px;
+  &:before{
+    content: "";
+    //background: rgba(10, 137, 152, 0.70);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+  canvas{
+    height: 90px;
+    display: inline-block;
+    float: $left-division;
+  }
+  h2{
+    //float: $right-division;
+    color: $white-text-color;
+    font-size: 45px;
+    line-height: 100px;
+    text-align: $text-left;
+  }
+}
+.weather-block_display{
+  padding: $spacing-50 + 2 $spacing-10 $spacing-10 $spacing-0;
+  overflow: hidden;
+  position: $position-relative;
+  margin: $spacing-0 auto;
+  width: 260px;
+}
+.weather-display-block{
+  //background: $primary-background-color;
+  padding: $spacing-15;
+}
+.weather-display-title{
+  padding-bottom:$spacing-50 + 2;
+  position: $position-relative;
+  h5{
+    color: $white-text-color;
+  }
+}
+.weather-display-day{
+  h6{
+    color: $white-text-color;
+    font-size: 14px;
+  }
+}
+/*project list*/
+.dashboard_v4_project_list{
+  &.content{
+    margin: $spacing-0 $spacing-0 $spacing-20 $spacing-0;
+  }
+}
+/*daily visiter chart*/
+.dashboard_v4_chart{
+  height:95px;
+}
+/*advertise chart*/
+.dashboard_v4_advertise{
+  height:108px;
+}
+.legendColorBox {
+  padding-right: 10px;
+}
+/*expense daily sale*/
+.dashboard_v4_sale{
+  .vertical-progress-bar{
+    border-bottom: 3px solid $danger-background-color;
+    .progress-bar{
+      height: 75px;
+      width: 20px;
+      margin-right: $spacing-10 - 1;
+    }
+    .progress-fill{
+      span{
+        display: none;
+      }
+    }
+    .progress-track{
+      background: #f1f1f1;
+    }
+  }
+}
+.bar-legend{
+  position: $position-absolute;
+  right: 35px;
+  top: 60px;
+  list-style: none;
+}
+.bar-legend-pointer {
+  height: 10px;
+  width: 10px;
+  display: inline-block;
+  position: $position-relative;
+  top: 1px;
+  margin-right: $spacing-5;
+}
+/*expense chart*/
+#dashboard_v4_monthly_expense {
+  height: 89px;
+}
+/*advertise box*/
+.dashboard_4_advertise_box{
+  padding: $spacing-15;
+  overflow: hidden;
+  color: $white-text-color;
+  position: relative;
+  height: 151px;
+  display: block;
+  h5 , i{
+    color: $white-text-color;
+  }
+  i{
+    font-size: 22px;
+  }
+  &.dashboard_4_advertise_box2{
+    padding: $spacing-30 $spacing-15;
+  }
+}
+.dashboard_4_advertise_box3{
+  padding: $spacing-40 + 2 $spacing-25;
+  overflow: hidden;
+  color: $white-text-color;
+  height: 151px;
+  h5 , i ,h4{
+    color: $white-text-color;
+  }
+  i{
+    line-height: 65px;
+    font-size: 50px;
+  }
+  &.google_bg{
+    background: $social-googleplus-background-color;
+  }
+  &.twitter_bg{
+    background: $social-twitter-background-color;
+  }
+}
+.dashboard_4_advertise_image{
+  background-image: url("../../../assets/global/image/img_340x200.png");
+  background-position: center center;
+  background-size: 100% 100%;
+  height: 151px;
+  padding: $spacing-20;
+  h5{
+    color: $white-text-color;
+  }
+}
+.advertise_box_icon{
+  i{
+    font-size: 45px;
+    margin-bottom: $spacing-15;
+  }
+}
+.dashboard_v4_advertise_block{
+  margin-bottom: $spacing-20;
+  overflow: hidden;
+}
+/*advertise box slider*/
+.tile-active{
+  margin: $spacing-0;
+  height: 151px;
+  overflow: hidden;
+}
+.dashboard_v4_map{
+  .map{
+    height: 300px;
+    svg {
+      height: 300px;
+      margin: $spacing-0 10%;
+      circle{
+        //fill: $primary-background-color;
+      }
+    }
+  }
+}
+.dashboard_v4_map_block{
+  &.content{
+    margin: $spacing-0;
+  }
+}
+#dashboard-chart-line{
+  height:277px;
+}
+#yaxis{
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 20px;
+}
+#xaxis{
+  position: absolute;
+  width: 100%;
+  height: 21px;
+  left: 20px;
+  bottom: 0;
+}
+/*----------------------------------------------
+
+END DASHBOARD 4 PAGE STYLE
+
+------------------------------------------------*/
+/*---- START RESPONSIVE ----*/
+@media ( min-width: 1200px ) and ( max-width: 1468px ) {
+  .dashboard_v4_block{
+    width: 40%;
+  }
+  .dashboard_v4_block2{
+    width: 60%;
+  }
+  .dashboard_v4_project_block{
+    table{
+      tbody{
+        tr{
+          padding: $spacing-0 $spacing-10;
+        }
+        td{
+          padding: $spacing-10 - 1 $spacing-10 - 2;
+
+        }
+      }
+    }
+  }
+  #dashboard_v4_revenue_chart {
+    height: 309px;
+  }
+  /*.stackline-bar, .sparkline-line, .sparkline-inlinerange, .sparkline-linecustom{
+    canvas{
+      width: 58px !important;
+      height: 40px !important;
+    }
+  }*/
+}
+@media ( max-width: $media-xl-width ) {
+  .dashboard_v4_box_block {
+    .content{
+      padding: $spacing-15;
+    }
+  }
+  .dashboard_v4_box_icon {
+    width: 70px;
+    height: 70px;
+    margin: $spacing-5 + 1 $spacing-0;
+  }
+  .dashboard_v4_box_icon {
+    i {
+      font-size: 25px;
+      line-height: 58px;
+    }
+  }
+  .dashboard_v4_box_title{
+    h4{
+      font-size: 20px;
+    }
+  }
+  .dashboard_v4_box_title {
+    p{
+      font-size: 12px;
+    }
+  }
+  .dashboard_v4_project_main {
+    margin-right: -$spacing-15;
+  }
+  .dashboard_v4_revenue_block{
+    margin-left: -$spacing-15;
+  }
+  .dashboard_v4_chart_contain{
+    h5{
+      font-size: 16px;
+    }
+  }
+  .dashboard_v4_box_block{
+    h4{
+      font-size: 19px;
+    }
+  }
+  .dashboard_4_advertise_box{
+    h5{
+      font-size: 14px;
+    }
+    p{
+      font-size: 12px;
+    }
+  }
+  .dashboard_4_advertise_box3{
+    i{
+      font-size: 35px;
+    }
+    h4{
+      font-size: 20px;
+    }
+    h5{
+      font-size: 14px;
+    }
+  }
+  .dashboard_v4_map{
+    .map{
+      svg {
+        margin: auto;
+      }
+    }
+  }
+}
+@media ( max-width: $media-lg-width ) {
+  .dashboard_v4_box_block {
+    .content{
+      padding: $spacing-20;
+    }
+  }
+  .dashboard_v4_box_icon {
+    width: 80px;
+    height: 80px;
+    margin: $spacing-0;
+  }
+  .dashboard_v4_box_icon {
+    i {
+      font-size: 27px;
+      line-height: 70px;
+    }
+  }
+  .dashboard_v4_box_title{
+    h4{
+      font-size: 24px;
+    }
+  }
+  .dashboard_v4_box_title {
+    p{
+      font-size: 14px;
+    }
+  }
+  .dashboard_v4_project_main {
+    margin-right: $spacing-0;
+  }
+  .dashboard_v4_revenue_block{
+    margin-left: $spacing-0;
+  }
+  .dashboard_v4_chart_contain{
+    h5{
+      font-size: 20px;
+    }
+  }
+  .dashboard_v4_box_block{
+    h5{
+      font-size: 24px;
+    }
+  }
+  .dashboard_v4_sm_space{
+    height: 15px;
+    clear: both;
+  }
+  .dashboard_4_advertise_box{
+    h5{
+      font-size: 20px; 
+    }
+    p{
+      font-size: 14px;
+    }
+  }
+}
+@media ( max-width: $media-md-width ) {
+  .dashboard_v4_box_block {
+    h5 {
+      font-size:17px;
+    }
+  }
+}
+@media ( max-width: $media-sm-width ) {
+}
+@media ( max-width: $media-xs-width ) {
+  .weather-block canvas {
+    height: 75px;
+  }
+  .weather-block h2 {
+    font-size: 40px;
+    line-height: 78px;
+  }
+  .weather-block_display{
+    width: 225px;
+  }
+}
+@media ( max-width: 575px ) {
+  .dashboard_v4_xs_space{
+    height: 15px;
+    clear: both;
+  }
+  .dashboard_4_advertise_box {
+    p{
+      padding-bottom: $spacing-0;
+    }
+  }
+}
+/*---- END RESPONSIVE ----*/

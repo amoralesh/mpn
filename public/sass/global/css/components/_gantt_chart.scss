@@ -1,0 +1,216 @@
+/*----------------------------------------------
+
+START GANTT-CHART-PAGE
+
+------------------------------------------------*/
+
+.gantt-header, .gantt-side, .gantt-task{
+  z-index: 0;
+}
+
+.gantt-chart-content {
+  .col-date-range {
+    float: $left-division;
+    width: 33.3%;
+    padding: 0 $spacing-15;
+  }
+  .col-md-date-range {
+    width: 66.666667%;
+    float: $left-division;
+    padding: 0 $spacing-15;
+  }
+  .form-group {
+    margin-bottom: $spacing-15;
+    .form-group {
+      margin-bottom: 0;
+    }
+    label {
+      line-height: 30px;
+    }
+    .dropdown-menu {
+      &.datepicker {
+        table {
+          th {
+            text-align: $text-center;
+          }
+          button {
+            text-align: $text-center;
+          }
+        }
+        .btn {
+          &.btn-default {
+            &.pull-left {
+              i {
+                &:before {
+                  content: "<";
+                  font-size: 20px;
+                  color: $secondary-text-color;
+                  vertical-align: middle;
+                }
+              }
+            }
+            &.pull-right {
+              i {
+                &:before {
+                  content: ">";
+                  font-size: 20px;
+                  color: $secondary-text-color;
+                  vertical-align: middle;
+                }
+              }
+            }
+            strong {
+              color: $secondary-text-color;
+            }
+          }
+        }
+      }
+
+    }
+    .form-control {
+      padding: 6px;
+      line-height: 21px;
+    }
+
+    .btn {
+      padding: 6px;
+      width: 100%;
+      text-align:  $text-left;
+      line-height: 21px;
+      position: $position-relative;
+    }
+    .gantt-chart-btn {
+      width: 49%;
+      text-align: $text-center;
+      &.btn-with-input {
+        float: $left-division;
+      }
+    }
+    .gantt-chart-btn3 {
+      width: 32.3%;
+      text-align: $text-center;
+    }
+    .row-index-input {
+      width: 65%;
+    }
+    .caret {
+      float: $right-division;
+      display: inline-block;
+      width: 0;
+      height: 0;
+      vertical-align: middle;
+      border-top: 4px dashed;
+      border-top: 4px solid;
+      border-right: 4px solid transparent;
+      border-left: 4px solid transparent;
+      position: absolute;
+      right: 7px;
+      top: 15px;
+    }
+    .input-spacing {
+      margin-right: 6px;
+    }
+  }
+
+  .gantt-row-milestone {
+    color: $secondary-text-color;
+  }
+}
+.col-md-date-range{
+  .btn{
+    border-radius: $border-radius-0;
+    background-color: $white-background-color;
+  }
+}
+
+.rounded-admin{
+  .gantt-chart-content{
+    .btn.btn-secondary{
+      border-radius: $border-radius-default;
+    }
+  }
+}
+/*----------------------------------------------
+
+END GANTT-CHART-PAGE
+
+------------------------------------------------*/
+
+/*---- START GANTT-CHART-PAGE RESPONSIVE ----*/
+@media (min-width: 1200px) and (max-width: 1770px) {
+  .gantt-chart-content {
+    .xl-options {
+      width: 50%;
+    }
+    .form-group {
+      .gantt-chart-btn3 {
+        width: 49%;
+      }
+      .xs-gantt-btn {
+        margin-top: $spacing-5;
+      }
+      .row-index-input {
+        width: 50%;
+      }
+      .input-spacing {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: $media-lg-width) {
+  .gantt-chart-content {
+    .col-date-range {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: $media-sm-width) {
+  .gantt-chart-content {
+    .col-md-date-range {
+      width: 100%;
+    }
+    .form-group{
+      .gantt-chart-btn{
+        &.chart-date{
+          width: 100%;
+          float: none;
+          &:first-child{
+            margin-bottom: $spacing-10;
+          }
+        }
+      }
+    }
+    .clear-form{
+      clear: both;
+    }
+  }
+}
+
+@media (max-width: $media-xs-width) {
+  .gantt-chart-content {
+    .form-group {
+      .xs-gantt-btn {
+        margin-top: $spacing-5;
+      }
+      .gantt-chart-btn3 {
+        width: 49%;
+      }
+      .input-spacing {
+        margin-right: 0;
+      }
+      .row-index-input {
+        width: 50%;
+      }
+    }
+  }
+
+}
+
+/*---- END GANTT-CHART-PAGE RESPONSIVE ----*/
+
+
+
+

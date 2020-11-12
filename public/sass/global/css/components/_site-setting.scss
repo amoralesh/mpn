@@ -1,0 +1,364 @@
+/* START SIDEBAR ROUND CSS */
+.rounded-admin {
+  .right-side-inner-box {
+    .settings-sidebox {
+      .color-inner-box {
+        border-radius: $border-radius-default;
+      }
+    }
+  }
+}
+
+/* END SIDEBAR ROUND CSS */
+
+/*---- RIGHT-SIDEBAR-START ----*/
+.right-side-bar {
+  position: $position-fixed;
+  right: 0;
+  top: $header-height;
+  height: calc(100% - #{$header-height});
+  z-index: 999;
+  transition: all 0.3s ease 0s;
+  &.icon-menu-side{
+    z-index: 9999;
+  }
+}
+
+body{
+  &.right-sidebar-fixed{
+    .right-side-bar {
+      top: 0;
+      height: 100%;
+    }
+  }
+}
+
+.icon-right {
+  //background: $white-background-color;
+  border-radius: $border-radius-3 0 0 $border-radius-3;
+  background: $primary-background-color none repeat scroll 0 0;
+  box-shadow: -2px 0 4px rgba(0, 0, 0, 0.176);
+  cursor: $text-link;
+  height: 45px;
+  width: 42px;
+  z-index: 99;
+  top: $spacing-140;
+  right: $spacing-md-0;
+  position: $position-fixed;
+  transition: all 0.5s ease 0s;
+}
+
+.right-side-box {
+  background: $white-background-color;
+  margin-right: -$right-size-collapsed;
+  bottom: 0;
+  @include multi-box-shadow(rgba(0, 0, 0, 0.176) 1px 2px 9px);
+  height: 100%;
+  transition: all 0.5s ease 0s;
+  width: $right-size-collapsed;
+  z-index: 99;
+}
+
+.right-side-inner-box {
+  padding: $spacing-20;
+}
+
+.globle-right-content {
+  clear: both;
+  padding-bottom: $spacing-30;
+  overflow: hidden;
+  h5 {
+    border-bottom: 1px solid $primary-text-color;
+    span {
+      &:first-child {
+        font-size: $site-setting-title-icon-font-size;
+      }
+    }
+  }
+}
+
+.site-footer-fixed #footer {
+  position: $position-fixed;
+  right: $spacing-0;
+  bottom: $spacing-0;
+  z-index: 99;
+}
+
+.site-footer-fixed #content-wrapper {
+  margin-bottom: $spacing-50;
+  overflow: hidden;
+}
+
+.settings-sidebox {
+  padding-top: $spacing-15;
+}
+
+.site-settings {
+  .icon-right {
+    right: $site-settings-open-icon-right-position;
+  }
+}
+
+.right-side-bar {
+  .right-side-inner-box {
+    .settings-sidebox {
+      .default-color {
+        background: $primary-background-color;
+      }
+      .golden-color {
+        background: #f3c200 none repeat scroll 0 0;
+      }
+      .soft-orange-color {
+        background: #f2784b none repeat scroll 0 0;
+      }
+      .dodger-blue-color {
+        background: #039be5 none repeat scroll 0 0;
+      }
+      .bright-pink-color {
+        background: #ec407a none repeat scroll 0 0;
+      }
+      .light-red-color {
+        background: #eb6d6d none repeat scroll 0 0;
+      }
+      .purple-color {
+        background: #6d5cae none repeat scroll 0 0;
+      }
+      .spice-color {
+        background: #6d4c41 none repeat scroll 0 0;
+      }
+    }
+  }
+}
+
+.settings-sidebox {
+  ul {
+    margin: $spacing-0;
+    padding: $spacing-0;
+    li {
+      padding-left: $spacing-0;
+      padding: 7px $spacing-0;
+      span {
+        text-transform: $text-uppercase;
+        i {
+          margin-right: $spacing-5;
+          font-size: $spacing-15 + 1;
+          line-height: $spacing-25;
+          float: $text-left;
+        }
+      }
+      span.time {
+        color: $site-primary-text-color;
+        text-transform: $without-float-division;
+        font-weight: $bold-text;
+      }
+    }
+    li:first-child {
+      padding-top: $spacing-0;
+    }
+  }
+}
+
+.settings-sidebox {
+  .dark-color, .nav-dark-color, .footer-check-text, .nav-fixed-text,.top-nav-color-text,.nav-color-text{
+    text-transform: $text-uppercase;
+  }
+}
+
+.font-box {
+  padding-bottom: $spacing-5;
+  overflow: hidden;
+  label {
+    float: $text-left;
+    cursor: pointer;
+    text-transform: $text-uppercase;
+    color: inherit;
+  }
+  .icr-label {
+    float: $text-right;
+    margin: $spacing-0;
+  }
+  .radio {
+    float: $text-right;
+    margin-right: $spacing-0;
+  }
+  input {
+    height: 20px;
+    float: $text-right;
+  }
+  .radio-button {
+    margin-right: 5px;
+  }
+}
+
+.color-inner-box {
+  &:nth-child(5n),
+  &:nth-child(6n),
+  &:nth-child(7n),
+  &:nth-child(8n) {
+    margin-bottom: $spacing-5;
+  }
+  @include multi-box-shadow(rgba(102, 102, 102, 0.5) 0 0 10px inset);
+  cursor: $text-link;
+  float: $text-left;
+  height: 45px;
+  margin: 0 $spacing-10 $spacing-10 0;
+  width: 45px;
+  padding: 0;
+  border-radius: 0;
+  position: $position-relative;
+  &.color-active {
+    opacity: 0.5;
+  }
+  &.color-active {
+    &:before {
+      content: "\5a";
+      font-family: "ElegantIcons";
+      font-size: 24px;
+      margin-left: $spacing-10;
+      text-align: $text-center;
+      line-height: $site-setting-color-inner-box-line-height;
+      color: $secondary-text-color;
+    }
+
+  }
+  &:hover {
+    background: none;
+    border-radius: 0;
+  }
+
+}
+
+.texture-switch {
+  float: $text-right;
+  height: $site-setting-texture-switch-height;
+  cursor: $text-link;
+}
+
+.site-settings {
+  .right-side-box {
+    margin-right: $spacing-0;
+  }
+}
+
+/*-- Right-Icon --*/
+#site_setting_icon img {
+  position: $position-absolute;
+}
+
+#site_setting_icon .icon1 {
+  left: 5px;
+  top: 5px;
+  width: 16px;
+}
+
+#site_setting_icon .icon2 {
+  left: 13px;
+  top: 18px;
+  width: 20px;
+}
+
+#site_setting_icon .icon3 {
+  left: 22px;
+  top: 6px;
+  width: 13px;
+}
+
+@-webkit-keyframes clockwise {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes clockwise {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes counterclockwise {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(-180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+
+@keyframes counterclockwise {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.site-setting-animation #site_setting_icon .icon1 {
+  -webkit-animation: counterclockwise 2.5s linear infinite;
+  animation: counterclockwise 2.5s linear infinite;
+}
+
+.site-setting-animation #site_setting_icon .icon2 {
+  -webkit-animation: counterclockwise 3s linear infinite;
+  animation: counterclockwise 3s linear infinite;
+}
+
+.site-setting-animation #site_setting_icon .icon3 {
+  -webkit-animation: clockwise 2s linear infinite;
+  animation: clockwise 2s linear infinite;
+}
+
+.site-setting-animation {
+  text-decoration: none;
+  color: white;
+}
+
+.site-setting-animation * {
+  transition: opacity .3s;
+  opacity: 1;
+}
+
+/* Font */
+
+.font2{
+  body {
+    font-family: $secondary-font;
+  }
+  h1, h2, h3, h4, h5, h6{
+    font-family: $secondary-font;
+  }
+}
+
+.font3{
+  body {
+    font-family: $tertiary-font;
+  }
+  h1, h2, h3, h4, h5, h6{
+    font-family: $tertiary-font;
+  }
+}
+
+/*---- RIGHT-SIDEBAR-END ----*/
+@media (max-width: $media-sm-width) {
+  .right-side-bar{
+    z-index: 9999;
+  }
+}

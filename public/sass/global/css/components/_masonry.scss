@@ -1,0 +1,147 @@
+/*----------------------------------------------
+
+START MASONRY
+
+------------------------------------------------*/
+
+/* START MASONRY ROUND CSS */
+.rounded-admin {
+  .masonry-box {
+    .icon-box-masonry {
+      border-radius: $border-radius-default;
+      &:hover {
+        border-radius: $border-radius-default;
+      }
+    }
+  }
+}
+/* END MASONRY ROUND CSS */
+
+.content-masonry {
+  padding: $masonry-spacing-10;
+  #masonry-section {
+    @include column-count(4);
+    @include column-gap(0px);
+    width: 100%;
+    padding: 0px;
+    .masonry-box {
+      display: inline-block;
+      margin: $masonry-spacing-10;
+      padding: 0;
+      position: $position-relative;
+      overflow: visible;
+      .content-inner-detail {
+        padding: $masonry-spacing-15;
+        h6 {
+          color: $small-tag-text-color;
+          font-size: 12px;
+          font-weight: $normal-text;
+          text-transform: $text-uppercase;
+        }
+        p {
+          padding: 0;
+          clear: both;
+        }
+        .masonry-profile {
+          margin: -50px auto 0 auto;
+          z-index: 99;
+          width: 75px;
+          position: $position-relative;
+          margin-bottom: $masonry-spacing-5;
+        }
+      }
+      .icon-box-masonry {
+        width: 30px;
+        height: 30px;
+        position: $position-absolute;
+        top: 10px;
+        right: -10px;
+        color: $white-text-color;
+        line-height: 32px;
+      }
+      .bottom-masonary {
+        background: $utilities-hidden-background;
+        border-top: 1px solid $utilities-table-border-color;
+        padding: $masonry-spacing-10;
+        overflow: hidden;
+        a {
+          padding-right: $masonry-spacing-5;
+          color: $light-gray-text-color;
+          span {
+            margin-right: $masonry-spacing-5;
+          }
+          &:last-child {
+            padding-right: 0;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+
+
+/*----------------------------------------------
+
+END MASONRY
+
+------------------------------------------------*/
+
+/*---- START MASONRY RESPONSIVE ----*/
+@media (max-width: $media-xl-width) {
+  .content-masonry {
+    #masonry-section {
+      @include column-count(3);
+      @include column-gap(0px);
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: $media-lg-width) {
+  .content-masonry {
+    #masonry-section {
+      @include column-count(2);
+      @include column-gap(0px);
+      width: 100%;
+    }
+    #masonry-section {
+      .masonry-box {
+        .content-inner-detail {
+          h4 {
+            font-size: 21px;
+            line-height: 21px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $media-sm-width) {
+  .content-masonry {
+    #masonry-section {
+      @include column-count(1);
+      @include column-gap(0px);
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: $media-xs-width) {
+  .content-masonry {
+    #masonry-section {
+      .masonry-box {
+        .content-inner-detail {
+          h4 {
+            font-size: 18px;
+            line-height: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*---- END MASONRY RESPONSIVE ----*/

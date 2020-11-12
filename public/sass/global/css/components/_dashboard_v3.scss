@@ -1,0 +1,362 @@
+/*----------------------------------------------
+
+START DASHBOARD-V3-PAGE
+
+------------------------------------------------*/
+
+#todo-list{
+  li{
+    padding-left:$spacing-0;
+  }
+}
+
+.dashboard-v3 {
+  margin: $spacing-20 $spacing-0;
+  .box-dahsboard-v3 {
+    padding: $spacing-20;
+    background: $white-background-color;
+    @include border-radius($border-radius-4);
+    @include multi-box-shadow(rgba($black-background-color, 0.2) 0 0 4px);
+  }
+  .title-box {
+    font-size: 14px;
+    text-transform: $text-uppercase;
+    font-weight: $bold-text;
+    padding-bottom: $spacing-15;
+  }
+  .total-user {
+    font-size: 32px;
+    line-height: 50px;
+    font-weight: $bold-text;
+  }
+  .top-arrow {
+    vertical-align: top;
+    i {
+      position: $position-relative;
+      top: 7px;
+    }
+  }
+  .content {
+    margin: $spacing-20 0 0 0;
+  }
+  .stacked-chart {
+    height: 185px;
+  }
+  .setting-section {
+    height: 313px;
+    min-height: 313px;
+  }
+  .widget-specing {
+    margin: $spacing-20 0 0 0;
+  }
+  .message-profile {
+    textarea {
+      height: 60px;
+    }
+  }
+  .social-icon-slider {
+    .social-icon {
+      padding: 16px 0 17px 0px;
+    }
+  }
+  .last-widget-v3 {
+    margin-bottom: 0;
+  }
+  .testimonial-box {
+    &.testimonial-background {
+      &.warning-bg {
+        background: $warning-light-background-color;
+        border-color: $warning-background-color;
+        .testimonial-center-image {
+          border-color: $warning-background-color;
+        }
+        .testimonial-name {
+          h6 {
+            color: $warning-light-text;
+          }
+        }
+      }
+      &.danger-bg {
+        background: $danger-light-background-color;
+        border-color: $danger-background-color;
+        .testimonial-center-image {
+          border-color: $danger-background-color;
+        }
+        .testimonial-name {
+          h6 {
+            color: $danger-light-text;
+          }
+        }
+      }
+      &.success-bg {
+        background: $success-light-background-color;
+        border-color: $success-background-color;
+        .testimonial-center-image {
+          border-color: $success-background-color;
+        }
+        .testimonial-name {
+          h6 {
+            color: $success-light-text;
+          }
+        }
+      }
+    }
+  }
+  .widget-content {
+    padding: 22px $spacing-20;
+  }
+  .accept-section {
+    border: none;
+    padding: 45px $profile-spacing-15;
+    .profile-accept {
+      width: 125px;
+      margin: auto;
+      img {
+        border: 5px solid rgba(255, 255, 255, 0.5);
+      }
+    }
+    h5 {
+      color: $white-background-color;
+    }
+    h6 {
+      color: $white-background-color;
+    }
+    .accept-btn {
+      background: $secondary-text-color;
+      //font-size: 13px;
+      margin-top: $profile-spacing-10;
+      padding: $profile-spacing-5 $profile-spacing-10;
+    }
+  }
+  .message-page {
+    .message-rightbar {
+      padding: 0;
+      .chat-input {
+        width: 95%;
+      }
+    }
+    .chat-image {
+      width: 100%;
+    }
+  }
+  .todo_main {
+    .todo_block {
+      margin-bottom: 0;
+    }
+  }
+  .peak-circle {
+    height: 350px;
+  }
+  .ct-series-a .ct-slice-pie, .ct-series-a .ct-area {
+    fill: #f12b2f;
+  }
+  .ct-series-a .ct-point, .ct-series-a .ct-line, .ct-series-a .ct-bar, .ct-series-a .ct-slice-donut {
+    stroke: #f12b2f;
+  }
+  .ct-line {
+    stroke-width: 2px;
+  }
+  .smil-animation {
+    height: 190px;
+  }
+  #todo-list {
+    li {
+      padding-bottom: 12px;
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+.divider20 {
+  height: 20px;
+}
+
+.contain-inner {
+  margin: $spacing-20;
+}
+
+/*---- START RESPONSIVE ----*/
+@media (min-width: 1200px) and (max-width: 1600px) {
+  .boxes-section-v3 {
+    margin-bottom: $bottom-spacing-none-primary;
+    display: table;
+    width: 100%;
+    .boxes-xl {
+      width: 50%;
+      margin-bottom: $spacing-15;
+    }
+  }
+
+  .dashboard-v3 {
+    .message-page {
+      .message-rightbar {
+        .chat-input {
+          width:93%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $media-xl-width) {
+}
+
+@media (max-width: $media-lg-width) {
+  .dashboard-v3 {
+    .message-page {
+      .message-rightbar {
+        .chat-input {
+          width: 94%;
+        }
+      }
+    }
+    .table-responsive {
+      .table {
+        margin-bottom: 0;
+      }
+    }
+    .boxes-section-v3 {
+      margin-bottom: $bottom-spacing-none-normal;
+      display: table;
+      width: 100%;
+      .boxes-xl {
+        margin-bottom: $spacing-20;
+      }
+    }
+  }
+}
+
+@media (max-width: $media-md-width) {
+  .dashboard-v3 {
+    .widget-box {
+      width: 48%;
+      float: $left-division;
+      margin-right: $spacing-15;
+      margin-bottom: 0;
+    }
+    .last-widget-v3 {
+      margin-right: 0px;
+      float: $right-division;
+    }
+    .mobile-md {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: $spacing-15;
+      &:nth-child(3), &:nth-child(3) {
+        margin-bottom: 0;
+      }
+    }
+    .counter-section {
+      margin-bottom: $bottom-spacing-none-primary;
+      display: table;
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .dashboard-v3 {
+    .total-user {
+      font-size: 23px;
+    }
+    .activities-profile {
+      .right-activities-profile {
+        h5 {
+          font-size: 17px;
+          line-height: 27px;
+        }
+      }
+    }
+    .message-page {
+      .message-rightbar {
+        .chat-input {
+          width:93%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $media-sm-width) {
+  .dashboard-v3 {
+    .bottom-space{
+      height:0;
+    }
+    .activities-profile {
+      .right-activities-profile {
+        h5 {
+          font-size: 17px;
+          line-height: 27px;
+        }
+      }
+    }
+    .message-page {
+      .message-rightbar {
+        .chat-input {
+          width:91%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $media-xs-width) {
+  .dashboard-v3 {
+
+    .total-user {
+      font-size: 26px;
+    }
+
+    .widget-box {
+      width: 100%;
+      margin-right: 0px;
+      margin-bottom: $spacing-15;
+    }
+    .last-widget-v3 {
+      margin-bottom: 0;
+    }
+    .peak-circle {
+      height: 250px;
+    }
+    .icr-text {
+      font-size:12px;
+      padding-left:3px;
+    }
+    .message-page {
+      .message-rightbar {
+        .chat-input {
+          width:85%;
+        }
+      }
+    }
+    .widget-box {
+      margin-bottom:  $spacing-20;
+    }
+    .last-widget-v3 {
+      margin-bottom:  $spacing-0;
+    }
+    .bottom-space{
+      height:0;
+    }
+  }
+  #todo-list{
+    li{
+      .checkbox-squared {
+        > input{
+          margin-right: 5px;
+        }
+        > span {
+          display: inline-block;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          width: 11em;
+        }
+      }
+    }
+  }
+}
+
+/*---- END RESPONSIVE ----*/

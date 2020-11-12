@@ -1,0 +1,25 @@
+/*----------------------------------------------
+
+START HIGHLIGHT
+
+------------------------------------------------*/
+.content-highlight{
+  pre{
+    padding: 0;
+  }
+  a{
+    text-decoration: underline;
+  }
+}
+pre,code{
+  .hljs-name,.hljs-selector-class,.hljs-selector-id,.hljs-keyword,.hljs-selector-tag,.hljs-attr{
+    color: $warning-color;
+  }
+}
+
+
+/*----------------------------------------------
+
+END HIGHLIGHT
+
+------------------------------------------------*/

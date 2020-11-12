@@ -1,0 +1,92 @@
+/*----------------------------------------------
+
+START RATING
+
+------------------------------------------------*/
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'),
+  local('MaterialIcons-Regular'),
+  url(https://fonts.gstatic.com/s/materialicons/v7/2fcrYFNaTjcS6g4U3t-Y5UEw0lE80llgEseQY3FEmqw.woff2) format('woff2'),
+  url(https://fonts.gstatic.com/s/materialicons/v7/2fcrYFNaTjcS6g4U3t-Y5RV6cRhDpPC5P4GCEJpqGoc.woff) format('woff');
+}
+
+.content-rating {
+  p {
+    padding-bottom:0;
+  }
+  .live-rating {
+    color: $site-primary-text-color;
+    font-size: 25px;
+    margin-left: $star-spacing-10;
+  }
+  #full-rating-output, #read-rating-output, #half-rating-output, #size-rating-output, #select-rating-output, #color-rating-output, #callback-rating-output {
+    margin-bottom:$bottom-spacing-none-secondary;
+    display:table;
+  }
+}
+.desktop-divider {
+  margin-bottom:$desktop-xl-spacing;
+  clear:both;
+}
+
+.material-icons {
+  cursor: $text-link;
+  font-family: 'Material Icons';
+  font-weight: $normal-text;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  color:$site-primary-text-color;
+  word-wrap: normal;
+  -moz-font-feature-settings: 'liga';
+  -moz-osx-font-smoothing: grayscale;
+  i {
+    cursor :  pointer;
+  }
+}
+
+/*----------------------------------------------
+
+END RATING
+
+------------------------------------------------*/
+
+/*---- START RATING RESPONSIVE ----*/
+@media (max-width: $media-xl-width) {
+  .divider-xl-spacing {
+    height:$tablet-lg-spacing;
+    clear:both;
+  }
+}
+
+@media (max-width: $media-lg-width) {
+.divider-lg-spacing {
+  height:$tablet-lg-spacing;
+  clear:both;
+}
+}
+@media (max-width: $media-md-width) {
+  .divider-md-spacing {
+    height:$tablet-md-spacing;
+    clear:both;
+  }
+}
+
+@media (max-width: $media-sm-width) {
+  .divider-xs-spacing {
+    height:$mobile-xs-spacing;
+    clear:both;
+  }
+}
+
+@media (max-width: $media-xs-width) {
+
+}
+/*---- END RATING RESPONSIVE ----*/

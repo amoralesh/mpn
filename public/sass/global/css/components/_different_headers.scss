@@ -1,0 +1,266 @@
+/*----------------------------------------------
+
+START DIFFERENT-HEADER-PAGE
+
+------------------------------------------------*/
+
+.header-spacing {
+  margin-bottom: $spacing-20;
+}
+
+.last-breadcrumb {
+  padding-right: 4px;
+}
+
+.basic-header-right {
+  .content-title-main {
+    padding-right: 20px;
+    padding-left: 0;
+  }
+}
+
+.basic-header-center, .parallax-header-image, .parallax-header-bg {
+  .site-content-title {
+    padding: $spacing-10 0;
+  }
+  h2 {
+    font-weight: $semi-bold-text;
+    font-size: 24px;
+  }
+}
+
+.center-breadcrumb {
+  margin: auto;
+  display: table;
+  .breadcrumb {
+    padding: 9px 15px 9px 1rem;
+  }
+}
+
+.icon-header {
+  h2 {
+    i {
+      margin-right: 8px;
+      font-size: 19px;
+      text-align: $text-center;
+    }
+    span {
+      vertical-align: middle;
+      &.sub-title {
+        font-weight: $light-text;
+        font-size: 13px;
+        color: $header-subtitle-color;
+        padding-top: 6px;
+      }
+    }
+  }
+  h6 {
+    padding-left: $spacing-10;
+    line-height: 60px;
+    font-weight: $semi-bold-text;
+    span {
+      padding-left: $spacing-10;
+    }
+  }
+}
+
+.parallax-header-image, .parallax-header-bg {
+  min-height: 86px;
+  background-size: cover;
+  .site-content-title {
+    h2, p {
+      color: $secondary-text-color;
+    }
+    p {
+      padding-bottom: $spacing-0;
+    }
+  }
+}
+
+.parallax-header-image {
+  background: url("../../../assets/global/image/img_1570x1046.png") no-repeat fixed center;
+  background-size: 100% 100%;
+  .site-content-title {
+    text-align: $text-center;
+    background: transparent;
+  }
+}
+
+.parallax-header-bg {
+  background: url("../../../assets/global/image/img_1570x1046.png") no-repeat fixed center;
+  background-size: 100% 100%;
+  .site-content-title {
+    position: $position-relative;
+  }
+}
+
+.header-icon {
+  .right-icon {
+    border: none;
+    margin-left: 0;
+  }
+}
+
+.top-header {
+  border-bottom: 1px solid $light-gray-background-color;
+  overflow: hidden;
+  .content-title-main {
+    padding-left: 0;
+    line-height: 56px;
+  }
+  .breadcrumbs-form {
+    margin: $spacing-10 2px;
+  }
+  &.header-with-icon {
+    .header-icon {
+      margin: $spacing-5 2px $spacing-10 0;
+    }
+  }
+  &.header-with-breadcrumb {
+    .breadcrumb {
+      padding: 0;
+      margin: $spacing-15 0 $spacing-10 0;
+    }
+    .breadcrumb-item {
+      padding: 0 16px 0 0;
+      &.last-breadcrumb {
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+.title-description {
+  p {
+    padding-bottom: 0;
+    line-height: 35px;
+  }
+}
+
+.header-discription-spacing {
+  margin-bottom: $spacing-30;
+  .top-header {
+    .right-icon {
+      margin-right: 10px;
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+}
+
+/*----------------------------------------------
+
+END DIFFERENT-HEADER-PAGE
+
+------------------------------------------------*/
+
+/*---- START DIFFERENT-HEADER-PAGE RESPONSIVE ----*/
+
+@media (max-width: $media-md-width) {
+  .top-header {
+    &.header-with-form {
+      .breadcrumbs-form {
+        width: 275px;
+      }
+      .input-group {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: $media-sm-width) {
+  .simple-header-center {
+    .content-title-main {
+      padding-left: $spacing-10;
+      line-height: 60px;
+      padding-top: 0;
+    }
+  }
+  .icon-header {
+    .content-title-main {
+      &.text-sm-left {
+        padding-left: $spacing-20;
+      }
+    }
+  }
+  .top-header {
+    text-align: $text-center;
+
+    &.header-with-icon {
+      .header-icon {
+        margin: 0;
+      }
+      .right-icon {
+        display: inline-block;
+      }
+
+    }
+    &.header-with-form {
+      .breadcrumbs-form {
+        width: 99%;
+        .input-group {
+          width: 99%;
+        }
+      }
+    }
+    &.header-with-breadcrumb {
+      .breadcrumb {
+        padding: 0;
+        margin-top: $spacing-5;
+      }
+    }
+  }
+  .title-description {
+    text-align: $text-center;
+  }
+  .basic-header-right {
+    .content-title-main {
+      padding-right: 0;
+    }
+    .breadcrumb {
+      margin: $spacing-10 0 0 0;
+      padding: 0 8px;
+    }
+  }
+  .basic-header {
+    .breadcrumb {
+      margin: 0 0 $spacing-10 0;
+      padding: 0 8px;
+    }
+  }
+  .center-breadcrumb {
+    .breadcrumb {
+      padding: 0 8px;
+      margin-bottom: $spacing-10;
+    }
+  }
+  .header-discription-spacing {
+    .top-header {
+      padding-bottom: $spacing-15;
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .top-header {
+    &.header-with-form {
+      .breadcrumbs-form {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media (max-width: $media-xs-width) {
+  .icon-header {
+    .content-title-main {
+      &.text-sm-left {
+        padding-left: 0px;
+      }
+    }
+  }
+}
+
+/*---- END DIFFERENT-HEADER-PAGE RESPONSIVE ----*/

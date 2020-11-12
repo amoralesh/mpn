@@ -1,0 +1,380 @@
+/*----------------------------------------------
+
+START FOOTABLE-PAGE
+
+------------------------------------------------*/
+/* START BUTTON ROUND CSS */
+
+.rounded-admin{
+  #editing-footable{
+    .input-group{
+      input{
+        border-radius: $border-radius-tag-success;
+      }
+      button {
+        &.btn{
+          border-radius: $border-radius-tag-success;
+        }
+      }
+    }
+  }
+  .footable-5{
+    .footable-paging {
+      .pagination {
+          li{
+          &:first-child a {
+            border-radius: $border-radius-default 0px 0px $border-radius-default;
+          }
+          &:last-child a {
+            border-radius: 0px $border-radius-default $border-radius-default 0px;
+          }
+          }
+      }
+    }
+  }
+}
+
+
+/* END  BUTTON ROUND CSS */
+
+.fooicon{
+  font-family: ElegantIcons !important;
+}
+.fooicon-minus::before{
+  content: "\4b";
+}
+.fooicon-plus::before{
+  content: "\4c";
+}
+.fooicon-sort-asc:before {
+  content: "\21";
+}
+.fooicon-sort-desc:before {
+  content: "\22";
+}
+.fooicon-sort:before {
+  content: "\2a";
+}
+.fooicon-search:before {
+  content: "\55";
+}
+.fooicon-pencil:before {
+  content: "\6a";
+}
+.fooicon-cog:before {
+  content: "\e037";
+}
+.fooicon-trash:before {
+  content: "\e019";
+}
+.footable-toggle{
+  &.fooicon-minus, &.fooicon-plus{
+    font-size: 22px;
+    cursor: $text-link;
+    vertical-align: middle;
+  }
+}
+.footable-editing{
+  .btn-group{
+    .btn{
+      padding: 1px 5px;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+  }
+
+}
+
+table{
+  &.footable-filter{
+    thead {
+      .footable-header{
+        th{
+          border-bottom: none;
+        }
+      }
+    }
+    td{
+      &.footable-editing{
+        border-top: none;
+      }
+    }
+
+  }
+  tbody{
+    tr{
+      td{
+        span{
+          &.footable-toggle{
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+  &.footable-editing-no-view{
+    td{
+      &.footable-editing{
+        width: 80px;
+        max-width:80px;
+      }
+    }
+  }
+}
+#editor-modal{
+  .form-group{
+    margin-bottom: 7px;
+    overflow: hidden;
+    label{
+      font-weight: 600;
+      line-height: 33px;
+    }
+  }
+  .hidden{
+    display: none;
+  }
+
+}
+.collapse-footable{
+  &.card-accordions {
+    .card-header {
+      .card-title{
+        &::after, &::before{
+          font-size: 22px;
+          cursor:  $text-link;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
+.footable-paging{
+  li{
+    display: inline;
+    float: left;
+    padding: 3px 0;
+    margin-right: 5px;
+  }
+  .footable-page{
+    &.active{
+      .footable-page-link{
+        color: $secondary-text-color;
+      }
+    }
+  }
+}
+.footable-page-link{
+  position: $position-relative;
+  float: left;
+  margin-left: -1px;
+  text-decoration: none;
+  padding: 5px 15px;
+  line-height: 30px;
+}
+table{
+  &.footable {
+    thead{
+      tr{
+        &.footable-filtering{
+          .form-inline{
+            .form-group{
+              display: block;
+              .input-group-btn {
+                .dropdown-menu{
+                  &.dropdown-menu-right{
+                    width: 100px;
+                  }
+                }
+              }
+            }
+          }
+          th{
+            div{
+              &.input-group{
+                width: 100%;
+                .input-group-btn{
+                  .btn-primary{
+                    display: none;
+                  }
+                  .dropdown-toggle{
+                    border-radius: 0;
+                    color: $dropdown-toggle-color;
+                    background: $white-background-color;
+                    border: 1px solid $mail-border-color;
+                    margin-left: 5px;
+                    span::before{
+                      font: normal normal normal 14px/1 FontAwesome;
+                      content: "\f0c9";
+                      font-size: inherit;
+                      text-rendering: auto;
+                      margin-right: 4px;
+                      vertical-align: middle;
+                    }
+                  }
+                }
+              }
+              .form-control{
+                width: auto;
+              }
+            }
+            background: $white-background-color;
+            padding: 0 0 10px;
+            border-top:none;
+            ul{
+              &.dropdown-menu{
+                li{
+                  a{
+                    &.checkbox{
+                      input[type="checkbox"]{
+                        margin-left: -24px;
+                        margin-top:5px;
+                      }
+                      label{
+                        padding-left:28px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    tfoot {
+      tr.footable-paging{
+        td {
+          padding:5px 0 0 0;
+          text-align: right;
+          ul{
+            &.pagination{
+              margin:0;
+            }
+          }
+          span{
+            &.label{
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  &.footable-paging-center{
+    tfoot{
+      tr{
+        &.footable-paging{
+          td{
+            padding:5px 0 0 0;
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}
+.footable-detail-row{
+  td:first-child{
+    padding: 0;
+  }
+  .footable-details{
+    tbody{
+      padding: 0;
+      background: $light-gray-background-color;
+    }
+  }
+}
+
+.collapse-footable{
+  .card-block{
+    padding: 0;
+  }
+}
+
+.card-accordions .card-header .card-title[aria-expanded="false"]::after{
+  opacity: 0;
+}
+.card-accordions .card-header .card-title[aria-expanded="true"]::before{
+  opacity: 0;
+}
+
+
+/*----------------------------------------------
+
+END FOOTABLE-PAGE
+
+------------------------------------------------*/
+
+/*---- START FOOTABLE-PAGE RESPONSIVE ----*/
+@media ( max-width: $media-sm-width ) {
+  table{
+    &.footable {
+      thead {
+        tr{
+          &.footable-filtering {
+            th {
+              ul{
+                &.dropdown-menu {
+                  li {
+                    a{
+                      &.checkbox label{
+                        font-size: 15px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media ( max-width: $media-xs-width ) {
+  .collapse-footable{
+    &.card-accordions {
+      .card-header {
+        .card-title{
+          &::after{
+            right:10px;
+          }
+          &::before{
+            right:10px;
+          }
+        }
+      }
+    }
+  }
+  .footable-page-link{
+    padding: 0px 8px;
+  }
+
+  table{
+    &.footable-details {
+       tbody{
+          tr{
+            th:nth-child(1){
+              width:90px;
+            }
+          }
+       }
+    }
+    &.footable {
+      thead {
+        tr{
+          &.footable-filtering {
+            th {
+              div {
+                .form-control{
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/*---- END FOOTABLE-PAGE RESPONSIVE ----*/

@@ -1,0 +1,305 @@
+/*----------------------------------------------
+
+START HOSPITAL DASHBOARD
+
+------------------------------------------------*/
+
+#liveoperations {
+  min-width: 100%;
+  height: $spacing-250 + 50;
+  margin: $spacing-0 auto;
+}
+
+.dashboard-v3 {
+  .poll-height {
+    height: $spacing-250 + 50;
+  }
+}
+/*---- groeth chart ----*/
+.dashboard-groth {
+  height: 320px;
+  width: 100% !important;
+}
+.dashboard-hospital{
+  overflow: hidden;
+}
+.hospital-box {
+  padding: $spacing-0;
+  background: $white-background-color;
+  @include border-radius($border-radius-4);
+  @include multi-box-shadow(rgba($black-background-color, 0.2) 0 0 4px);
+  text-align: $text-center;
+  margin: $spacing-20 $spacing-0 $spacing-0 $spacing-0;
+  .title-box {
+    font-size: 22px;
+    text-transform: none;
+    padding: $spacing-20 $spacing-10 $spacing-10 $spacing-10;
+  }
+  i {
+    font-size: 60px;
+    padding: $spacing-30 $spacing-20 $spacing-15 $spacing-20;
+  }
+  .box-text-bottom {
+    font-size: 20px;
+  }
+  &.hospital-margin-bottom-box {
+    margin-bottom: $spacing-0;
+  }
+}
+.hospital-chart-height {
+  height: 230px;
+}
+/*---- patient detail ----*/
+.patient-detail , .emergency-detail {
+  padding: $spacing-25 $spacing-10;
+  border: 1px solid #dcdcdc;
+  position: $position-relative;
+  h6{
+    font-weight: 100;
+    span{
+      font-weight:500;
+    }
+  }
+}
+.emergency-detail{
+  background-image: url(../../../assets/global/image/img_40x40.png);
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.patient-title{
+  position: $position-absolute;
+  top: -$spacing-15;
+  background: $white-background-color;
+  padding: $spacing-0 $spacing-10;
+  left: $spacing-15;
+}
+.patient-icon{
+  padding: $spacing-15;
+  overflow: hidden;
+  p{
+    font-size: 17px;
+    color: $white-text-color;
+    float: $left-division;
+    margin: $spacing-0;
+    padding: $spacing-0;
+    clear: both;
+  }
+  h4{
+    color: $white-text-color;
+  }
+}
+.patient-icon-color{
+  font-size: 40px;
+  float: $right-division;
+}
+.currency-icon{
+  float: $left-division;
+  margin-right: $spacing-5;
+  font-size: 24px;
+  line-height: 37px;
+  color: $white-text-color;
+}
+.divider5{
+  height: $spacing-5;
+}
+/*---- service ----*/
+.hospital_service{
+  .progressbar-project{
+    .html-section{
+      .progress {
+        height: $spacing-10;
+      }
+    }
+  }
+}
+/*---- Today operation ----*/
+#visited_patient_chart{
+  min-width: 250px;
+  height: 182px;
+  margin: $spacing-0 auto;
+}
+.visited_patient_count{
+  color: $danger-color;
+}
+.visited_patient_title{
+  color: $small-tag-text-color;
+}
+.hospital_btn{
+  width: 100%;
+  border:none;
+}
+/*---- patient in ----*/
+.patientin-chart-height{
+  height: 300px;
+}
+/*---- hospital detail ----*/
+.hospital_dashboard {
+  display: table;
+  .dashboard-v1 {
+    .social-icons-margin {
+      margin: $spacing-20 $spacing-0 $spacing-0 $spacing-0;
+    }
+    .social-section{
+      padding: $spacing-30 $spacing-10;
+    }
+  }
+}
+.social-spice{
+  background: $site-spice-color;
+}
+.social-soft-orange{
+  background: $site-soft-orange-color;
+}
+/*---- admitted chart ----*/
+.admitted-chart-height{
+  height:200px;
+  svg{
+    width: 100%;
+  }
+}
+/*---- discharge chart ----*/
+.discharge-chart-height{
+  svg{
+    height: 195px !important;
+    width: 100%;
+  }
+}
+/*---- surgeries chart ----*/
+.surgeries-chart-height{
+  height: 200px;
+}
+/*---- madical chart ----*/
+.hospital_dashboard{
+  &.dashboard-v3{
+    .medical_chart{
+      .ct-series-a {
+        .ct-line {
+          stroke: $success-color;
+        }
+        .ct-area{
+          fill: #026502;
+        }
+        .ct-point{
+          stroke: $success-color;
+        }
+      }
+    }
+  }
+}
+.medical-chart-height{
+  svg{
+    height: 195px !important;
+    width: 100%;
+  }
+}
+/*---- earning chart ----*/
+.earning_chart_height{
+  height: 315px;
+}
+/*---- grandiant background ----*/
+#hospital_canvas1, #hospital_canvas2, #hospital_canvas3, #hospital_canvas4{
+  position: $position-absolute;
+  display: block;
+  top: $spacing-0;
+  @include border-radius($border-radius-4);
+  height: 100%;
+  width: 100%;
+  left: $spacing-0;
+}
+.hospital_dashboard_box{
+  position: $position-relative;
+}
+.hospital_dashboard_contain{
+  position: $position-relative;
+}
+/*----------------------------------------------
+
+END HOSPITAL DASHBOARD
+
+------------------------------------------------*/
+
+/*---- START CRM DASHBOARD RESPONSIVE ----*/
+@media (min-width: 1200px) and (max-width: 1665px) {
+  .hospital_btn {
+    font-size: 11px;
+    padding: $spacing-5 + 3 $spacing-5 - 1;
+  }
+  .btn.hospital_btn.flat-buttons:hover{
+    font-size: 11px;
+  }
+  .hospital_dashboard{
+    .dashboard-v1{
+      .social-section{
+        padding: $spacing-30 $spacing-0;
+        .social-text{
+          margin-left: -$spacing-5;
+          p{
+            font-size: 25px;
+          }
+          span{
+            font-size: 12px;
+          }
+        }
+        .social-icon{
+          font-size: 40px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1200px) and (max-width: 1390px) {
+  .visited_patient_count{
+    font-size:17px;
+  }
+  .visited_patient_title{
+    font-size:13px;
+  }
+}
+@media (max-width: $media-xl-width) {
+}
+@media (max-width: $media-lg-width) {
+  .hospital-box{
+    margin: $spacing-20 $spacing-0 $spacing-0 $spacing-0;
+  }
+  .emergency-detail{
+    margin-bottom: $spacing-15;
+  }
+  .patient-image{
+    margin-bottom: $spacing-15;
+  }
+}
+@media (max-width: $media-md-width) {
+}
+@media (max-width: $media-sm-width) {
+}
+@media (max-width: $media-xs-width) {
+  .patient-detail , .emergency-detail{
+    h6{
+      font-size: 14px;
+    }
+  }
+  .hospital_btn{
+    font-size: 11px;
+    padding: $spacing-5 + 3 4px;
+  }
+  .btn.hospital_btn.flat-buttons:hover{
+    font-size: 11px;
+  }
+}
+@media (max-width: 575px){
+  .hospital-xs-space{
+    margin-bottom: $spacing-20;
+  }
+  .patient-image {
+    text-align: $text-center;
+    margin-bottom: $spacing-35;
+    img {
+      height: 200px;
+      width: auto;
+    }
+  }
+  .patient-charge{
+    margin-bottom: $spacing-15;
+  }
+}
+/*---- End CRM DASHBOARD RESPONSIVE ----*/

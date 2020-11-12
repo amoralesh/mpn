@@ -1,0 +1,252 @@
+/*----------------------------------------------
+
+START LIST-PAGE
+
+------------------------------------------------*/
+.roman-list-style{
+  list-style-type: upper-roman;
+}
+.square-list-style{
+  list-style-type: square;
+}
+.content-list{
+  .list-group-item{
+    line-height: 20px;
+  }
+  .custom-content-list{
+    .list-group-item{
+      p{
+        padding-bottom: $spacing-0;
+      }
+    }
+  }
+  .message-list-group{
+    .list-group-item{
+      overflow: hidden;
+      .list-image{
+        width: 10%;
+      }
+      .list-message{
+        padding-left: $spacing-10;
+        width: 90%;
+        span{
+          color: $light-gray-text-color;
+          font-size: 12px;
+          margin-top: 2px;
+        }
+        h6{
+          padding-bottom: $spacing-5;
+        }
+        p{
+          line-height: 22px;
+          padding-bottom: $spacing-0;
+        }
+      }
+    }
+  }
+  .user-list{
+    .list-group-item{
+      overflow: hidden;
+      margin-bottom: $spacing-10;
+    }
+    .list-group-item:last-child{
+      margin-bottom: $spacing-0;
+    }
+    .user-list-image{
+      width: 9%;
+    }
+    .user-list-detail{
+      padding-left: $spacing-15;
+      p{
+        padding-bottom: $spacing-0;
+        line-height: 22px;
+      }
+      small{
+        font-size: 82%;
+      }
+    }
+  }
+  .comment-list{
+    .list-group-item{
+      overflow: hidden;
+      border: none;
+      padding: 0.75rem 0;
+      .list-group-item{
+        padding-left: 0;
+        padding-bottom: 0;
+      }
+    }
+    .comment-image{
+      width: 50px;
+    }
+    .comment-detail{
+      width: 94%;
+      padding-left: $spacing-15;
+      h6{
+        padding-bottom: $spacing-5;
+      }
+      p{
+        padding-bottom: $spacing-5;
+        line-height: 20px;
+      }
+      span{
+        color: $light-gray-text-color;
+        font-size:12px;
+      }
+
+    }
+    .comment-icon{
+      a{
+        margin-right: $spacing-5;
+      }
+    }
+    .comment-btn{
+      padding-top:$spacing-10;
+    }
+  }
+}
+
+
+
+
+/*----------------------------------------------
+
+END LIST-PAGE
+
+------------------------------------------------*/
+
+/*---- START LIST-PAGE RESPONSIVE ----*/
+@media ( max-width: $media-xl-width ) {
+  .content-list{
+    .user-list{
+      .user-list-image{
+        width: 14%;
+      }
+    }
+
+    .comment-list{
+      .comment-detail{
+        width: 93%;
+        padding-left: $spacing-10;
+      }
+      .comment-image{
+        width: 45px;
+      }
+    }
+  }
+}
+@media ( max-width: $media-lg-width ) {
+  .content-list{
+    .comment-list{
+      .comment-detail{
+        width: 91%;
+      }
+    }
+  }
+}
+@media ( max-width: $media-md-width ) {
+  .content-list{
+    .user-list{
+      .user-list-image{
+        width: 11%;
+      }
+    }
+    .message-list-group{
+      .list-group-item {
+        .list-image{
+          width: 10%;
+        }
+        .list-message {
+          width: 90%;
+        }
+      }
+
+    }
+    .comment-list{
+      .comment-detail{
+        width: 90%;
+      }
+    }
+  }
+
+}
+@media ( max-width: $media-sm-width ) {
+.content-list{
+  .user-list{
+    .user-list-image{
+      width: 18%;
+    }
+    .user-list-detail{
+      padding-left: $spacing-10;
+    }
+  }
+  .message-list-group{
+    .list-group-item{
+      .list-image{
+        width: 17%;
+      }
+      .list-message{
+        width: 82%;
+      }
+    }
+  }
+
+  .comment-list{
+    .comment-image{
+      width: 38px;
+    }
+    .comment-detail{
+      width: 86%;
+      padding-left:7px;
+    }
+    .comment-btn{
+      button{
+        margin-bottom: $spacing-5;
+        padding: $spacing-5;
+      }
+    }
+  }
+}
+
+}
+@media ( max-width: $media-xs-width ) {
+.content-list{
+  .user-list{
+    .list-group-item{
+      padding:12px;
+    }
+    .user-list-image{
+      width: 30%;
+    }
+  }
+  .comment-list{
+    .comment-image{
+      width: 30px;
+    }
+    .comment-detail{
+      width: 76%;
+    }
+    .list-group-item{
+      padding-left: 0;
+      padding-right:0;
+    }
+  }
+  .message-list-group{
+    .list-group-item{
+      .list-image{
+        width: 30%;
+        margin-right:10px;
+      }
+      .list-message{
+        float: none !important;
+        padding-left: 0;
+        width: auto;
+        p{
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+}
+/*---- END LIST-PAGE RESPONSIVE ----*/

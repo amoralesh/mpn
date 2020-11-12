@@ -1,0 +1,372 @@
+/*----------------------------------------------
+
+START FORM WIZARD PAGE
+
+------------------------------------------------*/
+/* START BUTTON ROUND CSS */
+.rounded-admin {
+  .content-wizard {
+    .basic-wizard {
+      .swMain {
+        .buttonFinish, .buttonNext, .buttonPrevious {
+          border-radius: $border-radius-default;
+        }
+      }
+    }
+  }
+}
+
+/* END BUTTON ROUND CSS */
+
+.content-wizard {
+  .basic-wizard {
+    .swMain {
+      width: 100%;
+      .anchor {
+        margin-top: 0;
+      }
+      .stepContainer {
+        height: 255px;
+        div.content {
+          width: 100%;
+          height: 255px;
+          overflow: visible;
+          border-radius: 0;
+          padding: 0;
+        }
+        .step-content-wizzard {
+          padding: $wizard-spacing-15;
+        }
+        p {
+          padding-bottom: 0;
+        }
+      }
+      ul.anchor {
+        clear: inherit;
+        li {
+          clear: inherit;
+          margin: 0 $wizard-spacing-10 $wizard-spacing-10 0;
+          padding: 0;
+          a.selected {
+            border: none;
+            box-shadow: 1px 5px 10px $light-gray-color;
+            .small, small {
+              color: $secondary-text-color;
+            }
+          }
+          a.done {
+            background: $success-background-color;
+            border: none;
+            .small, small {
+              color: $secondary-text-color;
+            }
+          }
+          a {
+            width: 270px;
+            padding: 7px;
+            border-radius: 0;
+            .stepDesc {
+              line-height: 20px;
+              padding: 7px 0 0 $wizard-spacing-10;
+              font-family: inherit;
+            }
+          }
+          &:last-child {
+            margin-bottom: 0;
+          }
+          &:hover {
+            a {
+              &.selected {
+                span,
+                small {
+                  color: $secondary-text-color !important;
+                }
+              }
+              &.disabled {
+                span,
+                small {
+                  color: $light-gray-color !important;
+                }
+              }
+            }
+          }
+        }
+      }
+      .stepContainer {
+        clear: both;
+      }
+      .buttonNext, .buttonPrevious, .buttonFinish {
+        font-family: inherit;
+        border: none;
+        font-size: 14px;
+        padding: $wizard-spacing-5 13px;
+        margin: 0 $wizard-spacing-5;
+        border-radius: 0px;
+      }
+      .buttonDisabled {
+        border: none !important;
+      }
+      .buttonFinish {
+        margin-right: 0;
+      }
+      .StepTitle {
+        border: none;
+        background: none;
+        padding: 0 0 3px 0;
+        line-height: 30px;
+        font-size: 20px;
+        margin-bottom: $wizard-spacing-10;
+        border-bottom: solid 1px $light-gray-color;
+        border-radius: 0;
+        font-family: inherit;
+        font-weight: $semi-bold-text;
+      }
+      .small, small {
+        color: $light-gray-color;
+      }
+      div.actionBar {
+        border-radius: 0;
+        height: auto;
+        padding: $wizard-spacing-10;
+      }
+      h6 {
+        text-transform: $text-uppercase;
+      }
+      ul {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
+  .vetical-wizard {
+    .swMain {
+      ul.anchor {
+        clear: both;
+        li {
+          clear: both;
+        }
+      }
+      .stepContainer {
+        clear: inherit;
+      }
+    }
+  }
+  .form-validation-wizzard {
+    .validation-form {
+      padding-top: $wizard-spacing-15;
+      label {
+        padding-top: $wizard-spacing-10;
+      }
+      .txtBox {
+        width: 100%;
+      }
+      span {
+        color: $danger-background-color;
+        position: $position-relative;
+        top: -12px;
+      }
+    }
+    .swMain {
+      .stepContainer {
+        height: 240px;
+        div.content {
+          height: 240px;
+        }
+      }
+      ul.anchor {
+        li {
+          a.error {
+            background: $danger-background-color !important;
+            border-color: $danger-background-color !important;
+            color: $secondary-text-color !important;
+          }
+        }
+      }
+      .msgBox {
+        display: none !important;
+      }
+    }
+
+  }
+}
+
+/*----------------------------------------------
+
+END FORM WIZARD PAGE
+
+------------------------------------------------*/
+
+/*---- START FORM WIZARD RESPONSIVE ----*/
+@media (max-width: $media-xl-width) {
+  .content-wizard {
+    .basic-wizard {
+      .swMain {
+        ul.anchor {
+          li {
+            a {
+              width: 245px;
+              .stepDesc {
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $media-lg-width) {
+  .content-wizard {
+    .basic-wizard {
+      .swMain {
+        ul.anchor {
+          li {
+            a {
+              width: 310px;
+              .stepDesc {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .vetical-wizard {
+      .swMain {
+        ul.anchor {
+          li {
+            a {
+              width: 245px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $media-md-width) {
+  .content-wizard {
+    .basic-wizard {
+      .swMain {
+        ul.anchor {
+          li {
+            a {
+              width: 280px;
+            }
+          }
+        }
+      }
+    }
+    .vetical-wizard {
+      .swMain {
+        ul.anchor {
+          li {
+            a {
+              width: 225px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $media-sm-width) {
+  .content-wizard {
+    .basic-wizard {
+      .swMain {
+        ul.anchor {
+          li:last-child {
+            margin-bottom: $wizard-spacing-10;
+          }
+        }
+        .StepTitle {
+          font-size: 16px;
+        }
+      }
+    }
+    .vetical-wizard {
+      .swMain {
+        ul.anchor {
+          li {
+            a {
+              width: 280px;
+            }
+          }
+        }
+        .stepContainer {
+          clear: both;
+        }
+      }
+    }
+    .form-validation-wizzard {
+      .validation-form {
+        label {
+          float: $left-division;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $media-xs-width) {
+  .content-wizard {
+    .basic-wizard {
+      .swMain {
+        ul.anchor {
+          margin-right: 0;
+          li {
+            width: 100%;
+            margin-right: 0;
+            a {
+              width: 100%;
+              .stepDesc {
+                font-size: 17px;
+              }
+            }
+          }
+        }
+        .buttonNext, .buttonPrevious, .buttonFinish {
+          width: 68px;
+          padding: $wizard-spacing-5 0;
+          font-size: 11px;
+          margin: 0 2px;
+        }
+        .stepContainer{
+          .step-content-wizzard {
+            width: 80%;
+          }
+        }
+      }
+    }
+    .vetical-wizard {
+      .swMain {
+        ul.anchor {
+          width: 100%;
+          li {
+            a {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .swMain {
+    ul.anchor {
+      li {
+        a {
+          .stepDesc {
+            small {
+              font: normal 11px Verdana, Arial, Helvetica, sans-serif;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*---- END FORM WIZARD RESPONSIVE ----*/

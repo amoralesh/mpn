@@ -1,0 +1,191 @@
+@import '../../../global/css/_variables.scss';
+@import '../../../global/css/_mixin.scss';
+
+/*----------------------------------------------
+
+START ERROR
+
+------------------------------------------------*/
+
+.contain-error {
+  &:before {
+    background: rgba(0, 0, 0, 0.4);
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: $position-fixed;
+  }
+  position: $position-fixed;
+  height: 100%;
+  width: 100%;
+  background: url("../../../../assets/pages/error/image/img_1570x1046.png") no-repeat;
+  background-size: cover;
+  overflow: auto;
+
+  .main-contain-error {
+    display: table;
+    height: 100%;
+    margin: 0 auto;
+
+    .main-contain-inner-error {
+      display: table-cell;
+      vertical-align: middle;
+
+      .error-des {
+        background: rgba(0, 0, 0, 0.1);
+        padding: $spacing-50;
+        position: relative;;
+        box-shadow: 0 0 8px #666;
+
+        .error-image {
+          width: 75%;
+          margin: auto;
+        }
+        h1 {
+          font-size: 34px;
+          letter-spacing: 4px;
+          padding: $spacing-10 0 0;
+          text-transform: $text-uppercase;
+          color: $secondary-text-color;
+        }
+        p {
+          color: $secondary-text-color;
+          font-size: 16px;
+          letter-spacing: 2px;
+          padding: 0;
+          text-transform: $text-uppercase;
+        }
+        .search-error {
+          margin: $spacing-30 auto 0;
+          overflow: hidden;
+          width: 65%;
+
+          .input-notify {
+            border: 1px solid $primary-background-color;
+            line-height: 17px;
+            margin-right: $spacing-10;
+            padding: 8px;
+            width: 78%;
+          }
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+.wrapper {
+  .btn-primary {
+    background: $primary-background-color;
+    border: solid 1px $site-primary-text-color;
+    &.active {
+      background: $primary-background-color;
+      border: solid 1px $site-primary-text-color;
+      &.focus, &:focus, &:hover {
+        background: $primary-background-color;
+        border: solid 1px $site-primary-text-color;
+      }
+    }
+    &:active {
+      &.focus, &:focus {
+        background: $primary-background-color;
+        border: solid 1px $site-primary-text-color;
+      }
+    }
+    &:hover, &:focus, &:active {
+      background: $primary-background-color;
+      border: solid 1px $site-primary-text-color;
+    }
+  }
+}
+
+.search-error{
+  .btn.flat-buttons{
+    line-height: 17px;
+  }
+}
+
+/*----------------------------------------------
+
+END ERROR
+
+------------------------------------------------*/
+
+/*---- START ERROR RESPONSIVE ----*/
+
+@media (max-width: $media-md-width) {
+  .contain-error {
+    .main-contain-error {
+      width: 80%;
+      .main-contain-inner-error {
+        .error-des {
+          padding: $spacing-40;
+          .search-error {
+            width: 84%;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+@media (max-width: $media-sm-width) {
+  .contain-error {
+    .main-contain-error {
+      width: 90%;
+      .main-contain-inner-error {
+        .error-des {
+          margin: $spacing-30 0;
+          padding: $spacing-30 $spacing-15;
+          h1 {
+            font-size: 23px;
+            line-height: 30px;
+          }
+          p {
+            font-size: 12px;
+            line-height: 19px;
+          }
+          .search-error {
+            margin: $spacing-15 auto 0;
+            width: 100%;
+            .input-notify {
+              width: 72%;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+
+@media (max-width: $media-xs-width) {
+  .contain-error {
+    .main-contain-error {
+      .main-contain-inner-error {
+        .error-des {
+          padding: $spacing-15;
+
+          h1 {
+            padding-bottom: $spacing-10 - 2;
+          }
+          .search-error {
+            text-align: $text-center;
+            .input-notify {
+              width: 100%;
+            }
+            button {
+              margin: $spacing-15 0px 0px 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*---- END ERROR RESPONSIVE ----*/

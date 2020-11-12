@@ -1,0 +1,156 @@
+/*----------------------------------------------
+
+START PROGRESS-BAR-PAGE
+
+------------------------------------------------*/
+
+.progress-sm{
+  height: 5px;
+}
+.progress-md{
+  height: 10px;
+}
+.progress-lg{
+  height: 22px;
+}
+.vertical-progress-bar{
+  overflow: hidden;
+  .progress-bar {
+    float: left;
+    height: 145px;
+    width: 30px;
+    margin-right: 45px;
+  }
+  .progress-track {
+    position: $position-relative;
+    width: 100%;
+    height: 100%;
+    background: $progress-bar-vertical-background;
+  }
+  .progress-fill {
+    position: $position-relative;
+    height: 50%;
+    width: 100%;
+    color: $secondary-text-color;
+    text-align: $text-center;
+    line-height: 20px;
+    span{
+      font-size: 10px;
+    }
+  }
+  .veritcal-progress-info{
+    background: $info-background-color;
+  }
+  .veritcal-progress-danger{
+    background:$danger-background-color;
+  }
+  .veritcal-progress-warning{
+    background: $warning-background-color;
+  }
+}
+.progress-primary[value]::-webkit-progress-bar {
+  background-color: $mail-contain-hover-background;
+}
+.circle-bar{
+  width: 130px;
+  height: 130px;
+  margin: auto;
+  display: table;
+}
+
+.animated-bar{
+  margin-bottom:$spacing-15;
+  height: 20px;
+}
+.simple-progress-bar, .label-progress-bar, .colored-progress-bar, .striped-progress-bar, .sizing-progress-bar, .skill-progress-bar{
+  progress{
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+.animated-bar{
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+
+.skill-progress-bar{
+  .skill{
+    margin-bottom: $spacing-5;
+  }
+}
+
+.anim-bar{
+  .progress-1{
+    margin-bottom:1rem;
+    display: block;
+    svg{
+      path{
+        //  stroke-dashoffset : 90 !important;
+      }
+    }
+  }
+  .progress-2{
+    margin-bottom:1rem;
+    display: block;
+    svg{
+      path{
+        //   stroke-dashoffset : 70 !important;
+      }
+    }
+  }
+  .progress-3{
+    margin-bottom : 1rem;
+    display: block;
+    svg{
+      path{
+        //  stroke-dashoffset : 40 !important;
+      }
+    }
+  }
+}
+
+/*----------------------------------------------
+
+END PROGRESS-BAR-PAGE
+
+------------------------------------------------*/
+
+/*---- START PROGRESS-BAR-PAGE RESPONSIVE ----*/
+@media ( max-width: $media-xl-width ) {
+  .circle-bar{
+    width: 100px;
+    height: 100px;
+  }
+
+}
+@media ( max-width: $media-lg-width ) {
+  .circle-bar{
+    width: 150px;
+    height: 150px;
+  }
+  .vertical-progress-bar{
+    .progress-bar{
+      margin-right:30px;
+    }
+  }
+
+}
+@media ( max-width: $media-md-width ) {
+  .vertical-progress-bar{
+    .progress-bar{
+      margin-right:18px;
+    }
+  }
+
+}
+@media ( max-width: $media-sm-width ) {
+  .circle-bar{
+    width: 100px;
+    height: 100px;
+  }
+
+
+}
+/*---- END PROGRESS-BAR-PAGE RESPONSIVE ----*/

@@ -1,0 +1,225 @@
+/*----------------------------------------------
+
+START DATATABLE
+
+------------------------------------------------*/
+
+/* START BUTTON ROUND CSS */
+.rounded-admin{
+  table.dataTable.nowrap{
+    .form-control{
+      border-radius: $border-radius-default;
+    }
+  }
+  .dataTables_wrapper{
+    .input-sm{
+        border-radius: $border-radius-tag-success;
+    }
+      select{
+        background-position: 90% center !important;
+      }
+
+  }
+  .pagination {
+    .page-item:first-child .page-link{
+      border-radius: $border-radius-default 0px 0px $border-radius-default;
+    }
+    .page-item:last-child .page-link{
+      border-radius: 0px $border-radius-default $border-radius-default 0px;
+    }
+  }
+
+}
+/* END BUTTON ROUND CSS */
+
+select.form-control:not([size]):not([multiple]):not(.form-control-sm):not(.form-control-lg) {
+  height: calc(2.5rem - 5px);
+  padding: $spacing-5;
+}
+.content-datatable{
+  .dataTable,.dataTables_scrollHeadInner,.dataTables_scrollFootInner{
+    width: 100% !important;
+  }
+}
+
+.dataTables_scrollHeadInner,.dataTables_scrollFootInner{
+  padding-right: $spacing-0 !important;
+}
+.dataTables_paginate{
+  .pagination{
+    .page-item{
+      margin-right: $spacing-5;
+      display: inline;
+      float: $left-division;
+      padding: $spacing-0;
+      a{
+        line-height: $spacing-35;
+        padding: $spacing-0 $spacing-15 $spacing-0 $spacing-15;
+      }
+    }
+    li.disabled .page-link{
+      color: #818a91;
+    }
+    li.active .page-link{
+      color: $secondary-text-color;
+    }
+    li .page-link{
+      &:hover{
+        color: $secondary-text-color;
+      }
+      &:focus{
+        color: $secondary-text-color;
+      }
+    }
+    li.disabled .page-link{
+      border-color:$tabs-border-color;
+      &:hover{
+        color: $default-text-color;
+      }
+      &:focus{
+        color: $default-text-color;
+      }
+    }
+
+    .next,.previous{
+      &:focus{
+        color: $secondary-text-color;
+      }
+    }
+  }
+}
+
+table tr.shown td.details-control{
+  &:before{
+    content: "\4f";
+  }
+}
+
+.sorting,.sorting_asc,.sorting_desc{
+  &:before,&:after{
+    top: $spacing-5 + 2;
+    visibility: hidden;
+    opacity: $spacing-0;
+    transition: opacity 0.3s ease-in;
+  }
+  &:hover{
+    &:before,&:after {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
+.sorting_asc,.sorting{
+  &:after{
+    opacity: 0.5 !important;
+  }
+}
+.sorting_desc,.sorting{
+  &:before{
+    opacity: 0.5 !important;
+  }
+}
+
+table{
+  border-spacing: $spacing-0;
+}
+
+table.dataTable.dtr-inline.collapsed > tbody > tr > td:first-child::before,
+table.dataTable.dtr-inline.collapsed > tbody > tr > th:first-child::before {
+  color: inherit;
+  background-color:inherit;
+}
+
+table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child::before,
+table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th:first-child::before {
+  background-color:inherit;
+}
+
+.m-b-5{
+  margin-bottom: $spacing-5;
+}
+
+.date-picker{
+  .btn{
+    line-height: $spacing-25;
+  }
+}
+.datatable-width{
+  table{
+    width: 100% !important;
+  }
+}
+
+div.dataTables_scrollHead{
+  table.dataTable,.dataTables_scrollFootInner,.dataTables_scrollHeadInner{
+    width: 100% !important;
+  }
+}
+
+.dataTables_scrollFootInner,div.dataTables_scrollFoot table{
+  width: 100% !important;
+  .form-control{
+    padding: $spacing-0 $spacing-5;
+  }
+}
+
+/*---- DATATABLE MATERIAL END ----*/
+/*----------------------------------------------
+
+END DATATABLE
+
+------------------------------------------------*/
+
+/*---- START DATATABLE RESPONSIVE ----*/
+@media (max-width: $media-md-width) {
+  .dataTables_wrapper {
+    .dataTables_paginate {
+      .pagination {
+        margin-top: $spacing-5 !important;
+        display: inline-flex;
+        .page-item {
+          a {
+            line-height: $spacing-35;
+            padding: 0 13px;
+          }
+        }
+      }
+    }
+  }
+  div.dataTables_scrollHead table.dataTable, div.dataTables_scrollHead .dataTables_scrollFootInner, div.dataTables_scrollHead .dataTables_scrollHeadInner {
+    width: auto !important;
+  }
+}
+@media (max-width: $media-sm-width) {
+    .dataTables_length,.dataTables_info{
+      margin-bottom: $spacing-10;
+    }
+  .dataTables_filter{
+    padding-bottom: 3px;
+  }
+  #initscroll_wrapper{
+    #initscroll_info{
+      margin-bottom:0;
+    }
+  }
+  div.dataTables_wrapper div.dataTables_filter input{
+    width: 150px;
+  }
+}
+
+@media (max-width: 410px) {
+  .dataTables_paginate .pagination .page-item{
+    &:nth-child(n+4){
+      margin-bottom: $spacing-5;
+    }
+    &:nth-child(-n+4){
+      margin-bottom: $spacing-0;
+    }
+    &:nth-child(-3n+3)
+    {
+      margin-bottom: $spacing-0;
+    }
+  }
+}
+
+/*---- END DATATABLE RESPONSIVE ----*/

@@ -1,0 +1,365 @@
+/*----------------------------------------------
+
+START SERVER MANAGEMENT DASHBOARD
+
+------------------------------------------------*/
+.contain-inner {
+  &.server-dashboard {
+    margin: $spacing-0 $spacing-20 $spacing-20;
+    .content {
+      margin: $spacing-20 $spacing-0 $spacing-0;
+    }
+  }
+}
+.server-dashboard {
+  .server-chart {
+    .chart-box {
+      float: $text-right;
+      background: transparent;
+      color: $primary-text-color;
+    }
+    .rickshaw_graph {
+      height: 352px;
+    }
+  }
+  .server-widget-box {
+    .widget-content {
+      color: #fff;
+      text-align: $text-center;
+      padding: $spacing-0;
+      .left-server-widget {
+        padding: 8px $spacing-20 $spacing-10 $spacing-25;
+      }
+      @media screen and (-webkit-min-device-pixel-ratio: 0) {
+        .left-server-widget {
+          padding: 9px $spacing-20 11px $spacing-25;
+        }
+        h3 {
+          margin-bottom: $spacing-10 ;
+        }
+      }
+      .right-server-widget {
+        color: $primary-hover-text-color;
+        text-align: $text-left;
+        ul {
+          padding-left: $spacing-0;
+          li {
+            list-style: none;
+            padding: $spacing-5 $spacing-15 $spacing-5 30px;
+            &.select {
+              color: $white-text-color;
+            }
+          }
+        }
+      }
+      p {
+        font-size: 16px;
+        text-align: $text-left;
+      }
+      h3 {
+        color: $white-text-color;
+        font-size: 30px;
+        margin-bottom: $spacing-10;
+        span {
+          color: $white-text-color;
+          font-size: 60px;
+        }
+      }
+      span {
+        color: $white-text-color;
+        font-size: 16px;
+      }
+    }
+  }
+  .vector-map-size {
+    height: 330px;
+  }
+  .calender-icon {
+    font-size: 50px;
+    padding: $spacing-20;
+    margin: auto;
+    text-align: $text-center;
+    i {
+      color: $white-text-color;
+    }
+  }
+  .content{
+    &.form-bootstrap-datetime {
+      padding: $spacing-0;
+      border-radius: 0;
+    }
+  }
+  .flot-chart-height {
+    height: 330px;
+  }
+  .server-status-box {
+    .widget-content {
+      margin-top: $spacing-20;
+    }
+    .server-status-text {
+      h2 {
+        margin: $spacing-20 $spacing-0;
+        text-align: $text-center;
+        font-size: 38px;
+      }
+      p {
+        padding-bottom: $spacing-0;
+        font-weight: 700;
+      }
+    }
+    .server-white-text {
+      color: $light-gray-color;
+      h5 {
+        color: $white-text-color;
+      }
+      h2 {
+        color: $white-text-color;
+      }
+    }
+  }
+  .mapael {
+    .map {
+      position: $position-relative;
+      height: 330px;
+      svg {
+        height: 330px;
+        margin: $spacing-0 10%;
+      }
+    }
+  }
+  .chart-height {
+    height: 352px;
+  }
+  .dashboard-widget{
+   &.widget-box {
+     box-shadow: rgba(0,0,0,.2) 0 0 4px;
+     border: none;
+   }
+  }
+}
+
+.bg-white {
+  background: $white-background-color;
+}
+
+.mapael .mapTooltip {
+  position: $position-absolute;
+  background: $white-background-color;
+  opacity: 0.70;
+  filter: alpha(opacity=70);
+  border-radius: 10px;
+  padding: $spacing-10;
+  z-index: 1000;
+  max-width: 200px;
+  display: none;
+  color: $primary-text-color;
+}
+
+/*----------------------------------------------
+
+END SERVER MANAGEMENT DASHBOARD
+
+------------------------------------------------*/
+
+/*---- START SERVER MANAGEMENT DASHBOARD RESPONSIVE ----*/
+@media (max-width: $media-xl-width) {
+  .contain-inner {
+    .chart-height {
+      height: 330px;
+    }
+    .server-widget-box {
+      .widget-content {
+        p {
+          padding-bottom: $spacing-10;
+        }
+        h3 {
+          margin-bottom: $spacing-5;
+          span {
+            font-size: 40px;
+          }
+        }
+        .left-server-widget {
+          padding: 18px $spacing-20 17px $spacing-25;
+        }
+        @media screen and (-webkit-min-device-pixel-ratio: $spacing-0) {
+          .left-server-widget {
+            padding: $spacing-20 $spacing-20 17px $spacing-25;
+          }
+        }
+      }
+    }
+    .server-status-box {
+      .server-status-text {
+        h2 {
+          margin: $spacing-10 $spacing-0;
+          font-size: 26px;
+        }
+      }
+    }
+    .flot-chart-height {
+      height: 270px;
+    }
+    .mapael {
+      .map {
+        height: 270px;
+        svg {
+          margin: 0;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1620px) {
+  .server-dashboard {
+    .server-status-box {
+      .widget-content {
+        padding: $spacing-10;
+      }
+      .server-status-text {
+        h2 {
+          font-size: 23px;
+        }
+      }
+    }
+    .server-widget-box {
+      .widget-content {
+        p {
+          font-size: 14px;
+        }
+        span {
+          font-size: 14px;
+        }
+        h3 {
+          font-size: 20px;
+        }
+        .left-server-widget {
+          padding: 15px $spacing-0 18px $spacing-25;
+        }
+        @media screen and (-webkit-min-device-pixel-ratio: 0) {
+          .left-server-widget {
+            padding: 16px $spacing-0 18px $spacing-25;
+          }
+        }
+        .right-server-widget {
+          ul {
+            li {
+              padding: $spacing-5 $spacing-15 $spacing-5 $spacing-15;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $media-lg-width) {
+  .contain-inner {
+    .server-widget-box {
+      .widget-content {
+        p {
+          padding-bottom: $spacing-15;
+        }
+        h3 {
+          margin-bottom: $spacing-10;
+          span {
+            font-size: 60px;
+          }
+        }
+        .left-server-widget {
+          padding: $spacing-10 $spacing-20 9px $spacing-25;
+        }
+        @media screen and (-webkit-min-device-pixel-ratio: 0) {
+          .left-server-widget {
+            padding: $spacing-10 $spacing-20 $spacing-10 $spacing-25;
+          }
+        }
+      }
+    }
+    .server-status-box {
+      .server-status-text {
+        h2 {
+          margin: $spacing-10 $spacing-0;
+          font-size: 26px;
+        }
+      }
+    }
+    .flot-chart-height {
+      height: 300px;
+    }
+    .mapael {
+      .map {
+        height: auto;
+      }
+    }
+  }
+  .server-dashboard{
+    .divider-lg-spacing {
+      height: 25px;
+      clear: both;
+    }
+  }
+}
+
+@media (max-width: $media-md-width) {
+  .contain-inner {
+    .server-status-box {
+      .server-status-text {
+        h2 {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $media-sm-width) {
+  .contain-inner {
+    .server-status-box {
+      .server-status-text {
+        h2 {
+          font-size: 35px;
+        }
+      }
+    }
+    .mobile-margin-bottom-box {
+      margin-bottom: $spacing-25;
+    }
+  }
+}
+
+@media (max-width: $media-xs-width) {
+  .contain-inner {
+    .server-widget-box {
+      .widget-content {
+        p {
+          padding-bottom: $spacing-10;
+        }
+        h3 {
+          margin-bottom: $spacing-5;
+          span {
+            font-size: 50px;
+          }
+        }
+        .left-server-widget {
+          padding: $spacing-15 $spacing-20 18px $spacing-25;
+        }
+        @media screen and (-webkit-min-device-pixel-ratio: 0) {
+          .left-server-widget {
+            padding: $spacing-15 $spacing-20 18px $spacing-25;
+          }
+        }
+      }
+    }
+    .server-status-box {
+      .server-status-text {
+        h2 {
+          font-size: 27px;
+        }
+      }
+    }
+  }
+}
+
+/*---- End SERVER MANAGEMENT DASHBOARD RESPONSIVE ----*/

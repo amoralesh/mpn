@@ -1,0 +1,134 @@
+/*----------------------------------------------
+
+START GALLERY-PAGE
+
+------------------------------------------------*/
+
+.gallery-filter{
+  margin-bottom:$spacing-10;
+  text-align: $text-center;
+}
+.gallery-img {
+  overflow: hidden;
+  position: $position-relative;
+  margin:$spacing-10;
+}
+.none-padding{
+  .filtr-item
+  {
+    padding:0;
+  }
+}
+.gallery-overlay{
+  position: $position-absolute;
+  margin: auto;
+  vertical-align: middle;
+  text-align: $text-center;
+  color: $secondary-text-color;
+  left: 0;
+  top: 0;
+  @include background-rgba($black-background-color, 0.5);
+  opacity:0;
+  width: 100%;
+  height: 100%;
+  @include transition(opacity 0.3s ease);
+}
+.gallery-description{
+  margin-top: -80px;
+  padding: 0 $spacing-20;
+  color: $secondary-text-color;
+}
+.filteredOut {
+  visibility: hidden;
+}
+.gallery-img:hover{
+  .gallery-wrapper{
+    margin-top:$spacing-0;
+  }
+  .gallery-overlay{
+    opacity:1;
+  }
+  .gallery-description{
+    margin-top:$spacing-0;
+  }
+}
+.gallery-description{
+  display: table-cell;
+  height:100%;
+  width: 100%;
+  vertical-align: middle;
+  h5{
+    color: $secondary-text-color;
+    margin-bottom:$spacing-10;
+  }
+}
+.gallery-icon{
+  a{
+    color: $secondary-text-color;
+    font-size: 22px;
+    i{
+      font-style: $font-style-normal;
+    }
+  }
+}
+.sl-overlay{
+  background-color: $black-background-color;
+  z-index: 9999;
+}
+.sl-wrapper .sl-close, .sl-wrapper .sl-navigation button{
+  font-family: ElegantIcons;
+  color: $secondary-text-color;
+  z-index: 99999;
+}
+
+.gallery-wrapper{
+  display: table;
+  height:100%;
+  width:100%;
+  margin-top:-80px;
+  @include transition(margin-top 0.2s ease-in-out);
+}
+
+
+/*----------------------------------------------
+
+END GALLEY-PAGE
+
+------------------------------------------------*/
+
+/*---- START GALLERY-PAGE RESPONSIVE ----*/
+@media ( max-width: $media-xl-width ) {
+  .gallery-filter{
+    button{
+      padding: 8px 12px;
+    }
+  }
+  .gallery-description{
+    h5{
+      font-size: 17px;
+      line-height: 21px;
+    }
+    p{
+      padding-bottom: $spacing-10;
+      line-height: 15px;
+      font-size: 12px;
+    }
+  }
+
+}
+@media ( max-width: $media-xs-width ) {
+  .gallery-filter{
+    button{
+      margin-bottom: $spacing-5;
+    }
+  }
+  .gallery-description{
+    p{
+      line-height: 18px;
+      padding-bottom:$spacing-10;
+    }
+  }
+;
+
+}
+/*---- END GALLERY-PAGE RESPONSIVE ----*/

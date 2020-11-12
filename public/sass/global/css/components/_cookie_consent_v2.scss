@@ -1,0 +1,54 @@
+/*----------------------------------------------
+
+START COOKIE-PAGE
+
+------------------------------------------------*/
+.nav-menu-icon {
+  .cookie-consent-2 {
+    &.cookie-message {
+      width: calc(100% - 70px);
+    }
+  }
+}
+
+body {
+  &.nav-menu-hide {
+    .cookie-consent-2 {
+      &.cookie-consent-2 {
+        width: 100%;
+      }
+    }
+
+  }
+}
+
+.cookie-consent-2 {
+  &.cookie-message {
+    left: auto;
+    width: calc(100% - 250px);
+    @include transition(all 0.3s ease 0s);
+  }
+}
+
+/*----------------------------------------------
+
+END COOKIE-PAGE
+
+------------------------------------------------*/
+
+/*---- START COOKIE-PAGE RESPONSIVE ----*/
+@media (max-width: $media-md-width) {
+  .cookie-consent-2 {
+    &.cookie-message {
+      width: calc(100% - 70px);
+    }
+  }
+  .cookie-message {
+    p {
+      font-weight: $font-style-normal;
+      line-height:22px;
+    }
+  }
+}
+
+/*---- END COOKIE-PAGE RESPONSIVE ----*/

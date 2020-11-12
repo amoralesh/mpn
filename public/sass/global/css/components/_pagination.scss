@@ -1,0 +1,432 @@
+/*----------------------------------------------
+
+PAGINATION PAGE STYLE
+
+------------------------------------------------*/
+/* START PAGINATION ROUND CSS */
+.rounded-admin {
+  #pagination1, #pagination-size1, #pagination-disabled1, #pagination-other1 {
+    .pagination {
+      .page-item {
+        &:first-child {
+          .pagination_link.flat-buttons {
+            border-radius: $border-radius-default 0px 0px $border-radius-default;
+          }
+        }
+        &:last-child {
+          .pagination_link.flat-buttons {
+            border-radius: 0px $border-radius-default $border-radius-default 0px;
+          }
+        }
+      }
+    }
+    .pagination_with_round {
+      .pagination {
+        .page-item {
+          &:first-child {
+            .pagination_link.flat-buttons {
+              border-radius: $border-radius-default;
+            }
+          }
+          &:last-child {
+            .pagination_link.flat-buttons {
+              border-radius: $border-radius-default;
+            }
+          }
+        }
+      }
+    }
+  }
+  .Js_pagination {
+    border-radius: $border-radius-default;
+    a.previous.flat-buttons {
+      border-radius: $border-radius-default 0px 0px $border-radius-default;
+    }
+    a.next.flat-buttons {
+      border-radius: 0px $border-radius-default $border-radius-default 0px;
+    }
+  }
+  .pagination_last_next_button.Js_pagination {
+    a.first.flat-buttons {
+      border-radius: $border-radius-default 0px 0px $border-radius-default;
+    }
+    a.last.flat-buttons {
+      border-radius: 0px $border-radius-default $border-radius-default 0px;
+    }
+    a.previous.flat-buttons {
+      border-radius: 0px;
+    }
+    a.next.flat-buttons {
+      border-radius: 0px;
+    }
+  }
+}
+/* END PAGINATION ROUND CSS */
+
+.pagination_main {
+  .pagination {
+    margin: $spacing-0;
+  }
+}
+
+.page-item {
+  &.active {
+    .page-link {
+      &:focus {
+        color: $secondary-text-color;
+      }
+      &:hover {
+        color: $secondary-text-color;
+      }
+    }
+  }
+  padding: $spacing-0;
+}
+
+.page-link {
+  &:focus {
+    color: $secondary-text-color;
+  }
+  &:hover {
+    color: $secondary-text-color;
+  }
+}
+
+.pagination-lg {
+  .page-link {
+    padding: 12px $spacing-20;
+  }
+  .page-item {
+    &:first-child {
+      .page-link {
+        @include border-radius($border-radius-0);
+      }
+    }
+    &:last-child {
+      .page-link {
+        @include border-radius($border-radius-0);
+      }
+    }
+  }
+}
+
+.pagination-sm {
+  .page-item {
+    &:first-child {
+      .page-link {
+        @include border-radius($border-radius-0);
+      }
+    }
+    &:last-child {
+      .page-link {
+        @include border-radius($border-radius-0);
+      }
+    }
+  }
+}
+
+.page-item {
+  &:first-child {
+    .page-link {
+      @include border-radius($border-radius-0);
+    }
+  }
+  &:last-child {
+    .page-link {
+      @include border-radius($border-radius-0);
+    }
+  }
+}
+
+.pagination_with_gap {
+  .pagination_link {
+    margin-right: $spacing-5;
+    padding: $spacing-5 $spacing-15;
+    @include border-radius($border-radius-0);
+  }
+}
+
+.pagination_with_round {
+  .pagination_link {
+    margin-right: 7px;
+    padding: $spacing-5 $spacing-15;
+    @include border-radius($border-radius-circle);
+  }
+  .page-item {
+    &:first-child {
+      .page-link {
+        @include border-radius($border-radius-circle);
+      }
+    }
+    &:last-child {
+      .page-link {
+        @include border-radius($border-radius-circle);
+      }
+    }
+  }
+}
+
+.pagination_without_border {
+  .pagination_link {
+    border: none;
+  }
+}
+
+.pagination_with_button {
+  .pagination_link {
+    padding: 8px 17px;
+  }
+}
+
+.page-item {
+  &.disabled {
+    .page-link {
+      pointer-events: visible;
+      &:focus {
+        pointer-events: visible;
+      }
+      &:hover {
+        pointer-events: visible;
+      }
+    }
+  }
+}
+
+.Js_pagination {
+  a {
+    &.disabled {
+      color: $secondary-text-color;
+      &:hover, &:focus, &:active {
+        color: $secondary-text-color;
+      }
+    }
+    &:hover, &:focus, &:active {
+      color: $secondary-text-color;
+    }
+    color: $secondary-text-color;
+  }
+  border: 1px solid #D7D7D7;
+}
+
+.gigantic {
+  &.Js_pagination {
+    input {
+      width: 150px;
+      font-size: 14px;
+      height: 35px;
+    }
+    a {
+      height: 35px;
+      width: 30px;
+      font-size: 30px;
+      line-height: 30px;
+    }
+    margin: $spacing-0;
+  }
+}
+
+.pagination_last_next_button {
+  &.gigantic {
+    &.Js_pagination {
+      input {
+        width: 150px;
+        font-size: 14px;
+        height: 35px;
+      }
+      a {
+        height: 35px;
+        width: 30px;
+        font-size: 30px;
+        line-height: 30px;
+      }
+      margin: $spacing-0;
+    }
+  }
+}
+
+.Js_pagination {
+  float: left;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+
+.Js_pagination {
+  a {
+    display: block;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    outline: none;
+    vertical-align: middle;
+  }
+}
+
+.Js_pagination {
+  a {
+    &:first-child {
+      border-radius: 2px 0 0 2px;
+      -moz-border-radius: 2px 0 0 2px;
+      -webkit-border-radius: 2px 0 0 2px;
+    }
+  }
+}
+
+.Js_pagination {
+  a {
+    &:last-child {
+      border-radius: 0 2px 2px 0;
+      -moz-border-radius: 0 2px 2px 0;
+      -webkit-border-radius: 0 2px 2px 0;
+    }
+  }
+}
+
+.Js_pagination {
+  a {
+    &:first-child {
+      border: none;
+    }
+  }
+}
+
+.Js_pagination {
+  a {
+    &:last-child {
+      border: none;
+    }
+  }
+}
+
+.Js_pagination {
+  input {
+    border: none;
+    float: left;
+    text-align: center;
+    height: 20px;
+    outline: none;
+    vertical-align: middle;
+    width: 120px;
+    padding: $spacing-0;
+    margin: $spacing-0;
+  }
+}
+
+/*----------------------------------------------
+
+END PAGINATION PAGE STYLE
+
+------------------------------------------------*/
+/*---- START RESPONSIVE ----*/
+@media (max-width: $media-xl-width) {
+  .pagination-lg {
+    .page-link {
+      padding: $spacing-10 $spacing-15;
+    }
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1700px) {
+  .pagination_block {
+    width: 50%;
+  }
+  .pagination_spacing {
+    height: $tablet-lg-spacing;
+    clear: both;
+  }
+}
+
+@media (max-width: $media-lg-width) {
+  .pagination-lg {
+    .page-link {
+      padding: 6px 9px;
+    }
+  }
+  .pagination_link {
+    padding: $spacing-5 $spacing-10;
+  }
+  .pagination-sm {
+    .page-link {
+      padding: 3px 8px;
+    }
+  }
+}
+
+/*-- FOR TABLET WIDTH --*/
+@media (max-width: $media-md-width) {
+  .pagination_link {
+    padding: 8px $spacing-15;
+  }
+  .pagination_with_gap {
+    .pagination_link {
+      padding: 3px 12px;
+    }
+  }
+  .pagination_with_round {
+    .pagination_link {
+      margin-right: $spacing-10;
+      padding: 3px 12px;
+    }
+  }
+  .pagination_with_button {
+    .pagination_link {
+      padding: $spacing-5 $spacing-15;
+    }
+  }
+  .pagination-lg {
+    .page-link {
+      padding: 12px $spacing-20;
+    }
+  }
+  .pagination-sm {
+    .page-link {
+      padding: $spacing-5 12px;
+    }
+  }
+
+}
+
+@media (max-width: $media-xs-width) {
+  .pagination_link {
+    padding: 6px 12px;
+  }
+  .pagination-lg {
+    .page-link {
+      padding: 6px 12px;
+    }
+  }
+  .pagination-sm {
+    .page-link {
+      padding: $spacing-5 $spacing-10;
+    }
+  }
+  .pagination_with_gap {
+    .pagination_link {
+      padding: 2px 12px;
+    }
+  }
+  .pagination_with_round {
+    .pagination_link {
+      margin-right: 6px;
+      padding: 3px 12px;
+    }
+  }
+  .pagination_with_button {
+    .pagination_link {
+      padding: 4px $spacing-10;
+    }
+  }
+  .pagination_last_next_button {
+    &.gigantic {
+      &.Js_pagination {
+        input {
+          width: 100px;
+        }
+      }
+    }
+  }
+}
+
+/*---- END RESPONSIVE ----*/

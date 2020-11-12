@@ -1,0 +1,156 @@
+/*----------------------------------------------
+
+START PRODUCTS EDIT
+
+------------------------------------------------*/
+.content-product-edit {
+  .button-product-edit {
+    .site-btn {
+      margin-right: $spacing-5;
+    }
+  }
+  .product-img {
+    width: 40px;
+    height: 40px;
+    img {
+      height: 100%;
+      width: auto;
+    }
+  }
+  .product-photos {
+    td {
+      vertical-align: middle;
+    }
+  }
+  .product-image-upload {
+    color: $dropdown-toggle-color;
+    display: inline;
+    input {
+      width: 0;
+      height: 0;
+      display: none;
+    }
+    label {
+      cursor: $text-link;
+    }
+    &:hover {
+      color: $primary-text-color;
+    }
+  }
+  .about-meta {
+    display: block;
+    margin-top: $spacing-5;
+  }
+  .review-table {
+    thead, tbody {
+      tr {
+        th, td {
+          &:first-child {
+            width: 40px;
+          }
+          &:last-child {
+            max-width: 100px;
+          }
+        }
+      }
+    }
+  }
+  .review-description {
+    p {
+      width: 250px !important;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      padding-bottom: $spacing-0;
+    }
+  }
+  a {
+    &.action-icon {
+      margin-right: $spacing-5;
+      color: $dropdown-toggle-color;
+    }
+  }
+  .icr-label {
+    margin: $spacing-0 $spacing-5 1px $spacing-0;
+  }
+
+  #photo {
+    .dataTables_filter {
+      display: none;
+    }
+  }
+  .checkbox {
+    overflow: hidden;
+    .checkbox-squared {
+      padding-right: $spacing-10;
+      padding-bottom: $spacing-5;
+      &:last-child {
+        padding-right: $spacing-0;
+        padding-bottom: $spacing-0;
+      }
+    }
+  }
+}
+.product-photos{
+  .form-control{
+    padding: $spacing-0 $spacing-5;
+  }
+}
+/*----------------------------------------------
+
+END PRODUCTS EDIT
+
+------------------------------------------------*/
+
+/*---- START PRODUCTS-EDIT RESPONSIVE ----*/
+
+@media (max-width: $media-sm-width) {
+  .content-product-edit {
+    .nav-tab-horizontal {
+      li {
+        padding-left: $spacing-0;
+        a {
+          padding: 6px;
+        }
+      }
+    }
+    .form-inline {
+      .form-control {
+        display: inline-block;
+        /*width: auto;*/
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+@media (max-width: $media-xs-width) {
+  .content-product-edit {
+    .button-product-edit {
+      .site-btn {
+        margin-bottom: $spacing-5;
+      }
+    }
+    .nav-tab-horizontal {
+      li {
+        margin-bottom: $spacing-5;
+        &:nth-child(4) {
+          margin-bottom: $spacing-0;
+        }
+        &:nth-child(5) {
+          margin-bottom: $spacing-0;
+        }
+        a{
+          padding: $spacing-5;
+        }
+      }
+    }
+    .form-inline {
+      .form-control.input-sm {
+        width: 150px;
+      }
+    }
+  }
+}
+
+/*---- END PRODUCTS-EDIT RESPONSIVE ----*/

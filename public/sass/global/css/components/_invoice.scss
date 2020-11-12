@@ -1,0 +1,54 @@
+/*----------------------------------------------
+
+START INVOICE-PAGE
+
+------------------------------------------------*/
+.address-detail{
+  margin:$spacing-10 0;
+}
+.invoice-total{
+  padding-right:$spacing-15;
+}
+.btn-invoice{
+  button{
+    i{
+      margin-right: $spacing-5;
+      font-style: $font-style-normal;
+    }
+  }
+}
+.invoice-top-box{
+  border:solid 1px $light-gray-color;
+  border-right: none;
+  min-height: 150px;
+  padding-top: $spacing-15;
+  &:last-child {
+      border-right: 1px solid $light-gray-color;
+  }
+}
+/*----------------------------------------------
+
+END INVOICE-PAGE
+
+------------------------------------------------*/
+
+/*---- START INVOICE-PAGE RESPONSIVE ----*/
+@media ( max-width: $media-lg-width ) {
+  .invoice-top-box{
+    min-height: 208px;
+  }
+}
+@media ( max-width: $media-md-width ) {
+  .invoice-top-box{
+    border-bottom: medium none;
+    border-right: 1px solid $light-gray-color;
+    min-height: 145px;
+    float: left;
+    width: 100%;
+  }
+  .invoice-top-box:last-child{
+    border-bottom: 1px solid $light-gray-color;
+  }
+}
+/*---- END INVOICE-PAGE RESPONSIVE ----*/
+

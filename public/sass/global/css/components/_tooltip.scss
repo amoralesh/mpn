@@ -1,0 +1,201 @@
+/*----------------------------------------------
+
+START TOOLTIP & POPOVER
+
+------------------------------------------------*/
+
+/* START TOOLTIP ROUND CSS */
+#api-examples {
+  i {
+    border-radius: $border-radius-default;
+    &:hover {
+      border-radius: $border-radius-default;
+    }
+  }
+}
+
+.style-tooltip {
+  i {
+    input {
+      border-radius: $border-radius-default;
+      &:hover {
+        border-radius: $border-radius-default;
+      }
+    }
+  }
+}
+
+/* End TOOLTIP ROUND CSS */
+
+.content-tooltip {
+  p {
+    padding-bottom: 0;
+  }
+  .style-tooltip {
+    margin-bottom: $bottom-spacing-none-secondary;
+    input {
+      border: 1px solid $light-gray-color;
+      background: none;
+      padding: $tooltip-spacing-10 $tooltip-spacing-15;
+      margin: 0 $tooltip-spacing-10 $tooltip-spacing-10 0;
+      cursor: $text-link;
+    }
+    .mouse-drag {
+      padding: $tooltip-spacing-10 0;
+      font-weight: $bold-text;
+    }
+  }
+  .settings-button {
+    margin-right: $tooltip-spacing-20;
+    img {
+      width: 50px;
+      cursor: $text-link;
+    }
+  }
+  .basic-popover-section {
+    .text-popover {
+      font-size: 16px;
+      margin-right: $tooltip-spacing-25;
+      cursor: $text-link;
+    }
+  }
+  #api-examples {
+    input {
+      cursor: $text-link;
+    }
+  }
+
+}
+
+#powerTip {
+  border-radius: $border-radius-0;
+  z-index: 999;
+}
+
+.tooltip-inner {
+  border-radius: $border-radius-0;
+}
+
+.tool-container.tool-top {
+  z-index: 999 !important;
+}
+
+.tool-top .tool-item {
+  color: $secondary-text-color;
+  line-height: 32px;
+}
+
+.tool-left .tool-item {
+  color: $secondary-text-color;
+  line-height: 32px;
+}
+
+.tool-container {
+  border-radius: 1px;
+  box-shadow: none;
+}
+
+.content-tooltip {
+  .btn {
+    border: 1px solid transparent;
+    line-height: 18px;
+    &:hover {
+      line-height: 18px;
+    }
+  }
+}
+
+.tool-container.gradient {
+  z-index: 999 !important;
+}
+
+.popover {
+  z-index: 999;
+}
+
+/*----------------------------------------------
+
+END TOOLTIP & POPOVER
+
+------------------------------------------------*/
+
+/*---- START TOOLTIP & POPOVER RESPONSIVE ----*/
+@media (max-width: $media-xl-width) {
+  .content-tooltip {
+    .basic-popover-section {
+      margin-bottom: $bottom-spacing-none-primary;
+      button {
+        margin-bottom: $tooltip-spacing-15;
+      }
+    }
+  }
+}
+
+@media (max-width: $media-lg-width) {
+  .content-tooltip {
+    .basic-popover-section {
+      .text-popover {
+        margin-right: 18px;
+      }
+    }
+  }
+}
+
+@media (max-width: $media-md-width) {
+  .content-tooltip {
+    .basic-popover-section {
+      button {
+        margin-bottom: $tooltip-spacing-15;
+
+      }
+    }
+  }
+}
+
+@media (max-width: $media-sm-width) {
+  .content-tooltip {
+    #api-examples {
+      input {
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .style-tooltip {
+      margin-bottom: 0;
+    }
+    #style-tooltip-output {
+      margin-bottom: $bottom-spacing-none-secondary;
+    }
+  }
+}
+
+@media (max-width: $media-xs-width) {
+  .content-tooltip {
+    .style-tooltip {
+      input {
+        margin: 0 $tooltip-spacing-10 $tooltip-spacing-10 0;
+      }
+    }
+    .basic-popover-section {
+      .text-popover {
+        margin-bottom: $tooltip-spacing-10;
+      }
+    }
+    .settings-button {
+      margin-right: $tooltip-spacing-10;
+    }
+    .basic-tooltip-section {
+      margin-bottom: $bottom-spacing-none-secondary;
+      display: table;
+      .btn {
+        margin-bottom: $tooltip-spacing-10;
+      }
+    }
+  }
+  .popover.bs-tether-element-attached-bottom, .popover.popover-top {
+    margin-left: -2px;
+  }
+}
+
+/*---- End TOOLTIP & POPOVER RESPONSIVE ----*/

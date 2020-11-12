@@ -1,0 +1,373 @@
+/*----------------------------------------------
+
+START TIMELINE
+
+------------------------------------------------*/
+
+.content-timeline {
+  margin: $spacing-20 $spacing-0;
+  padding: $spacing-20;
+  overflow: hidden;
+}
+#timeline {
+  position: $position-relative;
+  padding: $spacing-0;
+  margin: $spacing-0;
+  list-style: none;
+  display: table;
+  &:after {
+    position: $position-absolute;
+    top: $spacing-0;
+    left: 50%;
+    width: $spacing-5 - 2;
+    margin-left: -#{$spacing-5 - 3};
+    height: 100%;
+    content: "";
+    background: #e7e7e7;
+  }
+  .timeline-heading {
+    position: $position-relative;
+    margin-bottom: $spacing-30;
+    padding-left: $spacing-0;
+    z-index: 9;
+    width: 100%;
+    clear: both;
+    .timeline-date {
+      position: $position-relative;
+      display: block;
+      margin: $spacing-0 auto;
+      text-transform: $text-uppercase;
+      background: #f5f5f5;
+      padding: $spacing-10;
+      text-align: $text-center;
+      color: $primary-text-color;
+      font-weight: $bold-text;
+      font-size: $spacing-15 + 1;
+      border: solid 3px #dcdcdc;
+      box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.2);
+    }
+  }
+  .timeline-item.timeline-left {
+    padding-right: $spacing-50;
+    padding-left: $spacing-0;
+  }
+  .timeline-item.timeline-right {
+    padding-left: $spacing-50;
+    position: $position-relative;
+  }
+  .timeline-left {
+    .timeline-item {
+      padding-right: $spacing-30;
+    }
+  }
+  .timeline-item.timeline-right {
+    margin-top: $timeline-right-item-top-margin;
+    .timeline-icon {
+      right: auto;
+      left: -#{$spacing-25};
+    }
+    .timeline-content {
+      box-shadow: -2px 4px 4px rgba(0, 0, 0, 0.2);
+      &:before {
+        top: 90px;
+        right: 100%;
+        left: auto;
+        border-width: $spacing-10 $spacing-10 + 2 $spacing-10 $spacing-0;
+      }
+    }
+  }
+  .timeline-right {
+    margin-top: $timeline-right-item-top-margin;
+    .timeline-icon {
+      right: auto;
+      left: -#{$spacing-25};
+    }
+  }
+  .timeline-item {
+    margin-bottom: $spacing-50;
+    position: $position-relative;
+    .timeline-icon {
+      position: $position-absolute;
+      right: -#{$spacing-25};
+      width: $spacing-50 - 2;
+      height: $spacing-50 - 2;
+      top: $spacing-80;
+      display: block;
+      z-index: 1;
+      img {
+        display: block;
+        width: $spacing-50 - 2;
+        height: $spacing-50 - 2;
+        border: 4px solid $tabs-border-color;
+      }
+    }
+  }
+  .timeline-content {
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2);
+    &:before {
+      content: "";
+      position: absolute;
+      top: 90px;
+      left: 100%;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: $spacing-10 $spacing-0 $spacing-10 $spacing-10 + 2;
+    }
+    background: #fff;
+    position: relative;
+    .timeline_date {
+      .day {
+        font-size: $spacing-50;
+        letter-spacing: -2px;
+        color: $secondary-text-color;
+        margin-right: $spacing-5;
+      }
+      .week-day {
+        font-size: $spacing-15 + 2;
+      }
+      .month {
+        font-size: $spacing-15 + 1;
+        font-weight: $normal-text;
+        text-transform: capitalize;
+        line-height: $spacing-15 + 3;
+      }
+    }
+    .timeline-header {
+      position: $position-relative;
+      color: $secondary-text-color;
+      font-size: 13px;
+      font-weight: 600;
+      padding: $spacing-20;
+      overflow: hidden;
+      .timeline_title {
+        line-height: $spacing-50 - 2;
+        color: $secondary-text-color;
+      }
+    }
+    .timeline-body {
+      padding: $spacing-20;
+      p {
+        padding-bottom: 10px;
+        &:last-child {
+          padding: $spacing-0;
+        }
+      }
+      .img-with-text {
+        max-width: 170px;
+        float: left;
+        margin: $spacing-15 + 2 $spacing-15 $spacing-10 $spacing-0;
+      }
+      .time-user-info {
+        h4 {
+          font-size: $spacing-20 - 2;
+          line-height: $spacing-30;
+        }
+      }
+      .video-iframe {
+        position: $position-relative;
+        padding-bottom: 56.25%;
+        iframe, embed {
+          position: $position-absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .timeline-footer {
+      padding: $spacing-20;
+      border-top: 1px solid #e5e5e5;
+      .more {
+        overflow: hidden;
+        .list-inline {
+          display: inline-block;
+          padding: $spacing-0;
+          list-style: none;
+          li {
+            display: inline-block;
+            padding: $spacing-0;
+            padding-right: $spacing-10;
+            &:last-child {
+              padding-right: $spacing-0;
+            }
+            .time {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+  > li {
+    position: $position-relative;
+    display: block;
+    float: $left-division;
+    width: 50%;
+    &:last-child{
+      margin-bottom:$spacing-10;
+    }
+  }
+}
+
+/*----------------------------------------------
+
+END TIMELINE
+
+------------------------------------------------*/
+
+/*---- START TIMELINE RESPONSIVE ----*/
+@media(max-width: $media-lg-width){
+  .floatNoneList{
+    clear: both;
+  }
+}
+@media(max-width: $media-md-width){
+  #timeline{
+    .timeline-content{
+      .timeline_date{
+        .day{
+          font-size: 44px;
+        }
+        .week-day{
+          font-size: 14px;
+        }
+        .month{
+          font-size: 14px;
+        }
+      }
+    }
+    .timeline-item{
+      margin-bottom:$spacing-40;
+    }
+  }
+}
+@media(max-width: $media-sm-width){
+  #timeline{
+    &:after{
+      display: none;
+    }
+    > li{
+      width: 100%;
+    }
+    .timeline-heading{
+      margin-bottom: $spacing-30;
+      margin-top: $spacing-20;
+      &:first-child{
+        margin-top: 0;
+      }
+    }
+    .timeline-item.timeline-left{
+      padding-right: $spacing-70;
+      >.timeline-icon{
+        right: 0;
+      }
+    }
+    .timeline-item.timeline-right{
+      padding-left: $spacing-70;
+      margin-top:$spacing-0;
+      >.timeline-icon{
+        left: 0;
+      }
+    }
+    .timeline-item{
+      .timeline-icon{
+      }
+    }
+  }
+}
+@media(max-width: 575px){
+  .timeline-body{
+    .media-gallery{
+      margin-bottom: $spacing-20;
+    }
+  }
+}
+@media(max-width: $media-xs-width){
+  #timeline{
+    &:after{
+      left:$spacing-20;
+    }
+    .timeline-item{
+      .timeline-icon{
+        img{
+          width: $spacing-45;
+          height: $spacing-45;
+          border-width: 3px;
+        }
+      }
+      &.timeline-left{
+        padding-right: $spacing-60;
+        .timeline-icon{
+          right: -3px;
+        }
+      }
+      &.timeline-right{
+        padding-left: $spacing-60;
+        .timeline-content{
+          &:before{
+            border-width: $spacing-10 - 2 $spacing-10 $spacing-10 - 2 $spacing-0;
+          }
+        }
+      }
+    }
+    .timeline-content{
+      &:before{
+        border-width: $spacing-10 - 2 $spacing-0 $spacing-10 - 2 $spacing-10;
+      }
+      .timeline_date{
+        .day{
+          font-size:$spacing-30;
+        }
+        .week-day{
+          font-size:$spacing-15 - 2;
+          line-height: $spacing-15;
+        }
+        .month{
+          font-size: $spacing-15 - 3;
+          line-height: $spacing-15;
+        }
+      }
+      .timeline-header{
+        .timeline_title{
+          font-size: $spacing-15 + 3;
+          line-height: $spacing-35;
+        }
+        .timeline_date{
+          margin-top: 1px;
+        }
+      }
+      .timeline-header,.timeline-body,.timeline-footer{
+        padding:$spacing-10;
+      }
+      .timeline-footer .more .list-inline li{
+        padding-right: $spacing-5 - 2;
+        a{
+          cursor: $text-link;
+        }
+      }
+      .timeline-body{
+        .img-with-text{
+          max-width: 100%;
+          margin:$spacing-0;
+        }
+        .media-gallery{
+          margin-bottom: $spacing-10;
+        }
+      }
+    }
+  }
+}
+
+/*-- IE --*/
+@media screen and (min-width:0\0) {
+  .edit-scroll {
+    input{
+      min-height:$spacing-40 - 2;
+    }
+  }
+}
+
+
+/*---- END TIMELINE RESPONSIVE ----*/

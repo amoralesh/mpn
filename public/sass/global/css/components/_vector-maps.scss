@@ -1,0 +1,43 @@
+/*----------------------------------------------
+
+START VECTOR MAPS
+
+------------------------------------------------*/
+.vector-map-size{
+  width:100%;
+  height:$map-height;
+}
+.vector-map {
+  background-color: $white-background-color !important;
+  .vector-map-height{
+    height: 420px;
+    background: 0 0!important;
+  }
+}
+
+.vector-map .jqvmap-zoomin, .vector-map .jqvmap-zoomout {
+  background-color: $black-background-color;
+  width: 20px;
+  height: 20px;
+  line-height: 14px;
+}
+
+.jqvmap-zoomout {
+  top: 35px;
+}
+
+/*----------------------------------------------
+
+END VECTOR MAPS
+
+------------------------------------------------*/
+
+/*---- START VECTOR MAPS RESPONSIVE ----*/
+
+@media (max-width: $media-xs-width) {
+  .vector-map-size{
+    height:$map-height-responsive;
+  }
+}
+
+/*---- END VECTOR MAPS RESPONSIVE ----*/

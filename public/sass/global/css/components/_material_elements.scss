@@ -1,0 +1,135 @@
+/*----------------------------------------------
+
+START MATERIAL ELEMENTS
+
+------------------------------------------------*/
+.form-material{
+  position:$position-relative;
+  margin-bottom:$spacing-20;
+  .form-control {
+    font-size:16px;
+    padding:$spacing-10 $spacing-10 $spacing-10 $spacing-5;
+    display:block;
+    width:100%;
+    border:none;
+    border-bottom:1px solid $light-gray-color;
+    &:focus{
+      outline:none;
+    }
+    &:focus ~ .material-help{
+      opacity: 1;
+    }
+
+  }
+  .form-control:disabled, .form-control[readonly] {
+    background-color: transparent;
+  }
+  label {
+    color:$light-gray-text-color;
+    font-size:16px;
+    position:$position-absolute;
+    pointer-events: none;
+    left:5px;
+    top:10px;
+    @include transition(0.2s ease all);
+  }
+  .form-control:focus ~ label, .material-label-fixed{
+    top:-10px;
+    font-size:13px;
+  }
+  .material-line 	{
+    position:$position-relative;
+    display:block;
+    width:100%;
+    &:before, &:after{
+      content:'';
+      height:2px;
+      width:0;
+      bottom:1px;
+      position:$position-absolute;
+      @include transition(0.2s ease all);
+    }
+    &:before{
+      left: 50%;
+    }
+    &:after{
+      right: 50%;
+    }
+  }
+  .form-control:focus ~ .material-line:before, .form-control:focus ~ .material-line:after {
+    width:50%;
+  }
+  &.material-success{
+    .form-control:focus ~ label{
+      color:$success-color;
+    }
+    .material-line 	{
+      &:before, &:after{
+        background:$success-background-color;
+      }
+    }
+  }
+  &.material-info{
+    .form-control:focus ~ label{
+      color:$info-color;
+    }
+    .material-line 	{
+      &:before, &:after{
+        background:$info-background-color;
+      }
+    }
+  }
+  &.material-warning{
+    .form-control:focus ~ label{
+      color:$warning-color;
+    }
+    .material-line 	{
+      &:before, &:after{
+        background:$warning-background-color;
+      }
+    }
+  }
+  &.material-danger{
+    .form-control:focus ~ label{
+      color:$danger-color;
+    }
+    .material-line 	{
+      &:before, &:after{
+        background:$danger-background-color;
+      }
+    }
+  }
+  .material-help{
+    position: $position-absolute;
+    font-size: 13px;
+    opacity: 0;
+  }
+  &.material-icon-left{
+    i{
+      position: $position-absolute;
+      margin-top: 12px;
+    }
+    .form-control {
+      padding: $spacing-10 $spacing-25;
+    }
+    label {
+      left: 25px;
+    }
+  }
+  &.material-icon-right{
+    i{
+      position: $position-absolute;
+      margin-top: 12px;
+      right: 5px;
+    }
+    .form-control {
+      padding: $spacing-10 $spacing-25 $spacing-10 $spacing-5;
+    }
+  }
+}
+
+/*----------------------------------------------
+
+END MATERIAL ELEMENTS
+
+------------------------------------------------*/

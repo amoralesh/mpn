@@ -1,0 +1,193 @@
+/*----------------------------------------------
+
+START USERLIST
+
+------------------------------------------------*/
+.userlist-content {
+  .search_form {
+    margin: 0;
+  }
+  .userlist-box {
+    margin: 20px 0 0 0;
+    overflow: visible;
+    border: none;
+    padding: $userlist-spacing-30 $userlist-spacing-15;
+    .image-userlist {
+      background: $white-background-color;
+      width: 125px;
+      margin:auto;
+      img {
+        transition: all 0.3s ease;
+        padding: 3px;
+        box-shadow: 0 0 15px $light-gray-background-color;
+      }
+    }
+    .border-userlist {
+      width: 50px;
+      margin: 3px auto $userlist-spacing-10 auto;
+    }
+    .name-userlist {
+      margin: 0;
+      padding-top: $userlist-spacing-10;
+    }
+    .post-userlist {
+      padding-bottom: 5px;
+      margin: 0;
+      color: $light-gray-text-color;
+      font-size: 13px;
+      line-height: 18px;
+    }
+    &:hover {
+      .image-userlist {
+        img {
+          padding: 3px;
+          box-shadow: 0 0 15px $light-gray-background-color;
+        }
+      }
+    }
+  }
+}
+
+
+
+.overlay-userlistNav {
+  height: 100%;
+  width: 300px;
+  position: $position-fixed;
+  z-index: 999999;
+  top: 0;
+  right: 0;
+  margin-right:-300px;
+  background: $white-background-color;
+  overflow-x: hidden;
+  @include multi-box-shadow(rgba($black-background-color, 0.4) -2px 0 4px);
+  transition: 0.5s;
+
+  .overlay-content-userlistNav {
+    position: $position-relative;
+    top: 0%;
+    width: 100%;
+    padding-bottom:$userlist-spacing-20;
+    z-index: 0;
+    .user-overlay-img {
+      width: 300px;
+      overflow:hidden;
+      img {
+        width: 100%;
+        -webkit-filter: blur(5px);
+        filter: blur(5px);
+      }
+    }
+    .hover-user-box {
+      position: $position-absolute;
+      top: 0;
+      width: 100%;
+      .user-box {
+        display: table;
+        height: 300px;
+        margin: 0 auto;
+        .user-inner-box {
+          display: table-cell;
+          vertical-align: middle;
+          .post-userlist {
+            color: $secondary-text-color;
+          }
+          .image-userlist {
+            img {
+              box-shadow: 0 0 15px #ccc;
+              padding:3px;
+            }
+          }
+          .border-userlist {
+            border-top: 3px solid $secondary-text-color;
+          }
+          .name-userlist {
+            color: $secondary-text-color;
+          }
+        }
+      }
+    }
+
+  }
+  .closeUserlist {
+    position: $position-absolute;
+    color: $secondary-text-color;
+    font-size: 25px;
+    z-index: 999999;
+    right: $userlist-spacing-20;
+    top: $userlist-spacing-10;
+  }
+    .detail-userlist {
+      padding: $userlist-spacing-20;
+      .detail-profile {
+        background: none;
+        padding-left:0;
+      }
+      .edit-profile {
+        margin:$userlist-spacing-10 0 0 $userlist-spacing-15;
+      }
+    }
+    .user-name-profile {
+      .left-name-profile {
+        width: 100%;
+      }
+      .detail-profile {
+        width: 100%;
+      }
+      .userlist-group {
+        .edit-input {
+          border-radius:$border-radius-3;
+          width: 100%;
+          font-size: 15px;
+          padding: $userlist-spacing-5 $userlist-spacing-10;
+          margin-top: $userlist-spacing-10;
+        }
+        .edit-textarea {
+          height:50px;
+        }
+      }
+    }
+
+  }
+
+.open-userlist-section {
+  margin-right:0;
+}
+
+.info-userlist .userlist-group {
+  display: none;
+  margin: 0
+}
+.info-userlist.active .userlist-group {
+  display: block
+}
+.info-userlist.active .detail-profile {
+  display: none;
+}
+/* MATERIALS USERLIST */
+.rounded-admin{
+  .overlay-userlistNav{
+    .user-name-profile{
+      .userlist-group{
+        .edit-input{
+          border-radius: $border-radius-tag-success;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .overlay-userlistNav a {font-size: 20px}
+  .overlay-userlistNav .closeUserlist {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+/*----------------------------------------------
+
+END USERLIST
+
+------------------------------------------------*/

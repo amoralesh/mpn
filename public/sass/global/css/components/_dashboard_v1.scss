@@ -1,0 +1,553 @@
+/*----------------------------------------------
+
+START DASHBOARD
+
+------------------------------------------------*/
+.dashboard-v1 {
+  .content {
+    margin: $spacing-0 $spacing-0 $spacing-20 $spacing-0;
+  }
+  .dashboard-card-box {
+    color: $white-text-color;
+    p {
+      padding-bottom: $spacing-0;
+      font-size: 18px;
+      line-height: 45px;
+      font-weight: $bold-text;
+    }
+    &.card {
+      margin-bottom: $spacing-25;
+    }
+    span {
+      font-size: 17px;
+    }
+    .card-block {
+      padding: 22.4px $spacing-10;
+    }
+  }
+  .margin-bottom-card {
+    margin-bottom: -25px;
+    overflow: hidden;
+  }
+  .weather-background-image {
+    background: url('../../../assets/global/image/img_852x480.png');
+    color: $white-text-color;
+    padding: $spacing-45;
+    background-size: 100% 100%;
+    margin-bottom: $spacing-20;
+    .weather-icon-center {
+      font-size: 70px;
+      padding-left: $spacing-70;
+      .fa-spin {
+        position: $position-relative;
+        left: -60px;
+        top: -30px;
+        animation: fa-spin 5s infinite linear;
+      }
+    }
+    .weather-icon-title {
+      i {
+        font-size: 25px;
+        margin: 26px $spacing-0;
+      }
+      h3 {
+        display: inline-block;
+        color: $white-text-color;
+        padding-left: $spacing-10;
+      }
+    }
+    .weather-city {
+      h1 {
+        color: $white-text-color;
+      }
+    }
+    .weather-time {
+      h3 {
+        color: $white-text-color;
+      }
+    }
+    .weather-left-text {
+      text-align: $text-center;
+      margin-top: $spacing-10;
+      h1 {
+        font-size: 60px;
+        color: $white-text-color;
+      }
+      span {
+        font-size: 20px;
+      }
+    }
+    .weather-left-icon {
+      text-align: $text-center;
+      margin-top: 12px;
+      i {
+        font-size: 55px;
+      }
+      span {
+        font-size: 17px;
+      }
+    }
+    .weather-days {
+      padding: 0;
+      text-align: $text-center;
+      li {
+        display: inline-block;
+        text-align: $text-center;
+        border-left: 1px solid $white-text-color;
+        padding: $spacing-0 6.9px;
+        &:first-child {
+          border-left: none;
+        }
+        h4 {
+          color: $white-text-color;
+          text-shadow: 2px 2px 2px $primary-text-color;
+        }
+        i {
+          font-size: 30px;
+          text-shadow: 2px 2px 2px $primary-text-color;
+        }
+        span {
+          font-size: 18px;
+          display: block;
+          text-shadow: 2px 2px 2px $primary-text-color;
+        }
+      }
+    }
+  }
+  .social-icons-margin {
+    margin-bottom: $spacing-20;
+    overflow: hidden;
+  }
+  .social-section {
+    overflow: hidden;
+    padding: $spacing-10;
+    .social-text {
+      p {
+        font-size: 35px;
+        padding: $spacing-10 $spacing-0;
+      }
+      span {
+        font-size: 19px;
+      }
+    }
+    .social-icon {
+      font-size: 60px;
+    }
+  }
+  .poll-height {
+    height: 264px;
+    svg{
+      width: 100%;
+    }
+  }
+  .testimonial-box {
+    padding: 38px;
+  }
+  .data_widgets_block {
+    margin-bottom: $spacing-0;
+    margin-top: $spacing-0;
+    padding-top:$spacing-10;
+  }
+  .striped-progress-bar {
+    &:last-child {
+      margin-bottom: $spacing-0;
+    }
+  }
+  .chart-height {
+    height: 324px;
+  }
+  .data_widgets_box {
+    .striped-progress-bar {
+      padding: 9px;
+    }
+  }
+  .clock-content{
+      padding: $spacing-0;
+    .dashboard-header{
+      padding: $spacing-20;
+    }
+  }
+  .clock-section {
+    text-align: $text-center;
+    margin: 9px $spacing-0 $spacing-0;
+    color: $tabs-border-color;
+    overflow: auto;
+    padding: $spacing-10;
+    span {
+      font-size: 40px;
+    }
+    p {
+      font-size: 16px;
+      padding-bottom: $spacing-0;
+    }
+  }
+  .content-blockquote {
+    .dashboard-box {
+      margin-top:$spacing-0;
+      padding-top:$spacing-15;
+      .image-blockquote {
+        blockquote {
+          padding: $spacing-15 $spacing-15 7px $spacing-15;
+        }
+      }
+    }
+  }
+  .testimonial-dashboard-v1 {
+    .dashboard-box {
+      margin-top: $spacing-0;
+      padding-top:$spacing-15;
+    }
+  }
+  .overlay-box-shadow {
+    margin-bottom: $spacing-20;
+  }
+  .dashboard-margin-bottom {
+    margin-bottom: -20px;
+  }
+  .data_widgets_box_block {
+    margin-bottom: $spacing-0;
+  }
+  .flower-icon-dashboard{
+    a{
+      margin-right: $spacing-10;
+    }
+  }
+  .dashboard-card-margin{
+    margin-bottom: 0;
+  }
+  progress {
+    &:last-child {
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.traffic-chart{
+  position: $position-relative;
+  overflow: hidden;
+  #rickshaw-realtime_y_axis {
+    position: $position-absolute;
+    width: 40px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin-left: -4px;
+    z-index: 1;
+    .y_ticks{
+      .tick{
+        text{
+          fill: white;
+        }
+      }
+    }
+  }
+}
+
+/*----------------------------------------------
+
+END DASHBOARD
+
+------------------------------------------------*/
+
+/*---- START DASHBOARD RESPONSIVE ----*/
+@media (min-width: 1200px) and (max-width: 1833px) {
+  .dashboard-v1 {
+    .weather-background-image {
+      padding: $spacing-15;
+      .weather-icon-center {
+        font-size: 60px;
+      }
+      .weather-icon-title {
+        i {
+          margin: $spacing-10 $spacing-0;
+        }
+      }
+      .weather-width {
+        width: 50%;
+      }
+      .weather-day-width {
+        width: 100%;
+      }
+      .weather-left-text {
+        margin-bottom: $spacing-15;
+        h1 {
+          font-size: 50px;
+        }
+      }
+      .weather-left-icon {
+        margin-top: $spacing-20;
+        i {
+          font-size: 50px;
+        }
+        span {
+          display: block;
+        }
+      }
+      .weather-days li {
+        padding: $spacing-0 9.5px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1670px) {
+  .dashboard-v1 {
+    .data_widgets_block {
+      .data_widgets_box_block {
+        width: 50%;
+      }
+      .data_widgets_box {
+        .data_widgets_info {
+          width: 120px;
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: $media-xl-width) {
+  .dashboard-v1 {
+    .dashboard-card-box {
+      .card-block {
+        padding: 27px $spacing-0;
+        .fa-5x {
+          font-size: 4em;
+        }
+      }
+    }
+    .clock-section {
+      span {
+        font-size: 30px;
+      }
+      p {
+        font-size: 11px;
+      }
+    }
+    .icon-plus-overlay {
+      .icon-overlay-text {
+        padding: $spacing-10;
+      }
+    }
+    .widget-icon {
+      .icon-spacing {
+        font-size: 14px;
+      }
+    }
+    .widget-footer{
+      .site-btn{
+        padding: $spacing-5 $spacing-10;
+      }
+    }
+    .content-blockquote {
+      .image-blockquote {
+        .img-blockquote {
+          width: 155px;
+          img{
+            margin-top: -40px;
+          }
+        }
+        blockquote {
+          padding: $spacing-40 $spacing-15 7px $spacing-15;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $media-lg-width) {
+  .dashboard-v1 {
+    .data_widgets_box {
+      .striped-progress-bar {
+        padding: 4px $spacing-10;
+      }
+    }
+    .content-blockquote {
+      .alert-danger, .image-blockquote, .square-bracket-blockquote {
+        margin-bottom: $spacing-0;
+      }
+    }
+    .weather-background-image {
+      padding: $spacing-15;
+    }
+    .content-blockquote {
+      .image-blockquote {
+        .img-blockquote {
+          width: 200px;
+          img{
+            margin-top: -80px;
+          }
+        }
+      }
+    }
+    .dashboard-card-margin {
+      margin-bottom: $spacing-0;
+    }
+  }
+}
+
+@media (max-width: $media-md-width) {
+  .dashboard-v1 {
+    .dashboard-card-box {
+      .card-block {
+        padding: $spacing-10;
+      }
+    }
+    .weather-background-image {
+      .weather-days{
+        li {
+          padding: $spacing-0 5px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $media-sm-width) {
+  .dashboard-v1 {
+    .weather-background-image {
+      padding: $spacing-15;
+      .weather-icon-center {
+        font-size: 60px;
+      }
+      .weather-icon-title {
+        i {
+          margin: $spacing-10 0;
+        }
+      }
+      .weather-width {
+        width: 50%;
+      }
+      .weather-day-width {
+        width: 100%;
+      }
+      .weather-left-text {
+        margin-bottom: $spacing-15;
+        h1 {
+          font-size: 50px;
+        }
+      }
+      .weather-left-icon {
+        margin-top: $spacing-20;
+        i {
+          font-size: 50px;
+        }
+        span {
+          display: block;
+        }
+      }
+      .weather-days li {
+        padding: $spacing-0 9.5px;
+      }
+    }
+    .dashboard-card-box{
+      &.card {
+        margin-bottom: $spacing-15;
+      }
+    }
+    .dashboard-card-margin {
+      margin-bottom: $spacing-15;
+    }
+  }
+}
+
+@media (max-width: $media-xs-width) {
+  .dashboard-v1 {
+    .sparkline-compositeline {
+      canvas {
+        height: 200px !important;
+      }
+    }
+    .data_widgets_block {
+      margin-top: $spacing-0;
+    }
+    .dashboard-card-box {
+      &.card {
+        margin-bottom: $spacing-15;
+      }
+      p {
+        font-size: 16px;
+      }
+      span {
+        font-size: 15px;
+      }
+    }
+    .content-blockquote {
+      .image-blockquote {
+        .img-blockquote {
+          width: 100px;
+          img{
+            margin-top: -40px;
+          }
+        }
+        blockquote {
+          padding: 23px $spacing-15 7px $spacing-15;
+        }
+      }
+    }
+    .weather-background-image{
+      .weather-city{
+        h1 {
+          font-size: 28px;
+        }
+      }
+      .weather-time{
+        h3 {
+          font-size: 20px;
+          line-height: 30px;
+        }
+      }
+      .weather-icon-center {
+        font-size: 45px;
+        .fa-spin {
+          left: -45px;
+          top: -20px;
+          margin-top: $spacing-30;
+        }
+      }
+      .weather-icon-title{
+        i {
+          margin: $spacing-0;
+          font-size: 20px;
+        }
+        h3 {
+          font-size: 20px;
+        }
+      }
+      .weather-left-text {
+        margin-top: $spacing-0;
+        h1 {
+          font-size: 40px;
+        }
+        span {
+          font-size: 16px;
+        }
+      }
+      .weather-left-icon {
+        margin-top: $spacing-10;
+        i {
+          font-size: 45px;
+        }
+        span {
+          font-size: 16px;
+        }
+      }
+      .weather-days{
+        li {
+          padding: $spacing-0 3px;
+          h4 {
+            font-size: 16px;
+          }
+          i {
+            font-size: 20px;
+          }
+          span {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*---- END DASHBOARD RESPONSIVE ----*/

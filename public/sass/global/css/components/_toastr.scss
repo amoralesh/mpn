@@ -1,0 +1,92 @@
+/*----------------------------------------------
+
+TOASTR PAGE STYLE
+
+------------------------------------------------*/
+[aria-live="polite"] {
+  z-index: 9999;
+}
+[aria-live=polite]>div{
+  @include border-radius($border-radius-0);
+}
+
+button {
+  .toast-close-button {
+    font-weight: $bold-text;
+  }
+}
+.toast-title {
+  font-weight: $bold-text;
+  font-size: 16px;
+  margin-bottom: $spacing-5;
+}
+.amaran{
+  &.default{
+    @include border-radius($border-radius-0);
+    font-size: 16px;
+    font-weight: $normal-text;
+    opacity: .95;
+    .default-message{
+      margin-left: $spacing-10;
+    }
+    .default-spinner{
+      display: none;
+    }
+  }
+  &.awesome {
+    .icon {
+      @include border-radius($border-radius-0);
+      width: 30%;
+      height: 100%;
+      top: 25px;
+      left: 0px;
+      line-height: 88px;
+      font-size: 25px;
+    }
+    p {
+      padding-left: 30px;
+      &.bold {
+        padding-left: 30px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;
+      }
+    }
+    &.error{
+      border: 1px solid $danger-color;
+      p {
+        font-size: 14px;
+        &.bold {
+          font-size: 16px;
+        }
+      }
+    }
+    &.success{
+      border: 1px solid $success-color;
+      .icon {
+        background-color: $success-color;
+        color: $white-text-color;
+      }
+      p {
+        font-size: 14px;
+        &.bold {
+          color: $success-color;
+          font-size: 16px;
+        }
+      }
+    }
+    box-shadow: none;
+    border: none;
+    @include border-radius($border-radius-0);
+  }
+  &.user{
+    box-shadow: none;
+  }
+}
+
+/*----------------------------------------------
+
+END TOASTR PAGE STYLE
+
+------------------------------------------------*/

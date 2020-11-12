@@ -1,0 +1,138 @@
+/*----------------------------------------------
+
+SEARCH PAGE STYLE
+
+------------------------------------------------*/
+
+.search_form{
+  margin: $spacing-20;
+}
+.search_field{
+  @include multi-box-shadow(rgba($black-background-color, 0.2) 0 0 4px);
+  z-index: 0;
+  input{
+    border: none;
+    height: 55px;
+  }
+  span{
+    border: none;
+    padding: $spacing-0 $spacing-15;
+    background: $white-background-color;
+  }
+  button{
+    background:none;
+    border: none;
+    font-size: 20px;
+    &:focus{
+      outline: none;
+    }
+  }
+}
+.search_result{
+  font-style: italic;
+  margin-left: $spacing-5;
+}
+.search_block{
+  padding: $spacing-15;
+  float: $left-division;
+  width: 100%;
+  background: $search-block-background-color;
+  a{
+    font-size: 15px;
+  }
+  p{
+    padding-bottom: $spacing-0;
+    padding-top: $spacing-5;
+  }
+}
+.search_rating{
+  padding-top: $spacing-5;
+  i{
+    color:#ff7015;
+  }
+  span{
+    font-size: 13px;
+    color: $light-gray-text-color;
+    margin-left: $spacing-5;
+  }
+}
+.search_ad{
+  padding: 2px $spacing-5;
+  font-size: 12px;
+  color: $secondary-text-color;
+  margin-right: $spacing-5;
+  @include border-radius($border-radius-5);
+
+}
+.search_tag{
+  margin-top: $spacing-5;
+}
+.search_img{
+  width: 195px;
+}
+.search_contain{
+  width: calc(100% - 195px);
+  padding-left: $spacing-15;
+}
+/*----------------------------------------------
+
+END SEARCH PAGE STYLE
+
+------------------------------------------------*/
+
+/*---- START RESPONSIVE ----*/
+@media ( max-width: $media-xl-width ) {
+  .search_field input {
+    height: 45px;
+  }
+}
+@media ( max-width: $media-md-width ) {
+  .search_img {
+    width: 100%;
+  }
+  .search_contain{
+    width: 100%;
+    padding-left: $spacing-0;
+    padding-top: $spacing-5;
+  }
+  .search_block{
+    a{
+      font-size: 14px;
+    }
+  }
+}
+@media ( max-width: $media-sm-width ) {
+  .search_title {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .search_ad {
+    font-size: 10px;
+  }
+  .search_block {
+    a {
+      font-size: 12px;
+    }
+    p{
+      font-size: 13px;
+    }
+  }
+  .search_rating {
+    span {
+      font-size: 11px;;
+    }
+  }
+
+}
+@media ( max-width: $media-xs-width ) {
+  .search_field input {
+    height: 40px;
+  }
+  .search_img{
+    img{
+      width: 100%;
+    }
+  }
+}
+
+/*---- END RESPONSIVE ----*/

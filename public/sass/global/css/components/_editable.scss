@@ -1,0 +1,24 @@
+/*----------------------------------------------
+
+START EDITABLE PAGE STYLE
+
+------------------------------------------------*/
+
+table thead tr th{
+  color: $white-text-color;
+}
+.table-editing+input,.table-editing+textarea{
+  &:focus{
+    outline: 0!important;
+    outline-offset: 0!important;
+  }
+  outline: 0!important;
+  outline-offset: 0!important;
+}
+
+/*----------------------------------------------
+
+END EDITABLE PAGE STYLE
+
+------------------------------------------------*/
+

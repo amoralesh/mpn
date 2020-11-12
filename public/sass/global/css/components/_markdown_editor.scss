@@ -1,0 +1,53 @@
+/*----------------------------------------------
+
+START MARKDOWN EDITOR
+
+------------------------------------------------*/
+
+.editor-toolbar.fullscreen,.CodeMirror-fullscreen,.editor-preview-side{
+  z-index: 9999;
+}
+
+.editor-toolbar,.CodeMirror{
+  border-radius: 0;
+}
+
+.editor-statusbar{
+  border: 1px solid #ddd;
+  border-top: 0;
+}
+
+.editor-toolbar a.active, .editor-toolbar a:hover {
+  color: white !important;
+  border-radius: $spacing-0;
+}
+
+.content{
+  p{
+    a{
+      text-decoration: underline;
+    }
+  }
+}
+
+/*----------------------------------------------
+
+END MARKDOWN EDITOR
+
+------------------------------------------------*/
+
+/*---- START JSGRID RESPONSIVE ----*/
+@media (max-width: $media-sm-width) {
+
+}
+@media (max-width: $media-xs-width) {
+  .editor-toolbar a{
+    margin: $spacing-5 - 2 $spacing-0;
+  }
+  .editor-statusbar{
+    span{
+      min-width: 2em;
+    }
+  }
+}
+/*---- END JSGRID RESPONSIVE ----*/

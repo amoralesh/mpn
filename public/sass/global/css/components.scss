@@ -1,0 +1,178 @@
+/* -----------------------------------------------------------------------------------
+
+    1. COMPONENTS
+    1.1 BASIC UI
+        1.1.1 PANEL
+        1.1.2 BUTTONS
+        1.1.3 ICONS
+        1.1.4 LIST
+        1.1.5 DROPDOWN
+        1.1.6 IMAGE
+        1.1.7 MODAL
+        1.1.8 SCROLLABLE
+        1.1.9 TYPOGRAPHY
+        1.1.10 UTILITIES
+        1.1.11 CAROUSEL
+        1.1.12 TABS & ACCORDIONS
+        1.1.13 BADGES & LABELS
+        1.1.14 TOOLTIP & POPOVER
+        1.1.15 PROGRESS BARS
+    1.2 ADVANCE UI
+        1.2.1 ANIMATION
+        1.2.2 HIGHLIGHT
+        1.2.3 BOOTBOX
+        1.2.4 SWEET ALERT
+        1.2.5 TOASTR
+        1.2.6 MASONRY
+        1.2.7 RATING
+        1.2.8 SORTABLE & NESTABLE
+        1.2.9 LIGHTBOX
+        1.2.10 TREEVIEW
+
+    1.3 ELEMENTS
+        1.3.1 ALERT
+        1.3.2 RIBBON
+        1.3.3 PRICING TABLE
+        1.3.4 OVERLAY
+        1.3.5 STEP
+        1.3.6 TIMELINE
+        1.3.7 TESTIMONIALS
+        1.3.8 BLOCKQUOTE
+        1.3.9 BREADCRUMBS
+        1.3.10 NAV
+        1.3.11 NAVBAR
+        1.3.12 PAGINATION
+        1.3.13 DIFFERENT HEADER
+    1.4 FORMS
+        1.4.1 GENERAL ELEMENTS
+        1.4.2 FORM LAYOUT
+        1.4.3 FORM VALIDATION
+        1.4.4 FORM MASKS
+        1.4.5 ADVANCE ELEMENTS
+        1.4.6 FORM WIZARD
+        1.4.7 MARKDOWN EDITOR
+        1.4.8 IMAGE CROPPING
+        1.4.9 FILE UPLOADING
+    1.5 TABLES
+        1.5.1 BASIC TABLE
+        1.5.2 BOOTSTRAP TABLE
+        1.5.3 FLOTHED TABLE
+        1.5.4 RESPONSIVE TABLE
+        1.5.5 DATABLE
+        1.5.6 EDIT TABLE
+        1.5.7 JSGRID
+        1.5.8 FOOTABLE
+    1.6 CHARTS
+        1.6.1 MORRIS CHART
+        1.6.2 SPARKLINE CHART
+    1.7 WIDGETS
+        1.7.1 STATIC WIDGETS
+        1.7.2 DATA WIDGETS
+        1.7.3 SOCIAL WIDGET
+
+----------------------------------------------------------------------------------- */
+
+@import '_variables';
+@import '_mixin';
+@import 'components/_site';
+@import 'components/_global';
+@import 'components/_site-setting';
+@import 'components/_typography';
+@import 'components/_search';
+@import 'components/_gallery';
+@import 'components/_profile';
+@import 'components/_tabs-accordions';
+@import 'components/_invoice';
+@import 'components/_pagination';
+@import 'components/_userlist';
+@import 'components/_google-maps';
+@import 'components/_grid';
+@import 'components/_contact';
+@import 'components/_mail_box';
+@import 'components/_vector-maps';
+@import 'components/_buttons';
+@import 'components/_calendar';
+@import 'components/_message';
+@import 'components/_cards';
+@import 'components/_icons';
+@import 'components/_dropdown';
+@import 'components/_scrollable';
+@import 'components/_list';
+@import 'components/_images';
+@import 'components/_badges';
+@import 'components/_carousel';
+@import 'components/_modals';
+@import 'components/_utilities';
+@import 'components/_progress_bar';
+@import 'components/_tooltip';
+@import 'components/_bootbox';
+@import 'components/_toastr';
+@import 'components/_highlight';
+@import 'components/_masonry';
+@import 'components/_sweetalert';
+@import 'components/_rating';
+@import 'components/_sortable_nestable';
+@import 'components/_lightbox';
+@import 'components/_alerts';
+@import 'components/_treeview';
+@import 'components/_ribbon';
+@import 'components/_pricing_table';
+@import 'components/_overlay';
+@import 'components/_step';
+@import 'components/_timeline';
+@import 'components/_testimonial';
+@import 'components/_file-upload';
+@import 'components/_image_cropping';
+@import 'components/_blockquote';
+@import 'components/_breadcrumbs';
+@import 'components/_nav';
+@import 'components/_navbar';
+@import 'components/_different_headers';
+@import 'components/_general_elements';
+@import 'components/_bootstrap_tables';
+@import 'components/_form_validation';
+@import 'components/_editable';
+@import 'components/_jsgrid';
+@import 'components/_footable';
+@import 'components/_form_layout';
+@import 'components/_advanced_elements';
+@import 'components/_basic_table';
+@import 'components/_form_masks';
+@import 'components/_form_wizard';
+@import 'components/_responsive_table';
+@import 'components/_datatable';
+@import 'components/_static_widget';
+@import 'components/_data_widgets';
+@import 'components/_morris_chart';
+@import 'components/_floatthead';
+@import 'components/_context_menu';
+@import 'components/_social_widget';
+@import 'components/_markdown_editor';
+@import 'components/_dashboard_v1';
+@import 'components/_dashboard_v2';
+@import 'components/_dashboard_v3';
+@import 'components/_sparkline_chart';
+@import 'components/_chartist.scss';
+@import 'components/_cookie_consent_v1';
+@import 'components/_cookie_consent_v2';
+@import 'components/_gantt_chart';
+@import 'components/_order';
+@import 'components/_file_manager';
+@import 'components/_orderview';
+@import 'components/_product';
+@import 'components/_products_edit';
+@import 'components/_eCommerce_dashboard';
+@import 'components/_material';
+@import 'components/_material_elements';
+@import 'components/_crm_dashboard';
+@import 'components/page_progress';
+@import 'components/server_dashboard';
+@import 'components/_university_dashboard';
+@import 'components/_switches';
+@import 'components/_color_generator';
+@import 'components/_dashboard_v4';
+@import 'components/_analytics_dashboard';
+@import 'components/_hospital_dashboard';
+@import 'components/_real_estate_dashboard';
+
+/*--test--*/

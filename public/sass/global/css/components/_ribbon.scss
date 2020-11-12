@@ -1,0 +1,329 @@
+/*----------------------------------------------
+
+START RIBBON-PAGE
+
+------------------------------------------------*/
+
+  .ribbon-box{
+    position: $position-relative;
+    border:1px solid $light-gray-color;
+    padding: 55px 20px 20px 20px;
+    background: $ribbon-box-background-color;
+    &.left-ribbon-box{
+      margin-left: $spacing-20;
+      &.default-left-ribbon-box{
+        padding: 45px 20px 20px 45px;
+      }
+      &.default-bottom-left-ribbon-box{
+        padding: 20px 20px 45px 45px;
+      }
+    }
+    &.right-ribbon-box{
+      margin-right: $spacing-20;
+      &.default-right-ribbon-box{
+        padding: 45px 45px 20px 20px;
+      }
+      &.default-bottom-right-ribbon-box{
+        padding: 20px 45px 45px 20px;
+      }
+    }
+    p{
+      padding-bottom: $spacing-0;
+    }
+    .ribbon-position{
+      min-width:100px;
+      position: $position-absolute;
+      text-align: center;
+      top: 10px;
+      line-height: 34px;
+      color: $secondary-text-color;
+      &:before, &:after{
+        position: $position-absolute;
+        content: '';
+        height: 0;
+        width: 0;
+        border-style: solid;
+        border-width: 0;
+      }
+    }
+    .left-ribbon-position{
+      left: -8px;
+    }
+    .right-ribbon-position{
+      right: -8px;
+    }
+    .diamond-ribbon{
+      background-color: $success-background-color;
+      &::before{
+        left: -17px;
+        border-width: 17px 17px 17px 0;
+        border-color: transparent $success-background-color;
+      }
+      &::after{
+        right: -17px;
+        border-width: 17px 0 17px 17px;
+        border-color: transparent $success-background-color;
+      }
+    }
+    .arrow-ribbon{
+      background-color: $warning-background-color;
+      &::before{
+        border-color: $warning-background-color transparent;
+        left: -17px;
+        border-width: 17px 0 17px 17px;
+      }
+      &::after{
+        border-color: transparent $warning-background-color;
+        right: -17px;
+        border-width: 17px 0 17px 17px;
+      }
+    }
+    .rounded-ribbon{
+      background-color: $danger-background-color;
+      border-radius: $border-radius-20;
+      min-width: 150px;
+      &.left-ribbon-position{
+        left: -22px;
+      }
+      &.right-ribbon-position{
+        right: -22px;
+      }
+    }
+    .sheer-ribbon{
+      &::before{
+        left: -10px;
+        border-width: 34px 10px 0 0;
+      }
+      &::after{
+        right: -10px;
+        border-width: 34px 10px 0 0;
+      }
+    }
+    .default-ribbon{
+      min-width: 125px;
+      line-height: 25px;
+      @include gradient-vertical(rgba($sticky-ribbon-color, 0.9), rgba($sticky-ribbon-color, 1));
+      @include multi-box-shadow(rgba($black-background-color, 1) 0px 3px 10px -5px);
+      top: 19px;
+      &.left-ribbon-position{
+        @include transform(rotate(-45deg));
+        left: -32px;
+      }
+      &.right-ribbon-position{
+        @include transform(rotate(45deg));
+        right:-32px;
+      }
+      &::before {
+        left: 0;
+        top: 100%;
+        border: 3px solid;
+        border-color:  $sticky-ribbon-color transparent transparent $sticky-ribbon-color;
+      }
+      &::after{
+        right: 0;
+        top: 100%;
+        border: 3px solid;
+        border-color: $sticky-ribbon-color $sticky-ribbon-color transparent transparent;
+      }
+    }
+    &.default-ribbon-position{
+      margin:0 $spacing-15;
+    }
+    .extra-arrow-ribbon{
+        width: 100%;
+        background-color:$full-width-ribbon-color;
+        top:0;
+        left: 0;
+        @include multi-box-shadow(rgba($black-background-color, 1) 0px 3px 10px -5px);
+        &::before{
+          border-color:$full-width-ribbon-color $full-width-ribbon-color $full-width-ribbon-color $white-background-color;
+          border-width: 17px;
+          left: -34px;
+          top:5px;
+        }
+        &::after{
+            border-color: $full-width-ribbon-color $white-background-color $full-width-ribbon-color $full-width-ribbon-color;
+            border-width: 17px;
+            right: -34px;
+            top:5px;
+        }
+    }
+    .side-ribbon{
+        top: 5px;
+        right: 16px;
+        @include transition(line-height 0.5s);
+        &::after {
+          border: 24px solid $side-ribbon-color;
+          top: -16px;
+          border-bottom-color: transparent;
+          right: 0;
+        }
+        &::before {
+          border-width: 0 0 10px 9px;
+          border-color: transparent transparent $side-ribbon-border-color transparent;
+          top: -16px;
+          right: 48px;
+        }
+    }
+    .left-simple-ribbon,
+    .right-simple-ribbon,
+    .bottom-left-simple-ribbon,
+    .bottom-right-simple-ribbon
+    {
+      background: $simple-ribbon-background-color;
+      @include multi-box-shadow(rgba($black-background-color, 1) 0px 3px 10px -5px);
+      &.left-ribbon-position{
+        left:-13px;
+      }
+      &.right-ribbon-position{
+        right:-13px;
+      }
+      &.bottom-left-ribbon-position{
+        left:-13px;
+        bottom: 10px;
+        top:auto;
+      }
+      &.bottom-right-ribbon-position{
+        right:-13px;
+        bottom: 10px;
+        top:auto;
+      }
+    }
+    .left-simple-ribbon::before{
+      border-color: $simple-ribbon-border-color $simple-ribbon-border-color transparent transparent;
+      border-width:6px;
+      bottom: -2px;
+      left: 0;
+      margin-bottom: -10px;
+    }
+    .right-simple-ribbon::before{
+      border-color: $simple-ribbon-border-color transparent transparent $simple-ribbon-border-color;
+      border-width: 6px;
+      bottom: -2px;
+      right: 0;
+      margin-bottom: -10px;
+    }
+    .bottom-left-simple-ribbon::before{
+      border-color: transparent $simple-ribbon-border-color $simple-ribbon-border-color transparent;
+      border-width: 6px;
+      bottom: 34px;
+      left: 0;
+    }
+    .bottom-right-simple-ribbon::before{
+      border-color: transparent transparent $simple-ribbon-border-color $simple-ribbon-border-color ;
+      border-width: 6px;
+      bottom: 34px;
+      right: 0;
+    }
+    .folded-ribbon{
+      background: $folded-ribbon-background-color;
+      left:0;
+      width:100%;
+      @include multi-box-shadow(rgba($black-background-color, 1) 0px 3px 10px -5px);
+      &::after {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 0;
+        position: $position-absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 20;
+        border-bottom: 33px solid $folded-ribbon-border-color;
+        border-right: 33px solid transparent;
+        @include transform(rotate(90deg));
+        @include transform-origin(right bottom);
+      }
+      &::before {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 0;
+        position: $position-absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 10;
+        border-bottom: 33px solid rgba(0, 0, 0, 0.3);
+        border-right: 33px solid transparent;
+        @include transform(rotate(80deg));
+        @include transform-origin(right bottom);
+      }
+    }
+    .left-border-ribbon,
+    .right-border-ribbon
+    {
+      &.left-ribbon-position{
+        left: -19px;
+      }
+    }
+    .border-ribbon{
+      min-width:200px;
+      background: $success-background-color;
+      position: $position-absolute;
+      text-align: center;
+      top: 10px;
+      padding: 8px;
+      color: $secondary-text-color;
+      @include multi-box-shadow(rgba($black-background-color, 1) 0px 3px 10px -5px);
+      &.left-side{
+        left:-13px;
+      }
+      &.right-side{
+       right:-13px;
+      }
+      &.right-round-border{
+        border-radius: 0 $border-radius-4 $border-radius-4 0;
+        &::after{
+          border-right:1px dashed;
+          left: 0;
+          right: 5px;
+        }
+      }
+      &.left-round-border{
+        border-radius: $border-radius-4 0 0 $border-radius-4;
+        &::after{
+          border-left:1px dashed;
+          left: 5px;
+          right: 0;
+        }
+      }
+      &::after{
+        border:1px dashed;
+        border-left: none;
+        border-right: none;
+        content: '';
+        position: $position-absolute;
+        top: 5px;
+        bottom: 5px;
+        left: 0;
+        right: 0;
+      }
+    }
+    .left-border-ribbon::before{
+      border-color: $round-ribbon-border-color $round-ribbon-border-color transparent transparent;
+      border-width: 6px;
+      bottom: -38px;
+      left: 19px;
+    }
+    .right-border-ribbon::before {
+      border-color: $round-ribbon-border-color transparent transparent $round-ribbon-border-color;
+      border-width: 6px;
+      bottom: -38px;
+      right: 8px;
+    }
+  }
+
+/*----------------------------------------------
+
+END RIBBON-PAGE
+
+------------------------------------------------*/
+/*---- START RIBBON-PAGE RESPONSIVE ----*/
+@media (max-width: $media-sm-width) {
+  .ribbon-box{
+    &.left-ribbon-box{
+      margin-bottom: 15px;
+    }
+  }
+}
+/*---- END RIBBON-PAGE RESPONSIVE ----*/

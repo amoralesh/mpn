@@ -1,0 +1,374 @@
+/*----------------------------------------------
+
+START CARDS
+
+------------------------------------------------*/
+
+.wrapper {
+  .content-section {
+    border: none;
+    margin: 0;
+  }
+
+  .content-cards {
+    .heading-card {
+      p {
+        padding-bottom: $cards-spacing-15;
+      }
+      .footer-cards {
+        border-top: 1px solid $light-gray-background-color;
+        padding-top: $cards-spacing-10;
+      }
+    }
+
+    .scroll-horizontal {
+      width: 1200px;
+    }
+    .card {
+      margin-bottom: 0;
+    }
+    .toggle-des {
+      padding: $cards-spacing-20;
+    }
+    .des-card {
+      padding: $cards-spacing-20;
+      border: 1px solid rgba(0, 0, 0, 0.125);
+      border-radius: $border-radius-5;
+      overflow: hidden;
+
+      .search_form {
+        margin: 0 0 7px 0;
+      }
+    }
+    .pagination {
+      padding: 0;
+      margin: 0;
+    }
+    .card-toggle {
+      padding: 0px;
+    }
+    p {
+      padding-bottom: 0;
+    }
+
+  }
+
+  .card.content {
+    padding: 0;
+    .card-header {
+      .card-title {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .card.content.collapse .card-block {
+    display: none;
+  }
+
+  .content.showFullscreen {
+    position: $position-fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  .panel-loader {
+    .loader-wrapper {
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+      margin: auto;
+      position: $position-absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+  }
+
+  .content.panel-close {
+    display: none;
+  }
+
+  .panel-action-section {
+    margin-top: 5px;
+    overflow: hidden;
+    position: $position-absolute;
+    right: 20px;
+    .right-action {
+      li {
+        display: inline;
+        a {
+          padding: $cards-spacing-5;
+        }
+      }
+    }
+  }
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  @include border-radius(100%);
+  @include animation(spinner-bubble 1.3s linear 0s infinite);
+  margin: auto;
+  position: $position-absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.model-1 {
+  position: $position-absolute;
+  top: 0;
+  left: 0;
+  z-index: 6;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  opacity: .5;
+  background: $white-background-color;
+  .spinner {
+    color: #f00;
+    @include animation(color-bubble 2s linear 0s infinite);
+    &:after, &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      @include border-radius(100%);
+      @include multi-box-shadow(0 0 0 3px);
+      @include animation(spinner-bubble 1.3s linear 0s infinite);
+      margin: auto;
+      width: 10px;
+      height: 10px;
+      opacity: 0;
+    }
+    &:before {
+      @include animation(spinner-bubble 1.3s linear 2s infinite);
+    }
+  }
+}
+
+/*------------------------------------------*/
+.dropdown-submenu {
+  position: relative
+}
+
+.dropdown-submenu > .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: $border-radius-4;
+}
+
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block
+}
+
+.dropdown-submenu > a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #ccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+
+.dropdown-submenu:hover > a:after {
+  border-left-color: #ccc
+}
+
+.dropdown-submenu.pull-left {
+  float: none
+}
+
+.dropdown-submenu.pull-left > .dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/*------------------------------------------*/
+
+@include keyframes(spinner-bubble) {
+  from {
+    width: 10px;
+    height: 10px;
+    opacity: .8;
+  }
+  to {
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+  }
+}
+
+@include keyframes(color-bubble) {
+  0% {
+    color: #009DDC;
+  }
+  33% {
+    color: #50B949;
+  }
+  66% {
+    color: #EE2D24;
+  }
+  100% {
+    color: #FEB825;
+  }
+}
+
+@include keyframes(color-change) {
+  0% {
+    background: #009DDC;
+  }
+  33% {
+    background: #50B949;
+  }
+  66% {
+    background: #EE2D24;
+  }
+  100% {
+    background: #FEB825;
+  }
+}
+
+@include keyframes(rotate) {
+  from {
+    @include rotate(0deg);
+  }
+  to {
+    @include rotate(360deg);
+  }
+}
+
+@include keyframes (rotateRct) {
+  0% {
+    @include transform(perspective(120px) rotateX(0deg) rotateY(0deg))
+  }
+  50% {
+    @include transform(perspective(120px) rotateX(-180.1deg) rotateY(0deg))
+  }
+  100% {
+    @include transform(perspective(120px) rotateX(-180deg) rotateY(-179.9deg))
+  }
+}
+
+@include keyframes(size) {
+  from {
+    width: 70px;
+    height: 70px;
+  }
+  to {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@include keyframes(shadowSize) {
+  0% {
+    @include multi-box-shadow(15px 0 0 0, 30px 0 0 0, 45px 0 0 0, 60px 0 0 0, 75px 0 0 0);
+  }
+  20% {
+    @include multi-box-shadow(15px 0 0 5px, 30px 0 0 0, 45px 0 0 0, 60px 0 0 0, 75px 0 0 0);
+  }
+  40% {
+    @include multi-box-shadow(15px 0 0 0, 30px 0 0 5px, 45px 0 0 0, 60px 0 0 0, 75px 0 0 0);
+  }
+  60% {
+    @include multi-box-shadow(15px 0 0 0, 30px 0 0 0, 45px 0 0 5px, 60px 0 0 0, 75px 0 0 0);
+  }
+  80% {
+    @include multi-box-shadow(15px 0 0 0, 30px 0 0 0, 45px 0 0 0, 60px 0 0 5px, 75px 0 0 0);
+  }
+  100% {
+    @include multi-box-shadow(15px 0 0 0, 30px 0 0 0, 45px 0 0 0, 60px 0 0 0, 75px 0 0 5px);
+  }
+}
+
+
+/*----------------------------------------------
+
+END CARDS
+
+------------------------------------------------*/
+
+/*---- START CARDS RESPONSIVE ----*/
+@media (max-width: $media-lg-width) {
+  .mobile-spacing {
+    margin-bottom: $cards-spacing-15;
+  }
+}
+@media (max-width: $media-md-width) {
+  #primary-outline-output{
+    .page-content-title{
+      font-size: 19px;
+    }
+  }
+}
+@media (max-width: $media-sm-width) {
+  .search_field button {
+    font-size: 16px;
+  }
+  .mobile-sm {
+    height:15px;
+  }
+}
+
+@media (max-width: $media-xs-width) {
+  .content-cards {
+    .pagination_link {
+      padding: 6px 11px
+    }
+    .nav-tab-pills-image {
+      ul {
+        li {
+          margin-left: $cards-spacing-5 !important;
+          .nav-link {
+            font-size: 12px;
+
+          }
+        }
+      }
+    }
+    .pagination_link {
+      padding: 0 9px;
+    }
+
+  }
+  .wrapper {
+    .panel-action-section {
+      overflow: inherit;
+      position: $position-relative;
+      .right-action {
+        li {
+          a {
+            padding: 0;
+          }
+          padding-left: 0;
+        }
+      }
+    }
+  }
+  .nav-tab-pills-image {
+    .pills-height {
+      height: auto;
+    }
+  }
+}
+
+/*---- END CARDS RESPONSIVE ----*/

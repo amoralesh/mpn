@@ -1,0 +1,489 @@
+/*----------------------------------------------
+
+START GENERAL ELEMENTS
+
+------------------------------------------------*/
+
+/* START ADVANCED ELEMENTS ROUND CSS */
+.rounded-admin {
+  .form-elements {
+    .form-bootstrap-select {
+      .select2-container--default {
+        .select2-selection--single, .select2-selection--multiple {
+          border-radius: $border-radius-default;
+        }
+      }
+      .select2-selection--multiple {
+        padding-left: $spacing-15;
+      }
+      .js-example-disabled, .js-example-disabled-multi {
+        border-radius: $border-radius-default;
+      }
+      .btn-group-sm.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
+        border-radius: $border-radius-default;
+      }
+      .btn-group-sm.btn-group > .btn:last-child:not(:first-child), .btn-group > .dropdown-toggle:not(:first-child) {
+        border-radius: $border-radius-default;
+      }
+    }
+    .form-bootstrap-touchspin .bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-up {
+      border-radius: 0 $border-radius-tag-primary 0 0;
+      &:hover {
+        border-radius: 0 $border-radius-tag-primary 0 0;
+      }
+    }
+    .form-bootstrap-touchspin .bootstrap-touchspin .input-group-btn-vertical .bootstrap-touchspin-down {
+      border-radius: 0 0 $border-radius-tag-primary 0;
+      &:hover {
+        border-radius: 0 0 $border-radius-tag-primary 0;
+      }
+    }
+    .input-group .form-control:last-child, .input-group-addon:last-child, .input-group-btn:last-child > .btn, .input-group-btn:last-child > .dropdown-toggle, .input-group-btn:first-child > .btn:not(:first-child) {
+      border-radius: 0 17px 17px 0;
+    }
+    .input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child > .btn, .input-group-btn:first-child > .dropdown-toggle, .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle) {
+      border-radius: 17px 0 0 17px;
+    }
+    #demo_vertical.form-control, #demo_vertical2.form-control, .form-control.flatpickr-input {
+      border-radius: 17px 0 0 17px !important;
+    }
+    .form-control.color-rounded-input {
+      border-radius: 17px !important;
+    }
+    .bootstrap-touchspin {
+      .input-group-btn-vertical {
+        i {
+          left: 4px;
+          top: 4px;
+        }
+      }
+    }
+  }
+  #events-colorpicker {
+    .element-margin-bottom {
+      .form-group {
+        button.btn-block {
+          &:hover {
+            border-radius:25px;
+            border:1px solid rgba(0,0,0,0.1);
+          }
+        }
+      }
+    }
+  }
+}
+/* END ADVANCED ELEMENTS ROUND CSS */
+
+.advanced-elements-content {
+  overflow: visible;
+  .btn {
+    font-size: 16px;
+  }
+  .btn-sm {
+    font-size: 14px;
+    margin-right: $spacing-5;
+  }
+  .btn-group-sm {
+    .btn {
+      font-size: 14px;
+    }
+  }
+}
+
+.custom-width-select {
+  display: table;
+  width: 100%;
+}
+
+.form-bootstrap-select {
+  .form-control, .input-group-addon {
+    margin-bottom: 8px;
+  }
+  .dropdown-menu {
+    li {
+      padding-left: $spacing-0;
+      a {
+        display: block;
+        padding: 3px $spacing-20;
+      }
+      &:focus, &:hover {
+        background-color: $gray-background-color;
+      }
+    }
+    .divider {
+      height: 1px;
+      margin: 9px $spacing-0;
+      background-color: $gray-background-color;
+    }
+    .active {
+      a {
+        color: $white-text-color;
+        &:focus, &:hover {
+          color: $white-text-color;
+        }
+      }
+    }
+    .dropdown-header {
+      padding-left: $spacing-10;
+      padding-top: $spacing-5;
+      padding-bottom: $spacing-5;
+    }
+  }
+  .bootstrap-select {
+    margin-bottom: $spacing-15;
+    .btn {
+      line-height: 22px;
+      padding-bottom: $spacing-5;
+      padding-top: 7px;
+      padding-left: $spacing-10;
+    }
+  }
+  .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: 100%;
+  }
+  .special-color-danger {
+    font-weight: $bold-text;
+    color: $white-text-color;
+    background: $danger-color;
+    text-transform: $text-uppercase;
+  }
+  .special-color-success {
+    background: $success-color;
+    color: $white-text-color;
+  }
+  .special-color-info {
+    background: $info-color;
+    color: $white-text-color;
+  }
+  .label {
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    color: $white-text-color;
+    vertical-align: middle;
+  }
+  .bs-actionsbox {
+    .btn-group button {
+      width: 49%;
+    }
+  }
+  .dropdown-menu {
+    .disabled {
+      a, a:focus, a:hover {
+        color: $small-tag-text-color;
+      }
+    }
+  }
+  .dropdown-toggle {
+    &:after {
+      margin-left: $spacing-0;
+      margin-bottom: $spacing-10;
+    }
+  }
+  .select2-container--default {
+    .select2-selection--single, .select2-selection--multiple {
+      @include border-radius($border-radius-0);
+    }
+  }
+  .select2 {
+    width: 100% !important;
+    margin-bottom: $spacing-15;
+  }
+  .btn-group-sm {
+    .btn {
+      @include border-radius($border-radius-0);
+    }
+  }
+}
+
+.bootstrap-select {
+  &.btn-group {
+    .dropdown-menu {
+      z-index: 9;
+    }
+  }
+}
+
+.select2-container {
+  .select2-dropdown {
+    z-index: 9;
+  }
+}
+
+.select2-results {
+  .img-flag {
+    height: 15px;
+    width: 18px;
+  }
+}
+
+.tt-menu {
+  padding: 8px $spacing-10;
+  border: 1px solid $gray-background-color;
+  box-shadow: 0 5px 10px $gray-background-color;
+  width: 100%;
+  background: $white-background-color;
+}
+
+.typeahead-control {
+  span {
+    width: 100%;
+  }
+}
+
+#multiple-datasets .league-name {
+  margin: $spacing-10 $spacing-0;
+  border-bottom: 1px solid $light-gray-color;
+}
+
+#scrollable-dropdown-menu .tt-menu {
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.form-bootstrap-touchspin {
+  .bootstrap-touchspin {
+    margin-bottom: $spacing-15;
+    .btn-default {
+      border-color: $light-gray-color;
+    }
+    .input-group-btn-vertical {
+      .btn {
+        padding: 9px $spacing-10;
+      }
+      .bootstrap-touchspin-down {
+        @include border-bottom-right-radius($border-radius-0);
+      }
+      .bootstrap-touchspin-up {
+        @include border-top-right-radius($border-radius-0);
+      }
+    }
+  }
+  .form-control, .input-group-addon {
+    font-size: 16px;
+  }
+  .form-control-sm {
+    font-size: 16px;
+    @include border-radius($border-radius-0);
+
+  }
+  .input-group-sm {
+    .form-control, .input-group-addon, .input-group-btn {
+      font-size: 16px;
+      @include border-radius($border-radius-0);
+      .btn {
+        font-size: 16px;
+        @include border-radius($border-radius-0);
+      }
+    }
+  }
+  .btn-link {
+    &:focus, &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.form-bootstrap-datetime {
+  .form-control[readonly] {
+    background: $white-background-color;
+  }
+  .bootstrap-datetimepicker-widget {
+    table {
+      td, th {
+        @include border-radius($border-radius-0);
+      }
+    }
+  }
+  .bootstrap-datetimepicker-widget {
+    table {
+      td {
+        &.active {
+          &.today {
+            &:before {
+              border-bottom-color: $secondary-text-color;
+            }
+          }
+        }
+        &.day {
+          height: 30px;
+        }
+      }
+      th {
+        height: 30px;
+      }
+    }
+    thead {
+      tr {
+        &:first-child {
+          th {
+            &:hover {
+              color: $white-text-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.form-bootstrap-colorpicker {
+  .colorpicker-element {
+    .add-on, .input-group-addon {
+      i {
+        height: 17px;
+        vertical-align: top;
+      }
+    }
+  }
+}
+
+.colorpicker {
+  &.colorpicker-visible {
+    z-index: 99999;
+  }
+}
+
+.btn-group-sm {
+  .js-programmatic-enable {
+    margin-right: $spacing-10;
+  }
+}
+
+.datetimepicker-display {
+  width: 50%;
+  margin: $spacing-0 auto $spacing-15 auto;
+  li {
+    padding-left: $spacing-0;
+  }
+}
+
+.flatpickr-calendar {
+  z-index: 99;
+}
+
+.select2-container--default {
+  .select2-selection--single, .select2-selection--multiple {
+    border: 1px solid $tabs-border-color;
+  }
+}
+
+.ui-timepicker-select {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  padding: $spacing-5 $spacing-10;
+  font-size: 16px;
+  line-height: 25px;
+  width: 100%;
+}
+
+.bs-actionsbox, .bs-donebutton, .bs-searchbox{
+  padding: 0px 8px;
+}
+
+.bootstrap-select.btn-group .dropdown-menu li a{
+  padding: 3px $spacing-10;
+}
+
+.bootstrap-select{
+  .popover-title{
+    padding: 8px $spacing-10;
+  }
+}
+
+.bootstrap-select.btn-group .dropdown-menu li a.opt{
+  padding-left: $spacing-20;
+}
+
+/*----------------------------------------------
+
+END GENERAL ELEMENTS
+
+------------------------------------------------*/
+
+/*---- START GENERAL ELEMENTS RESPONSIVE ----*/
+@media (max-width: $media-lg-width) {
+  .datetimepicker-display {
+    width: 100%;
+  }
+}
+
+@media (max-width: $media-md-width) {
+  .ui-timepicker-wrapper, .colorpicker.colorpicker-visible {
+    z-index: 99;
+  }
+}
+
+@media (max-width: $media-md-width) {
+  .bootstrap-select.btn-group.bs-container .dropdown-menu {
+    z-index: 99;
+  }
+}
+
+@media (max-width: $media-xs-width) {
+  .datetimepicker-display {
+    .flatpickr-calendar {
+      width: 100%;
+    }
+    .flatpickr-rContainer {
+      width: 100%;
+    }
+    .flatpickr-days {
+      width: 100%;
+      .flatpickr-day {
+        max-width: 15%;
+      }
+    }
+  }
+  .form-bootstrap-touchspin {
+    .form-control, .input-group-addon {
+      font-size: 13px;
+    }
+  }
+  .form-bootstrap-select {
+    .bootstrap-select {
+      .btn {
+        line-height: 15px;
+      }
+    }
+    .dropdown-toggle {
+      &:after {
+        margin-bottom: 8px;
+      }
+    }
+  }
+  .bootstrap-touchspin {
+    input {
+      padding: 9px $spacing-10;
+    }
+  }
+  .advanced-elements-content {
+    .btn {
+      font-size: 14px;
+    }
+  }
+  .form-bootstrap-touchspin .bootstrap-touchspin .input-group-btn-vertical .btn {
+    padding: 8.5px $spacing-10;
+  }
+  .flatpickr-calendar {
+    &.open {
+      width: 87% !important;
+      left: 20px !important;
+      .flatpickr-days {
+        width: 100%;
+      }
+    }
+  }
+}
+
+/*---- END GENERAL ELEMENTS RESPONSIVE ----*/
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,110 @@
+/*----------------------------------------------
+
+START FORM LAYOUT
+
+------------------------------------------------*/
+/* START FORM MASKS ROUND CSS */
+.rounded-admin {
+  .form-mask {
+    a.btn, .mask-on-div, .bt-mask-it {
+      border-radius: $border-radius-default;
+    }
+    .site-btn {
+      border: 0;
+    }
+  }
+}
+.bt-mask-it{
+  cursor: pointer;
+}
+ /* END FORM MASKS ROUND CSS */
+
+.content-mask {
+  .element-form {
+    label {
+      padding-top: $layout-spacing-10;
+    }
+    .site-btn {
+      margin-top: 0;
+      padding: 8px 16px;
+    }
+    .cancel-btn {
+      font-size: 14px;
+    }
+    .bt-mask-it {
+      width: 9%;
+    }
+    .form-group {
+      overflow: hidden;
+    }
+    .mask-on-div {
+      border: 1px solid rgba(0, 0, 0, 0.15);
+      padding: 7px 12px;
+      width: 90%;
+    }
+  }
+}
+
+.cancel-btn {
+  &:hover {
+    border: 1px solid $light-gray-color;
+  }
+}
+
+
+
+/*----------------------------------------------
+
+END FORM LAYOUT
+
+------------------------------------------------*/
+
+/*---- START FORM LAYOUT RESPONSIVE ----*/
+
+@media (max-width: $media-lg-width) {
+  .content-mask {
+    .element-form {
+      .bt-mask-it {
+        width: 19%;
+      }
+      .mask-on-div {
+        width: 79%;
+      }
+    }
+  }
+}
+
+@media (max-width: $media-sm-width) {
+  .content-mask {
+    .element-form {
+      label {
+        float: $left-division;
+        text-align: $text-left;
+      }
+      .bt-mask-it {
+        width: 21%;
+      }
+      .mask-on-div {
+        width: 76%;
+      }
+    }
+    .element-form label {
+      padding-top: 0;
+    }
+  }
+}
+
+@media (max-width: $media-xs-width) {
+  .content-mask {
+    .element-form {
+      .bt-mask-it {
+        width: 35%;
+      }
+      .mask-on-div {
+        width: 60%;
+      }
+    }
+  }
+}
+
+/*---- END FORM LAYOUT RESPONSIVE ----*/

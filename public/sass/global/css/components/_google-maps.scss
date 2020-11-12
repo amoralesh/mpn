@@ -1,0 +1,56 @@
+/*----------------------------------------------
+
+START GOOGLE MAPS
+
+------------------------------------------------*/
+.map-size{
+  width:100%;
+  height:$map-height;
+}
+.overlay-map{
+  color:$secondary-text-color;
+  font-size:30px;
+  line-height:60px;
+  opacity:0.8;
+  @include border-radius($border-radius-0);
+  box-shadow:2px 2px 10px $secondary-background-color;
+  padding:0 $spacing-15;
+}
+
+.overlay_arrow-map{
+  left:50%;
+  margin-left:-16px;
+  width:0;
+  height:0;
+  position:$position-absolute;
+}
+.overlay_arrow-map.above{
+  bottom:-15px;
+  border-left:16px solid transparent;
+  border-right:16px solid transparent;
+}
+.map-text-hide{
+  display: none;
+}
+.map-button{
+  margin-bottom: $spacing-15;
+}
+/*----------------------------------------------
+
+END GOOGLE MAPS
+
+------------------------------------------------*/
+
+/*---- START GOOGLE MAPS RESPONSIVE ----*/
+@media (max-width: $media-xl-width) {
+  .map-search input {
+    width: 93%;
+  }
+}
+@media (max-width: $media-xs-width) {
+  .map-size{
+    height:$map-height-responsive;
+  }
+}
+
+/*---- END GOOGLE MAPS RESPONSIVE ----*/

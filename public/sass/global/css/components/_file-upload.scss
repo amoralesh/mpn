@@ -1,0 +1,49 @@
+/*----------------------------------------------
+
+START FILE UPLOAD
+
+------------------------------------------------*/
+
+
+/* START BUTTON ROUND CSS */
+.rounded-admin {
+  .dropify-wrapper {
+    .dropify-clear {
+      border-radius: $border-radius-default;
+    }
+  }
+}
+/* END BUTTON ROUND CSS */
+
+
+.dropify-wrapper .dropify-preview .dropify-infos .dropify-infos-inner{
+  .dropify-filename{
+    font-size: $spacing-20 - 2;
+  }
+  p.dropify-infos-message{
+    font-size: $spacing-15 - 1;
+  }
+}
+
+.events-drop + .dropify-preview .dropify-render img{
+    padding-bottom: $spacing-5 + 2;
+    padding-top: $spacing-5 + 2;
+}
+
+#default-upload{
+
+}
+
+/*----------------------------------------------
+
+END SUMMER NOTE
+
+------------------------------------------------*/
+
+/*---- START FILE UPLOAD RESPONSIVE ----*/
+@media (max-width: $media-xs-width) {
+  .dropify-wrapper{
+    height:$spacing-270 !important;
+  }
+}
+/*---- END FILE UPLOAD RESPONSIVE ----*/

@@ -1,0 +1,357 @@
+/*----------------------------------------------
+
+START TABS ACCORDIONS
+
+------------------------------------------------*/
+
+.tab-content{
+  .tab-pane{
+    > p:last-child{
+      padding: 0;
+    }
+  }
+}
+
+.nav-tab-horizontal-right, .nav-tab-vertical-left, .nav-tab-vertical-icon-right, .nav-tab-vertical-icon-right, .nav-tab-vertical-icon-combination, .nav-tab-bottom-inverse {
+  ul {
+    li {
+      .nav-link {
+        &.active, &.active:hover, &.active:focus, &:hover, &:focus {
+          color: $secondary-text-color;
+          @include border-radius($border-radius-0);
+        }
+      }
+    }
+  }
+}
+
+.nav-tab-horizontal-right {
+  ul {
+    border-bottom: 0;
+    .nav-item{
+      padding-right: $spacing-0;
+    }
+  }
+  .tab-content {
+    clear: both;
+  }
+}
+.nav-tab-horizontal {
+  ul {
+    .nav-item {
+      padding-right: $spacing-0;
+      a{
+        background:$gray-background-color;
+      }
+    }
+  }
+}
+.nav-tab-vertical-right {
+  ul {
+    border-bottom: 0;
+    border-left: 1px solid $tabs-border-color;
+    margin-left: $tabs-spacing-15;
+    li {
+      padding-left: $spacing-0;
+      margin-left: -1px;
+      .nav-link {
+        margin-left: -1px;
+        &.active, &.active:hover, &.active:focus, &:hover, &:focus {
+          border-color: $tabs-border-color $tabs-border-color $tabs-border-color transparent;
+          @include border-bottom-right-radius($border-bottom-right-radius-4);
+          @include border-top-left-radius($border-top-left-radius-0);
+          margin-left: -1px;
+        }
+      }
+    }
+    .nav-item + .nav-item {
+      margin-left: $spacing-0;
+      margin-top: 8px;
+    }
+  }
+  .nav-tabs {
+    .nav-item {
+      float: none;
+    }
+  }
+}
+
+.nav-tab-vertical-left {
+  ul {
+    border-bottom: 0;
+    margin-right: $tabs-spacing-15;
+    li {
+      padding-left: $spacing-0;
+      margin-left: -1px;
+      .nav-link {
+        margin-left: -1px;
+      }
+    }
+    .nav-item + .nav-item {
+      margin-left: $spacing-0;
+      margin-top: 8px;
+    }
+  }
+  .nav-tabs {
+    .nav-item {
+      float: none;
+    }
+  }
+}
+
+.nav-tab-vertical-icon-right {
+  ul {
+    border-bottom: 0;
+    margin-left: $tabs-spacing-15;
+    li {
+      padding-left: $spacing-0;
+      margin-left: -1px;
+      .nav-link {
+        margin-left: -1px;
+        font-size: 15px;
+      }
+    }
+    .nav-item + .nav-item {
+      margin-left: $spacing-0;
+      margin-top: 8px;
+    }
+  }
+  .nav-tabs {
+    .nav-item {
+      float: none;
+    }
+  }
+}
+
+.nav-tab-vertical-icon-left {
+  ul {
+    border-bottom: 0;
+    border-right: 1px solid $tabs-border-color;
+    margin-right: $tabs-spacing-15;
+    li {
+      padding-left: $spacing-0;
+      margin-right: -2px;
+      .nav-link {
+        font-size: 15px;
+        &.active, &.active:hover, &.active:focus, &:hover, &:focus {
+          border-right: 3px solid;
+          @include border-top-right-radius($border-top-right-radius-0);
+        }
+      }
+    }
+    .nav-item + .nav-item {
+      margin-left: $spacing-0;
+      margin-top: 8px;
+    }
+  }
+  .nav-tabs {
+    .nav-item {
+      float: none;
+    }
+  }
+}
+
+.nav-tab-vertical-icon-combination {
+  ul {
+    border-bottom: 0;
+    border-right: 1px solid $tabs-border-color;
+    margin-right: $tabs-spacing-15;
+    li {
+      padding-left: $spacing-0;
+      margin-left: -1px;
+      margin-right: -0.2px;
+      .nav-link {
+        margin-left: -1px;
+        font-size: 15px;
+      }
+    }
+    .nav-item + .nav-item {
+      margin-left: $spacing-0;
+      margin-top: 8px;
+    }
+  }
+  .nav-tabs {
+    .nav-item {
+      float: none;
+    }
+  }
+}
+
+.nav-tab-pills-image {
+  ul {
+    li {
+      padding-left: $spacing-0;
+      margin-bottom: -2px;
+      .nav-link {
+        font-size: 15px;
+        text-align: $text-center;
+
+        &.active, &.active:hover, &.active:focus, &:hover, &:focus {
+          border-bottom: 3px solid;
+          line-height: 25px;
+        }
+        i {
+          display: block;
+        }
+        &.active {
+          line-height:25px;
+        }
+      }
+    }
+    .nav-item + .nav-item {
+      margin-left: $spacing-15;
+    }
+  }
+}
+
+.nav-tab-inverse {
+  ul {
+    border-bottom: none;
+    li {
+      padding-left: $spacing-0;
+      .nav-link {
+        font-size: 15px;
+        &.active, &.active:hover, &.active:focus, &:hover, &:focus {
+          border-top: 3px solid;
+          @include border-top-right-radius($border-top-right-radius-0);
+          @include border-top-left-radius($border-top-left-radius-0);
+          margin-top: -2px;
+        }
+      }
+    }
+    .nav-item + .nav-item {
+      margin-left: $spacing-15;
+    }
+  }
+}
+
+.nav-tab-bottom-inverse {
+  ul {
+    border-bottom: none;
+    border-top: 1px solid $tabs-border-color;
+    li {
+      padding-left: $spacing-0;
+      .nav-link {
+        font-size: 15px;
+      }
+    }
+    .nav-item + .nav-item {
+      margin-left: $spacing-15;
+    }
+  }
+}
+
+.card-accordions {
+  .card-header {
+    width: 100%;
+    .card-title {
+      &:before {
+        font-family: ElegantIcons;
+        content: "L";
+        position: $position-absolute;
+        top: 12px;
+        right: 30px;
+      }
+      &:after {
+        font-family: ElegantIcons;
+        content: "K";
+        position: $position-absolute;
+        top: 12px;
+        right: 30px
+      }
+    }
+  }
+  .card:last-child{
+    margin-bottom: 0;
+  }
+}
+.default-accordions {
+  .card {
+    border: none;
+  }
+}
+
+#accordionbg{
+  .card-header {
+    .card-title {
+      color: $secondary-text-color;
+    }
+  }
+}
+
+.color-accordions {
+  .primary-card {
+    .card-header {
+      .card-title {
+        color: $secondary-text-color;
+      }
+    }
+    .card-block {
+      color: $secondary-text-color;
+    }
+  }
+  .success-card {
+    .card-header {
+      background-color: $success-background-color;
+      .card-title {
+        color: $secondary-text-color;
+      }
+    }
+    .card-block {
+      background-color: $success-background-color;
+      color: $secondary-text-color;
+    }
+  }
+  .warning-card {
+    .card-header {
+      background-color: $warning-background-color;
+      .card-title {
+        color: $secondary-text-color;
+      }
+    }
+    .card-block {
+      background-color: $warning-background-color;
+      color: $secondary-text-color;
+    }
+  }
+}
+/*----------------------------------------------
+
+END TABS ACCORDIONS
+
+------------------------------------------------*/
+
+/*---- START TABS ACCORDIONS RESPONSIVE ----*/
+@media (max-width: $media-sm-width) {
+  .card-header{
+    h5{
+      font-size: 18px;
+    }
+  }
+  #home8{
+    img{
+      margin-top: 15px;
+    }
+  }
+}
+@media (max-width: $media-xs-width) {
+  .nav-tab-horizontal-right, .nav-tab-horizontal, .nav-tab-pills-image, .nav-tab-inverse, .nav-tab-bottom-inverse {
+    .nav-link {
+      padding: 8px 7px;
+    }
+  }
+
+  .card-header {
+    .card-title::after, .card-title::before {
+      right: 15px;
+    }
+  }
+  .nav-tab-pills-image {
+    .pills-height {
+      height: 215px;
+      overflow: auto;
+    }
+  }
+}
+
+/*---- END TABS ACCORDIONS RESPONSIVE ----*/

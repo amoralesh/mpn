@@ -1,0 +1,81 @@
+/*----------------------------------------------
+
+PAGE PROGRESS BAR PAGE STYLE
+
+------------------------------------------------*/
+
+body{
+  .pace{
+    .pace-progress{
+      font-family: inherit;
+    }
+  }
+  &.youtube{
+    .pace {
+      -webkit-pointer-events: none;
+      pointer-events: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+      .pace-progress {
+        position: $position-fixed;
+        z-index: 99999;
+        top: 0;
+        right: 100%;
+        width: 100%;
+        background-color: $youtube-line-color;
+      }
+    }
+  }
+  &.treed-bar-progress{
+    .pace {
+      z-index: 99999;
+      background: transparent;
+      .pace-progress {
+        bottom: $spacing-0;
+        top: auto;
+      }
+      .pace-activity{
+        background-image:none;
+        background: transparent;
+      }
+    }
+  }
+  &.flate-top-progress{
+    .pace{
+      z-index: 99999;
+      .pace-progress {
+        z-index: 99999;
+        height: $spacing-50;
+      }
+      &.pace-active{
+        -webkit-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+    }
+  }
+  &.corner-indicator-progress{
+    .pace {
+      z-index: 99999;
+      position: $position-relative;
+    }
+  }
+  &.big-counter{
+    .pace {
+      .pace-progress {
+        z-index: 99999;
+      }
+    }
+  }
+  &.bounce{
+    .pace{
+      position: $position-fixed;
+      margin: auto;
+      top: 12px;
+      left: $spacing-0;
+      right: $spacing-0;
+      bottom: $spacing-0;
+    }
+  }
+}

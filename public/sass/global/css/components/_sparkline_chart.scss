@@ -1,0 +1,17 @@
+/*---- START SPARKLINE CHART RESPONSIVE ----*/
+@media (min-width: 575px) and (max-width: 767px) {
+  .sparkline-chart-section {
+    .divider-xs-spacing {
+      clear:inherit;
+    }
+    .sparkline-mobile {
+      margin-bottom: $pricing-spacing-15;
+    }
+    .divider-lg-spacing {
+      clear: both;
+      height: 25px;
+    }
+  }
+}
+
+/*---- END SPARKLINE CHART RESPONSIVE ----*/

@@ -1,0 +1,135 @@
+/*----------------------------------------------
+
+START COLOR GENERATOR
+
+------------------------------------------------*/
+.contain-inner {
+  &.color-generator {
+    margin: $spacing-0 $spacing-20 $spacing-20;
+    .content {
+      margin: $spacing-20 $spacing-0 $spacing-0;
+    }
+  }
+}
+
+.color-generator {
+  .full-border {
+    background: $white-background-color;
+  }
+  .profile-color {
+    h5 {
+      margin: $spacing-10;
+    }
+    h6 {
+      margin-bottom: $spacing-10;
+    }
+  }
+  .color-bg-padding {
+    padding: $spacing-30;
+    background: $light-gray-background-color;
+  }
+  .color-box-width {
+    width: 195px;
+    float: $left-division;
+    margin-right: $spacing-20;
+  }
+  .color-box {
+    box-shadow: rgba(0, 0, 0, .2) 0 0 4px;
+    padding: $spacing-10;
+    .color-box-title {
+      font-size: 16px;
+      line-height: 30px;
+    }
+    .color-border {
+      padding-bottom: $spacing-0;
+      border: 1px solid $light-gray-color;
+    }
+    .form-control {
+      margin: $spacing-5 $spacing-0 $spacing-10 $spacing-0;
+      font-size: 13px;
+    }
+    .colorpicker.colorpicker-visible {
+      z-index: 9;
+    }
+    .colorpicker-saturation {
+      width: 125px;
+      height: 125px;
+    }
+    .colorpicker-hue, .colorpicker-alpha {
+      height: 125px;
+    }
+  }
+  .content-color {
+    background: $light-gray-background-color;
+    padding: $spacing-10;
+  }
+  .choose-color-box {
+    height: 100px;
+    width: 100%;
+    background: none;
+    border: none;
+    padding: $spacing-0;
+    margin-bottom: $spacing-10;
+  }
+  .btn-secondary {
+    &.flat-buttons {
+      &:hover {
+        border: 1px solid transparent;
+      }
+    }
+  }
+}
+
+/*----------------------------------------------
+
+END COLOR GENERATOR
+
+------------------------------------------------*/
+
+/*---- START COLOR GENERATOR RESPONSIVE ----*/
+@media (max-width: $media-sm-width) {
+  .color-generator {
+    .content-color {
+      margin-bottom: $spacing-20;
+    }
+    .activities-profile {
+      .right-activities-profile {
+        h5 {
+          line-height: $spacing-20;
+        }
+      }
+    }
+    .color-box-width {
+      width: 192px;
+      margin-right: 8px;
+    }
+    .color-box {
+      .colorpicker-saturation {
+        width: 120px;
+        height: 120px;
+      }
+      .colorpicker-hue, .colorpicker-alpha {
+        height: 120px;
+      }
+    }
+  }
+}
+
+@media (max-width: $media-xs-width) {
+  .color-generator {
+    .color-box-width {
+      width: 100%;
+      margin-right: $spacing-0;
+      margin-bottom: $spacing-20;
+    }
+    .activities-profile {
+      .right-activities-profile {
+        h5 {
+          line-height: 10px;
+        }
+      }
+    }
+  }
+}
+
+/*---- END COLOR GENERATOR RESPONSIVE ----*/

@@ -1,0 +1,323 @@
+/*----------------------------------------------
+
+START FORM LAYOUT
+
+------------------------------------------------*/
+.form-group{
+  .form-control-lg{
+    font-size: 19px;
+  }
+  .form-control.form-control-sm{
+    font-size: 12px;
+  }
+}
+.content-form-layout {
+  .basic-form-layout {
+    p {
+      padding-bottom: $layout-spacing-10;
+    }
+  }
+  .site-btn {
+    margin-top: 0;
+  }
+  .left-form-layout {
+    border-right: 1px solid $light-gray-color;
+  }
+  .register-icon {
+    i {
+      color: $light-gray-color;
+      opacity: 0.4;
+      font-size: 110px;
+    }
+  }
+  .right-form-layout {
+    border-left: 1px solid $light-gray-color;
+  }
+  .right-checkbox {
+    label {
+      margin-right: 0;
+      padding-right: 0;
+    }
+    .icr-text {
+      padding-left: 0;
+      padding-right: $layout-spacing-5;
+    }
+  }
+  .form-field-inline {
+    width: 30%;
+    margin-right: $layout-spacing-15;
+  }
+  .inline-form-layout {
+    p {
+      padding-bottom: $layout-spacing-10;
+    }
+    .site-btn {
+      padding: 8px $layout-spacing-30;
+    }
+  }
+  .model-form-layout {
+    .modal-dialog {
+      max-width: 700px;
+    }
+    h6 {
+      color: $secondary-text-color;
+    }
+    .site-btn {
+      background: $white-background-color;
+      border-color: $white-background-color;
+      &:hover, &:focus {
+        background: $white-background-color;
+      }
+    }
+    .register-icon {
+      i {
+        color: $secondary-text-color;
+        &:hover {
+          color: $secondary-text-color;
+        }
+      }
+    }
+    .btn .btn:focus {
+      border: none;
+    }
+    .checkbox .icr-label.checked .type_checkbox::after, .checkbox .icr-label.checked .type_checkbox::before {
+      background: $white-background-color;
+    }
+    .modal-header {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    .modal-footer {
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+    }
+  }
+  .all-form-section {
+    .element-form {
+      clear: both;
+      .form-color {
+        height: 35px;
+        padding: 4px;
+      }
+      .cancel-btn {
+        font-size: 14px;
+        padding: $layout-spacing-5 $layout-spacing-15;
+      }
+    }
+    label {
+      padding-top: $layout-spacing-10;
+    }
+    .checkbox-squared, .radio-inline, .radio-vertical {
+      label {
+        padding-top: 0px;
+        vertical-align: middle;
+        padding-bottom: $layout-spacing-10;
+      }
+    }
+  }
+
+  .icr-text {
+    padding-left: $layout-spacing-5;
+  }
+  .input-sizing, .select-sizing {
+    margin-bottom: $bottom-spacing-none-primary;
+    overflow: hidden;
+  }
+  .modal {
+    .modal-content {
+      background: none;
+    }
+  }
+  .input-group-addon {
+    border-radius: $border-radius-0;
+  }
+  .button-form-group {
+    .form-control {
+      font-size: 14px;
+    }
+  }
+}
+
+
+/*----------------------------------------------
+
+END FORM LAYOUT
+
+------------------------------------------------*/
+
+/*---- START FORM LAYOUT RESPONSIVE ----*/
+@media (min-width: 1366px) and (max-width: 1600px) {
+  .content-form-layout {
+    .left-xl-media {
+      width: 45%;
+    }
+    .right-xl-media {
+      width: 55%;
+    }
+    .form-field-inline {
+      width: 28%;
+    }
+    .checkbox-squared {
+      clear:both;
+    }
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1365px) {
+  .content-form-layout {
+    .form-field-inline {
+      width: 27%;
+    }
+    .model-form-layout {
+      .inner-content-setion {
+        margin-bottom: $bottom-spacing-none-primary;
+      }
+      .btn {
+        margin-bottom: $layout-spacing-15;
+      }
+    }
+    .register-icon {
+      i {
+        font-size: 80px;
+      }
+    }
+    .checkbox-squared {
+      clear:both;
+    }
+  }
+}
+
+@media (max-width: $media-lg-width) {
+  .content-form-layout {
+    .form-field-inline {
+      width: 47%;
+      &:nth-child(2) {
+        margin-right: 0;
+      }
+    }
+    .inline-form-layout {
+      .inline-checkbox {
+        clear: both;
+      }
+    }
+  }
+}
+
+@media (max-width: $media-sm-width) {
+  .content-form-layout {
+    .all-form-section {
+      label, .layout-text {
+        padding-top: 0;
+        padding-bottom: $layout-spacing-5;
+        display: block;
+      }
+    }
+    .right-form-layout, .left-form-layout {
+      border: none;
+    }
+    .left-xl-media {
+      clear: both;
+      h6, p, .register-icon {
+        text-align: $text-center;
+        width: 100%;
+      }
+    }
+    .left-md-spacing {
+      margin-top: $layout-spacing-25;
+      float: $left-division;
+      width: 100%;
+    }
+    .all-form-section {
+      .element-form {
+        label {
+          float: $left-division;
+        }
+      }
+    }
+    .model-form-layout {
+      .inner-content-setion {
+        margin-bottom: 0;
+      }
+      .btn {
+        margin-bottom: $layout-spacing-15;
+      }
+    }
+    .sizing-form {
+      div {
+        margin-bottom: $layout-spacing-15;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .form-group {
+      overflow: hidden;
+      width: 100%;
+    }
+    .checkbox-inline, .radio-inline {
+      .checkbox-squared, .radio-button {
+        margin-bottom: $layout-spacing-5;
+      }
+    }
+    .divider-mobile {
+      height: 0px;
+    }
+    .element-form {
+      .button-form-group {
+        overflow: inherit;
+      }
+    }
+  }
+}
+
+@media (min-width: 480px) and (max-width: 538px) {
+  .content-form-layout {
+    .model-form-layout {
+      .btn {
+        margin-bottom: $layout-spacing-15;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+  }
+}
+
+@media (max-width: $media-xs-width) {
+  .content-form-layout {
+    .inline-form-layout {
+      .form-field-inline {
+        width: 100%;
+      }
+      .site-btn {
+        float: $right-division !important;
+      }
+      .inine-checkbox {
+        position: $position-relative;
+        top: -37px;
+        margin-bottom: -37px;
+        clear: both;
+      }
+      .inline-checkbox {
+        clear: inherit;
+      }
+    }
+    .model-form-layout {
+      .btn {
+        margin-bottom: $layout-spacing-15;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .sizing-form {
+      div {
+        margin-bottom: $layout-spacing-15;
+        &:last-child {
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+}
+
+/*---- END FORM LAYOUT RESPONSIVE ----*/

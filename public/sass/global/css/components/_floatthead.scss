@@ -1,0 +1,53 @@
+/*----------------------------------------------
+
+START FLOATTHEAD
+
+------------------------------------------------*/
+/* START BUTTON ROUND CSS */
+
+.rounded-admin{
+  .add-thead{
+    border-radius: $border-radius-tag-success;
+  }
+}
+/* END BUTTON ROUND CSS */
+
+.floatThead-wrapper{
+  .float-width{
+    width: 20%;
+  }
+  .scroll-content.ps-container{
+    .ps-scrollbar-x-rail{
+      display: none !important;
+    }
+  }
+  .floatThead-container {
+    z-index:9 !important;
+  }
+}
+
+#floattheadwithlazy .size-row{
+  display: none !important;
+}
+.add-thead.flat-buttons{
+    color:$secondary-text-color;
+}
+
+/*----------------------------------------------
+
+END FLOATTHEAD
+
+------------------------------------------------*/
+
+/*---- START FLOATTHEAD RESPONSIVE ----*/
+@media ( max-width: $media-xs-width ) {
+  /*.wrapper #header{
+    height: 105px;
+  }*/
+  .floatThead-wrapper{
+    .float-width{
+      width: 100px;
+    }
+  }
+}
+/*---- END FLOATTHEAD RESPONSIVE ----*/

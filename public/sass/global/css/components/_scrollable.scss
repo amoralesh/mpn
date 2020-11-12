@@ -1,0 +1,45 @@
+/*----------------------------------------------
+
+START SCROLLABLE
+
+------------------------------------------------*/
+/* START SCROLLABLE ROUND CSS */
+.rounded-admin {
+  .form-inline {
+    button {
+      &.btn {
+        border-radius: 0 $border-radius-default $border-radius-default 0;
+      }
+    }
+  }
+}
+/* END SCROLLABLE ROUND CSS */
+
+.edit-scroll{
+  margin-top: $spacing-20;
+  .input-group{
+    width: 150px;
+  }
+  input{
+    border-radius: 0;
+    padding: 8px  $spacing-10  7px  $spacing-10;
+    line-height: 18px;
+    -moz-line-height:24px;
+  }
+}
+
+/*----------------------------------------------
+
+END SCROLLABLE
+
+------------------------------------------------*/
+
+/*---- START SCROLLABLE RESPONSIVE ----*/
+@media (max-width: 380px) {
+  .edit-scroll{
+    .input-group{
+      width: 100px;
+    }
+  }
+}
+/*---- END SCROLLABLE RESPONSIVE ----*/

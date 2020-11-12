@@ -1,0 +1,258 @@
+/*----------------------------------------------
+
+START SORTABLE-NESTABLE-PAGE
+
+------------------------------------------------*/
+
+/* START SORTABLE & NESTABLE ROUND CSS */
+.sortable-list {
+  ul {
+    .btn.flat-buttons {
+      border-radius: $border-radius-default;
+      &:hover {
+        border-radius: $border-radius-default;
+      }
+    }
+  }
+}
+/* END SORTABLE & NESTABLE ROUND CSS */
+
+.sortable-list {
+  ul {
+    padding: $spacing-0;
+  }
+  li {
+    padding: $spacing-10;
+    margin-bottom: $spacing-10;
+    list-style: none;
+    border: 1px solid $light-gray-color;
+    &.btn {
+      min-width: 135px;
+      float: left;
+      margin-right: $spacing-10;
+    }
+    &.btn:last-child {
+      margin-bottom: $spacing-10;
+    }
+  }
+  li:last-child {
+    margin-bottom: $spacing-0;
+  }
+  .add-list-btn {
+    margin-top: $spacing-10;
+  }
+  .js-remove {
+    cursor: pointer;
+  }
+}
+
+.list-handle {
+  .handle {
+    margin-right: 8px;
+    cursor: $text-link;
+  }
+}
+
+.multi-list-data {
+  border: 1px solid $light-gray-color;
+  margin-bottom: $spacing-15;
+  .data-name {
+    margin: 5px 0;
+  }
+}
+
+.tile_name {
+  cursor: move;
+}
+
+.multi-list-box {
+  min-height: 200px;
+}
+
+.sortable-ghost {
+  opacity: 0.1;
+}
+
+.add-list-label {
+  margin-bottom: 10px;
+}
+
+.nestable-list {
+  .nestable-menu {
+    margin-bottom: $spacing-15;
+  }
+}
+
+.dd-item {
+  div {
+    padding: $spacing-10;
+    margin-bottom: $spacing-10;
+    border: 1px solid $light-gray-color;
+  }
+  button {
+    display: block;
+    position: $position-relative;
+    cursor: $text-link;
+    float: left;
+    width: 35px;
+    height: 38px;
+    margin: 5px 0;
+    padding: 0;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    border: 0;
+    background: transparent;
+    line-height: 2;
+    text-align: center;
+    font-weight: $bold-text;
+  }
+  button:before {
+    content: '+';
+    display: block;
+    position: $position-absolute;
+    width: 100%;
+    text-align: center;
+    text-indent: 0;
+  }
+  button[data-action="collapse"]:before {
+    content: '-';
+  }
+}
+.multiple-sortable {
+ margin-bottom: $bottom-spacing-none-primary;
+  display:table;
+  width:100%;
+}
+
+.dd {
+  position: $position-relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  max-width: 600px;
+  list-style: none;
+}
+
+.dd-list {
+  display: block;
+  position: $position-relative;
+  margin: $spacing-0;
+  padding: $spacing-0;
+  list-style: none;
+  .dd-list {
+    padding-left: $spacing-30;
+  }
+}
+
+.dd-collapsed {
+  .dd-list {
+    display: none;
+  }
+}
+
+.dd-item,
+.dd-empty,
+.dd-placeholder {
+  display: block;
+  position: $position-relative;
+  margin: $spacing-0;
+  padding: $spacing-0;
+  min-height: 20px;
+}
+
+.dd-handle {
+  display: block;
+  margin: 5px 0;
+  text-decoration: none;
+  border: 1px solid $light-gray-color;
+  border-radius: $border-radius-3;
+  @include box-sizing(border-box);
+  &:hover {
+    background: $white-background-color;
+  }
+}
+
+.dd-placeholder, .dd-empty {
+  margin: 5px 0;
+  padding: 0;
+  min-height: 30px;
+  border: 1px dashed $light-gray-color;
+  @include box-sizing(border-box);
+}
+
+.dd-empty {
+  border: 1px dashed $light-gray-color;
+  min-height: 100px;
+  background-size: 60px 60px;
+  background-position: 0 0, 30px 30px;
+}
+
+.dd-dragel {
+  position: $position-absolute;
+  pointer-events: none;
+  z-index: 9999;
+  .dd-item {
+    .dd-handle {
+      margin-top: 0;
+    }
+  }
+  .dd-dragel {
+    .dd-handle {
+      @include multi-box-shadow(rgba($black-background-color, 0.1) 2px 4px 6px 0);
+    }
+  }
+}
+.dd-list{
+  li{
+    &:last-child{
+      .dd-handle{
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+/*----------------------------------------------
+
+END SORTABLE-NESTABLE-PAGE
+
+------------------------------------------------*/
+
+/*---- START SORTABLE-NESTABLE-PAGE RESPONSIVE ----*/
+@media (min-width: 1199px) and (max-width: 1670px) {
+  .xl-multi-sortable {
+    width: 50%;
+    margin-bottom: 20px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: $media-sm-width) {
+  .sortable-list {
+    li {
+      &.btn {
+        width: 125px;
+      }
+    }
+  }
+
+}
+
+@media (max-width: $media-xs-width) {
+  .sortable-list {
+    li {
+      &.btn {
+        margin-right: 5px;
+        width: 47%;
+        float: $left-division;
+        min-width: 47%;
+      }
+    }
+  }
+
+}
+
+/*---- END SORTABLE-NESTABLE-PAGE RESPONSIVE ----*/

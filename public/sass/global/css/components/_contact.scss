@@ -1,0 +1,249 @@
+/*----------------------------------------------
+
+START CONTACT-PAGE
+
+------------------------------------------------*/
+
+.contact-box {
+  padding: $spacing-20;
+  margin: $spacing-0 $spacing-0 $spacing-20 $spacing-0;
+  @include multi-box-shadow(rgba($black-background-color, 0.2) 0 0 4px);
+  overflow: hidden;
+  .contact-image {
+    margin: auto;
+  }
+  .contact-name {
+    padding-bottom:$spacing-5;
+  }
+  .contact-data {
+    padding-bottom:7px;
+    color: $light-gray-text-color;
+    line-height: 18px;
+    &.fonts-sm{
+      font-size: 14px;
+      padding-top: 3px;
+    }
+  }
+}
+.view-contact-detail {
+  .contact-name{
+  .name {
+    span {
+      font-weight: $bold-text;
+      font-size: 24px;
+      line-height: 36px;
+    }
+  }
+  }
+  span {
+    color: $light-gray-text-color;
+  }
+  .contact-detail-icon {
+    font-style: $font-style-normal;
+    font-size: 13px;
+    vertical-align: middle;
+  }
+  .contact-detail-list {
+    padding: $spacing-0;
+  }
+  .contact-detail-list{
+      li{
+        list-style: none;
+        line-height: 21px;
+        padding: $spacing-0;
+      }
+    }
+    .right-detail{
+      padding-left: $spacing-10;
+      width: 94%;
+    }
+}
+.contact-info{
+  .form-group {
+    display: none;
+    margin-bottom: 7px;
+  }
+  &.active{
+    .form-group {
+      display: block
+    }
+    span {
+      display: none;
+    }
+    .contact-detail-icon{
+      line-height: 33px;
+    }
+  }
+
+}
+.contact-close{
+  line-height: 38px;
+}
+.contact-input{
+  width: 100%;
+  padding: $spacing-5 $spacing-10;
+  line-height: 24px;
+  font-size: 14px;
+  color: $light-gray-text-color;
+  border: 1px solid $light-gray-color;
+}
+.contact-follow{
+  .profile-icon{
+  a{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+
+  }
+}
+.add-contact{
+  width: 70%;
+}
+.btn-file  {
+  width:100%;
+  padding: $spacing-15;
+  input[type=file]{
+    position: $position-absolute;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    display: block;
+    bottom: 7px;
+    left: 0;
+    max-width: 100%;
+    padding: 0 15px;
+    cursor: $text-link;
+  }
+}
+.input-spacing{
+  margin-bottom: 7px;
+}
+.add-contact-form{
+  .form-group{
+    overflow: hidden;
+    margin-bottom: 7px;
+  }
+  label{
+    width: 23%;
+    font-weight: $bold-text;
+    line-height: 33px;
+  }
+  input{
+    width: 77%;
+  }
+  textarea{
+    width: 77%;
+  }
+  .add-contact-btn{
+    margin-top:$spacing-10;
+  }
+}
+
+
+/*----------------------------------------------
+
+END CONTACT-PAGE
+
+------------------------------------------------*/
+
+/*---- START CONTACT-PAGE RESPONSIVE ----*/
+@media ( max-width: $media-xl-width ) {
+  .contact-box {
+    div[class*="col-"] {
+      width: 100%;
+      text-align: center !important;
+      .contact-image {
+        width: 100px;
+      }
+    }
+  }
+  .contact-follow{
+    .profile-icon{
+      padding-bottom: $spacing-10;
+    }
+  }
+}
+@media ( max-width: $media-lg-width ) {
+  .contact-follow{
+    .profile-icon{
+      a{
+        width: 27px;
+        height:27px;
+        line-height: 27px;
+        margin-right: 2px;
+      }
+    }
+  }
+  .add-contact{
+    width: 100%;
+  }
+}
+@media ( max-width: $media-md-width ) {
+
+
+  .contact{
+    .content{
+      margin: $spacing-10 0;
+    }
+    .add-contact-btn{
+      padding-right: $spacing-10;
+    }
+  }
+}
+
+@media ( min-width: 1367px ) and ( max-width: 1670px ) {
+  .contact-box {
+    div[class*="col-"] {
+      width: 100%;
+      text-align: center !important;
+      .contact-image {
+        width: 100px;
+      }
+    }
+  }
+}
+
+@media ( max-width: $media-sm-width ) {
+  .add-contact-form{
+    label{
+      width: 100%;
+    }
+    input{
+      width: 100%;
+    }
+    textarea{
+      width: 100%;
+    }
+
+  }
+  .add-contact{
+    .upload-img{
+      width:50%;
+      margin: auto;
+    }
+  }
+  .contact-info{
+    .image-view{
+      width:50%;
+      margin: auto;
+    }
+  }
+}
+@media ( max-width: $media-xs-width ) {
+  .add-contact{
+    .upload-img{
+      width:100%;
+    }
+  }
+  .contact-info{
+    .image-view{
+      width:100%;
+    }
+  }
+
+}
+
+
+/*---- END CONTACT-PAGE RESPONSIVE ----*/

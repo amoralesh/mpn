@@ -1,0 +1,24 @@
+//Background
+$base-color: #087380 !default;
+$background-color: lighten($base-color, 5%);
+$background-hover-color: darken($base-color, 12%);
+$dark-material-menu: darken($base-color, 5%);
+$dark-background-color: lighten($base-color, 10%);
+$profile-contain-accept-section: rgba($base-color, 0.8);
+$masonry-profile-border-color: rgba($base-color, 0.8);
+$overlay-userlistNav-hover-user-box: rgba($base-color, 0.5);
+$alert-background-light-color: rgba($base-color, 0.4);
+$blockquote-background-light-color: rgba($base-color, 0.2);
+$basic-inverse-table-background: rgba($base-color, 0.2);
+$message-profile-textarea-border-color: rgba($base-color, 0.3);
+
+$parallax-header-background: rgba($base-color, 0.5);
+$cookie-message-background-color: rgba($base-color, 0.85);
+
+
+//Color
+$base-text-color: $base-color !default;
+
+@import 'base';
+
+

@@ -1,0 +1,354 @@
+/*----------------------------------------------
+
+START BLOCKQUOTE
+
+------------------------------------------------*/
+.content-blockquote {
+  .simple-blockquote-section {
+    blockquote {
+      p {
+        padding: 0 0 0 $blockquote-spacing-15;
+      }
+    }
+  }
+  .right-blockquote-section {
+    blockquote {
+      border-left: none;
+      p {
+        padding: 0 $blockquote-spacing-15 0 0;
+      }
+    }
+  }
+  .single-blockquote-section {
+    blockquote {
+      padding: $blockquote-spacing-5 0px;
+      position: $position-relative;
+      border-left: 5px solid $light-gray-color;
+      p {
+        padding-bottom: 0;
+        padding-left: $blockquote-spacing-25;
+        &:after, &:before {
+          content: "'";
+          font-size: 60px;
+          position: $position-absolute;
+        }
+        &:before {
+          left: $blockquote-spacing-10;
+          top: $blockquote-spacing-10;
+        }
+        &:after {
+          margin-top: 7px;
+        }
+      }
+    }
+  }
+  .double-blockquote-section {
+    blockquote {
+      p {
+        padding-left: $blockquote-spacing-40;
+        &:after, &:before {
+          content: '"';
+        }
+      }
+    }
+  }
+  .alert-danger {
+    padding: $blockquote-spacing-20;
+    blockquote {
+      .blockquote-footer {
+        font-size: 14px;
+      }
+    }
+  }
+  .alert-success {
+    padding: $blockquote-spacing-20;
+    blockquote {
+      .blockquote-footer {
+        font-size: 14px;
+      }
+    }
+  }
+  .background-icon-blockquote {
+    blockquote {
+      position: $position-relative;
+      p {
+        padding-bottom: 0;
+      }
+      &:after {
+        content: "\f10d";
+        font-size: 100px;
+        opacity: 0.15;
+        position: absolute;
+        top: $blockquote-spacing-35;
+        left: $blockquote-spacing-15;
+        font-family: FontAwesome;
+      }
+    }
+  }
+  .modern-blockquote {
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    padding: $blockquote-spacing-20;
+    margin-top: $blockquote-spacing-20;
+    blockquote {
+      position: $position-relative;
+      p {
+        text-indent: 85px;
+        font-style: italic;
+        padding-bottom: 0;
+        &:after {
+          content: "\f10d";
+          font-size: 80px;
+          position: absolute;
+          top: $blockquote-minus-spacing-20;
+          left: -85px;
+          font-family: FontAwesome;
+        }
+      }
+    }
+    &:after, &:before {
+      border: medium solid transparent;
+      content: " ";
+      height: 0;
+      pointer-events: none;
+      position: $position-absolute;
+      top: 100%;
+      width: 0;
+    }
+    &:after {
+      border-width: 10px;
+      right: 7%;
+      margin-left: -10px;
+    }
+  }
+  .bottom-blockquote {
+    margin-top: $blockquote-spacing-15;
+    .img-blockkquote {
+      width: 125px;
+      img {
+        border: 5px solid rgba(255, 255, 255, 0.5);
+      }
+    }
+    .detail-blockquote {
+      padding: $blockquote-spacing-25 $blockquote-spacing-15 0 0;
+      h5 {
+        font-size: 15px;
+        line-height: 15px;
+      }
+      h6 {
+        font-size: 12px;
+        color: $small-tag-text-color;
+      }
+    }
+  }
+  .modern-section {
+    position: $position-relative;
+  }
+  .image-blockquote {
+    position: $position-relative;
+    margin-top: $blockquote-spacing-80;
+    .img-blockquote {
+      margin: auto;
+      width: 200px;
+      img {
+        margin-top: -80px;
+      }
+    }
+    blockquote {
+      padding: $blockquote-spacing-20;
+      p {
+        padding-bottom: 0;
+      }
+      .border-blockquote {
+        border-top: 1px solid $tabs-border-color;
+        margin: $blockquote-spacing-10 0;
+      }
+      h5 {
+        font-size: 15px;
+        line-height: 15px;
+      }
+      h6 {
+        font-size: 12px;
+        color: $small-tag-text-color;
+      }
+      &:after, &:before {
+        font-size: 80px;
+        position: absolute;
+        font-family: FontAwesome;
+      }
+      &:after {
+        opacity: 0.3;
+        top: $blockquote-spacing-35;
+        right: $blockquote-spacing-20;
+        content: "\f10e";
+      }
+      &:before {
+        content: "\f10d";
+        opacity: 0.3;
+        left: $blockquote-spacing-20;
+        top: $blockquote-spacing-35;
+      }
+    }
+  }
+
+  .curly-bracket-blockquote {
+    position: $position-relative;
+    padding: 0;
+    blockquote {
+      padding: $blockquote-spacing-20;
+      p {
+        padding: 0 $blockquote-spacing-40;
+      }
+      &:after, &:before {
+        font-size: 65px;
+        position: absolute;
+        opacity: 0.2;
+      }
+      &:before {
+        content: "{";
+        top: $blockquote-spacing-40;
+      }
+      &:after {
+        content: "}";
+        right: $blockquote-spacing-15;
+        bottom: $blockquote-spacing-40;
+      }
+    }
+  }
+
+  .square-bracket-blockquote {
+    position: $position-relative;
+    padding: 0;
+    blockquote {
+      padding: $blockquote-spacing-20;
+      p {
+        padding: 0 $blockquote-spacing-40;
+      }
+      &:after, &:before {
+        font-size: 65px;
+        position: $position-absolute;
+        opacity: 0.2;
+      }
+      &:before {
+        content: "[";
+        top: $blockquote-spacing-40;
+      }
+      &:after {
+        content: "]";
+        right: $blockquote-spacing-15;
+        bottom: $blockquote-spacing-40;
+      }
+    }
+  }
+}
+
+/*----------------------------------------------
+
+END BLOCKQUOTE
+
+------------------------------------------------*/
+
+/*---- START BLOCKQUOTE RESPONSIVE ----*/
+@media (max-width: $media-xl-width) {
+  .content-blockquote {
+    .modern-blockquote {
+      &:after {
+        right: 11%;
+      }
+    }
+    .square-bracket-blockquote, .curly-bracket-blockquote {
+      blockquote {
+        p {
+          padding: 0 $blockquote-spacing-30;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $media-lg-width) {
+  .content-blockquote {
+    .double-blockquote-section {
+      padding-bottom: 0;
+    }
+    .modern-blockquote {
+      &:after {
+        right: 8%;
+      }
+    }
+  }
+}
+
+@media (max-width: $media-sm-width) {
+  .content-blockquote {
+    .modern-blockquote {
+      &:after {
+        right: 14%;
+      }
+    }
+    .image-blockquote {
+      .img-blockquote {
+        width: 175px;
+        img {
+          margin-top: -60px;
+        }
+      }
+      blockquote {
+        &:after, &:before {
+          font-size: 60px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $media-xs-width) {
+  .content-blockquote {
+    .alert-danger {
+      blockquote {
+        .blockquote-footer {
+          font-size: 13px;
+        }
+      }
+    }
+    .alert-success {
+      blockquote {
+        .blockquote-footer {
+          font-size: 13px;
+        }
+      }
+    }
+    .modern-blockquote {
+      &:after {
+        right: 22%;
+      }
+    }
+    .image-blockquote {
+      margin-top: 30px;
+
+      .img-blockquote {
+        width: 100px;
+        img {
+          margin-top: -30px;
+        }
+      }
+      blockquote {
+        &:after, &:before {
+          font-size: 40px;
+        }
+      }
+    }
+    .square-bracket-blockquote, .curly-bracket-blockquote {
+      blockquote {
+        padding: $blockquote-spacing-10;
+        p {
+          padding: 0 $blockquote-spacing-25;
+        }
+        &:before {
+          top: 30px;
+        }
+      }
+    }
+  }
+}
+
+/*---- END BLOCKQUOTE RESPONSIVE ----*/

@@ -1,0 +1,219 @@
+/*----------------------------------------------
+
+START CAROUSEL
+
+------------------------------------------------*/
+
+.owl-carousel.slider-custom {
+  .owl-stage-outer {
+    .owl-stage {
+      .owl-item {
+        .item {
+          height: $slider-height;
+          padding: $spacing-15;
+          h4 {
+            color: $white-background-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  margin-bottom: 0;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: $spacing-15;
+}
+
+.carousel-caption {
+  p {
+    padding: 0;
+    line-height: 20px;
+  }
+}
+
+.owl-carousel.color-green {
+  .owl-stage-outer {
+    .owl-stage {
+      .owl-item {
+        .item {
+          background: $success-background-color;
+        }
+      }
+    }
+  }
+}
+
+.owl-carousel.color-yellow {
+  .owl-stage-outer {
+    .owl-stage {
+      .owl-item {
+        .item {
+          background: $warning-background-color;
+        }
+      }
+    }
+  }
+}
+
+.owl-carousel.color-primary {
+  .owl-stage-outer {
+    .owl-stage {
+      .owl-item {
+        border-right: 1px solid $white-background-color;
+        .owl-lazy {
+          opacity: 1;
+          height: $slider-height;
+          padding: $spacing-15;
+          h4 {
+            color: $white-background-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+.owl-carousel.color-gray {
+  .owl-stage-outer {
+    .owl-stage {
+      .owl-item {
+        background: $light-gray-background-color;
+        border-right: 1px solid $white-background-color;
+      }
+    }
+  }
+}
+
+.slider {
+  margin: $spacing-0 $spacing-25 $spacing-0;
+  .slick-track .slick-slide h3 {
+    background: $light-gray-color;
+    color: $secondary-text-color;
+    font-size: $spacing-25 - 1;
+    line-height: 100px;
+    margin: $spacing-10 $spacing-5;
+    padding: $spacing-20 $spacing-10;
+    position: $position-relative;
+    transition: all 300ms ease;
+    text-align: center;
+  }
+  .slick-prev:before, .slick-next:before {
+    color: #b5b5b5;
+  }
+}
+
+.center-mode .slick-track .slick-current h3 {
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  color: white;
+  opacity: 1;
+}
+
+.wrapper .slick-list {
+  z-index: 99;
+}
+.carousel {
+  .url-button {
+    a {
+      line-height:15px;
+      color:$secondary-text-color;
+    }
+  }
+}
+
+.owl-carousel .owl-item img{
+  transform-style: flat;
+}
+
+
+/*----------------------------------------------
+
+END CAROUSEL
+
+------------------------------------------------*/
+
+/*---- START CAROUSEL RESPONSIVE ----*/
+@media (max-width: $media-xs-width) {
+  .url-button {
+    a {
+      margin-bottom: $buttons-spacing-10;
+    }
+  }
+  #owl-full, #owl-padding {
+    .owl-stage-outer {
+      .owl-stage {
+        .owl-item {
+          .item {
+            img {
+              height: 100px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $media-md-width) {
+  .slider .slick-track .slick-slide h3 {
+    font-size: 24px;
+    margin: 5px;
+  }
+  .carousel-caption {
+    h3 {
+      font-size: 18px;
+      line-height: 32px;
+    }
+  }
+  .slick-dotted.slick-slider {
+    margin-bottom: $spacing-20;
+  }
+  .fade-slide.slick-dotted.slick-slider {
+    margin-bottom: $spacing-10;
+  }
+}
+
+@media (max-width: $media-sm-width) {
+  .carousel {
+    .divider-sm-spacing {
+      height: $spacing-25;
+    }
+  }
+  #owl-full, #owl-padding {
+    .owl-stage-outer {
+      .owl-stage {
+        .owl-item {
+          .item {
+            img {
+              height: $spacing-150;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $media-xs-width) {
+  #owl-full, #owl-padding {
+    .owl-stage-outer {
+      .owl-stage {
+        .owl-item {
+          .item {
+            img {
+              height: 100px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*---- END CAROUSEL RESPONSIVE ----*/

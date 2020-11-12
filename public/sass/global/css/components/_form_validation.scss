@@ -1,0 +1,46 @@
+/*----------------------------------------------
+
+START FORM VALIDATION
+
+------------------------------------------------*/
+
+/* START FORM VALIDATION ROUND CSS */
+.rounded-admin {
+  .btn-margin {
+    .btn.flat-buttons {
+      &:hover {
+        border-color: rgba(0,0,0,0.1);
+      }
+    }
+  }
+}
+/* END FORM VALIDATION ROUND CSS */
+
+input.error, select.error {
+  background-image: url(../../../assets/global/image/close.png);
+  background-position: right 5px center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+input.valid, select.valid{
+  background-image: url(../../../assets/global/image/right.png);
+  background-position: right 5px center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.help-block {
+  &.form-error{
+    color: $danger-color;
+  }
+}
+.file-control-upload {
+  &.has-error{
+    border-color: rgb(185, 74, 72);
+  }
+}
+/*----------------------------------------------
+
+END FORM VALIDATION
+
+------------------------------------------------*/

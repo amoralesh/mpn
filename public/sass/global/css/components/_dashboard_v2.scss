@@ -1,0 +1,527 @@
+/*----------------------------------------------
+
+START DASHBOARD-V2-PAGE
+
+------------------------------------------------*/
+
+.dashboard-header {
+  overflow: hidden;
+  .dashboard-action {
+    overflow: hidden;
+    margin-top: $spacing-5;
+    .right-action {
+      li {
+        display: inline;
+      }
+    }
+  }
+}
+
+.inline-calendar {
+  .flatpickr-calendar {
+    width: 100%;
+  }
+  .flatpickr-rContainer {
+    width: 100%;
+  }
+  .flatpickr-days {
+    width: 100%;
+    .flatpickr-day {
+      max-width: 15%;
+    }
+  }
+}
+
+.dashboard-box {
+  margin-top: $spacing-15;
+  clear: both;
+}
+.contain-inner.dashboard-v2 {
+  margin:0 $spacing-20 $spacing-20 $spacing-20;
+}
+
+.contain-inner {
+  &.dashboard-v2 {
+    .content {
+      margin: $spacing-20 0 0 0;
+      &.form-bootstrap-datetime {
+        padding: 0;
+        border-radius: 0;
+      }
+      &.dashboard-follow-content {
+        padding: $spacing-20 0 0 0;
+      }
+    }
+    .content-timeline {
+      margin: $spacing-0;
+      padding: $spacing-0;
+    }
+    .display-date {
+      color: $secondary-text-color;
+      padding: $spacing-20;
+    }
+    .calender-icon {
+      font-size: 68px;
+      margin: auto;
+      text-align: $text-center;
+      padding: $spacing-40;
+      i {
+        color: $secondary-text-color;
+      }
+    }
+    .dashboard-calender {
+      table {
+        thead {
+          tr {
+            th {
+              background: $secondary-text-color;
+              color: inherit;
+            }
+          }
+        }
+      }
+    }
+    #datetimepicker12 {
+      .datepicker {
+        width: 100%;
+      }
+      .timepicker {
+        display: none;
+      }
+    }
+    .chart-detail {
+      margin-top: $spacing-15;
+      .circle-list-style {
+        list-style-type: circle;
+        li {
+          line-height: 20px;
+        }
+        .text-blue {
+          color: $blue-text-color;
+        }
+        .text-light-green {
+          color: $light-green-text-color;
+        }
+      }
+    }
+    .follow-widget-box {
+      .inner-follow-widget {
+        padding: $spacing-0;
+        .follow-profile {
+          margin-top: $spacing-0;
+        }
+      }
+      .social-icon-box {
+        margin-top: $spacing-15;
+      }
+    }
+    .event-box {
+      color: $secondary-text-color;
+      margin-top: $spacing-20;
+      .carousel-indicators {
+        li {
+          cursor: $text-link;
+        }
+      }
+      .carousel-fade {
+        margin-top: $spacing-0;
+        .carousel-inner {
+          height: 300px;
+        }
+        .carousel-item {
+          height: 300px;
+          margin: auto;
+          text-align: $text-center;
+          .carousel-inner-item {
+            height: 270px;
+          }
+        }
+        .carousel-indicators {
+          display: block;
+        }
+
+      }
+      .contact-box {
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+        .contact-image {
+          width: 90px;
+          border: 5px solid rgba(255, 255, 255, 0.5);
+        }
+        .contact-data, .contact-name {
+          color: $secondary-text-color;
+        }
+        .connect-btn {
+          a:hover, a:focus {
+            color: inherit;
+          }
+        }
+      }
+    }
+    .dashboard-widget {
+      &.widget-box {
+        box-shadow: rgba(0, 0, 0, 0.2) 0 0 4px;
+        border: none;
+        span {
+          color: $small-tag-text-color;
+        }
+        h4 {
+          margin-bottom: $spacing-5;
+        }
+        .search_ad {
+          color: $secondary-text-color;
+          margin-right: $spacing-10;
+        }
+        .product-icon {
+          position: $position-absolute;
+          left: 0;
+          top: 0;
+          height: 70px;
+          width: 80px;
+          color: $secondary-text-color;
+          font-size: 26px;
+          border-radius: 0px 0px $border-radius-100 0px;
+          text-align: $text-center;
+          @include transition(all 0.3s ease 0s);
+          overflow: hidden;
+          i {
+            position: $position-relative;
+          }
+          .product-hover {
+            top: -50px;
+            left: 8px;
+            @include transition(top 0.5s ease 0s);
+          }
+          .display-icon {
+            @include transition(top 0.5s ease 0s);
+            top: 16px;
+            left: -27px;
+            opacity: 0.4;
+          }
+        }
+      }
+      &:hover {
+        .product-icon {
+          i.product-hover {
+            top: 14px;
+          }
+          i.display-icon {
+            top: 75px;
+          }
+        }
+
+      }
+    }
+    #timeline {
+      .timeline-item {
+        .timeline-content {
+          .timeline-header {
+            padding: $spacing-15;
+            .timeline_title {
+              line-height: 45px;
+              font-size: 23px;
+            }
+          }
+          .timeline_date {
+            .day {
+              font-size: 44px;
+            }
+            .week-day {
+              font-size: 15px;
+            }
+            .month {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+    .chart-height {
+      height: 352px;
+    }
+  }
+}
+.parallax-header-image{
+  .site-content-title{
+    &:after{
+      background : none;
+    }
+  }
+}
+.parallax-right-btn {
+  button.flat-buttons {
+    padding: $spacing-5;
+    width: 35px;
+    height: 35px;
+    margin-right: $spacing-10;
+    text-align: $text-center;
+    &:last-child {
+      margin-right: $spacing-0;
+    }
+  }
+}
+.carousel-inner {
+  .connect-btn {
+    a.btn.flat-buttons {
+      border: none;
+      &:hover {
+        border: none;
+      }
+    }
+  }
+}
+
+/*----------------------------------------------
+
+END DASHBOARD-V2-PAGE
+
+------------------------------------------------*/
+/*---- START DASHBOARD-V2-PAGE RESPONSIVE ----*/
+@media (max-width: $media-xl-width) {
+  .contain-inner {
+    &.dashboard-v2 {
+      .event-box {
+        .carousel-fade {
+          .carousel-inner {
+            height: 400px;
+          }
+          .carousel-item {
+            height: 400px;
+            .carousel-inner-item {
+              height: 400px;
+            }
+          }
+        }
+      }
+      .content-pricing {
+        .round-pricing-table {
+          .circle-box {
+            .success-text {
+              .title-text {
+                font-size: 26px;
+              }
+            }
+          }
+        }
+      }
+      .event-box{
+        .carousel-fade{
+          .carousel-inner{
+            .carousel-item{
+              .carousel-inner-item{
+                .content-event{
+                  p{
+                    text-align: center;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $media-lg-width) {
+  .contain-inner {
+    &.dashboard-v2 {
+      .parallax-header-image {
+        h2 {
+          line-height: 40px;
+        }
+        p {
+          line-height: 20px;
+        }
+        .site-content-title {
+          padding-bottom: $spacing-25;
+
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $media-md-width) {
+  .contain-inner {
+    &.dashboard-v2 {
+      #timeline {
+        .timeline-item {
+          .timeline-content {
+            .timeline_date {
+              .week-day {
+                font-size: 14px;
+              }
+              .month {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $media-sm-width) {
+  .dashboard-header {
+    .dashboard-action {
+      margin-top: 1px;
+    }
+  }
+  .dashboard-xs-widget {
+    margin-bottom: $spacing-25;
+  }
+  .contain-inner {
+    &.dashboard-v2 {
+      .calender-icon {
+        padding: $spacing-25;
+        font-size: 52px;
+      }
+    }
+  }
+
+}
+
+@media (max-width: $media-xs-width) {
+  .contain-inner {
+    &.dashboard-v2 {
+      .event-box {
+        .carousel-fade {
+          .carousel-item {
+            .connect-btn {
+              .btn {
+                margin-bottom: $spacing-10;
+              }
+            }
+          }
+        }
+      }
+      .connect-btn {
+        width: 235px;
+        margin: auto;
+      }
+      .content-pricing {
+        .round-pricing-table {
+          .circle-box {
+            .circle-detail {
+              .title-text {
+                font-size: 23px;
+              }
+              .description-text {
+                font-size: 25px;
+              }
+            }
+          }
+        }
+      }
+      #timeline {
+        .timeline-item {
+          .timeline-content {
+            .timeline-header {
+              padding: $spacing-10;
+              .timeline_title {
+                font-size: 18px;
+                line-height: 35px;
+              }
+            }
+            .timeline_date {
+              .day {
+                font-size: 30px;
+              }
+              .week-day {
+                font-size: 13px;
+                line-height: 15px;
+              }
+              .month {
+                font-size: 12px;
+                line-height: 15px;
+              }
+            }
+          }
+        }
+      }
+      .connect-btn {
+        width: 235px;
+        margin: auto;
+        .social-twitter {
+          margin-top: 8px;
+        }
+      }
+      .dashboard-xs-task {
+        width: 100%;
+      }
+      .chart-detail {
+        .circle-list-style {
+          li {
+            width: 50%;
+            float: $left-division;
+            text-align: $text-center;
+          }
+        }
+      }
+    }
+  }
+  .contain-inner.dashboard-v2 {
+
+    .chart-height {
+      height:260px;
+    }
+  }
+}
+
+@media (min-width: 1199px) and (max-width: 1670px) {
+  .contain-inner {
+    &.dashboard-v2 {
+      .xl-dashboard-v2 {
+        width: 100%;
+      }
+      .lg-dashboard-v2 {
+        width: 50%;
+      }
+      .event-box {
+        .carousel-fade {
+          .carousel-inner {
+            height: 355px;
+          }
+          .carousel-item {
+            height: 355px;
+            .carousel-inner-item {
+              height: 355px;
+            }
+          }
+        }
+      }
+      .parallax-header-image {
+        h2 {
+          line-height: 40px;
+        }
+        p {
+          line-height: 20px;
+        }
+        .site-content-title {
+          padding-bottom: $spacing-25;
+        }
+      }
+      .event-box{
+        .carousel-fade{
+          .carousel-inner{
+            .carousel-item{
+              .carousel-inner-item{
+                .content-event{
+                  p{
+                    text-align: center;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+/*---- END DASHBOARD-V2-PAGE RESPONSIVE ----*/

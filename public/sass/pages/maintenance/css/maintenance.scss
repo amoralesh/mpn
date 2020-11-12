@@ -1,0 +1,112 @@
+@import '../../../global/css/_variables';
+@import '../../../global/css/_mixin.scss';
+
+.maintenance {
+  background-image: url("../image/img_1570x1046.png");
+  background-size: cover;
+  height: 100%;
+  overflow: auto;
+}
+
+.maintenance-page {
+  display: table;
+  margin: auto;
+  padding: $spacing-25;
+  height: 100%;
+  max-width: 600px;
+}
+
+.maintenance-content {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.maintenance-detail {
+  padding: $spacing-30;
+  background-color: $white-background-color;
+  position: $position-relative;
+  overflow: hidden;
+  p {
+    position: $position-relative;
+  }
+}
+
+.page-icon {
+  position: $position-absolute;
+  right: -33px;
+  padding: 51px 38px 70px 58px;
+  border-radius: 50%;
+  background: rgba(191, 191, 191, 0.5);
+  i {
+    font-size: 122px;
+    color: $secondary-text-color;
+    margin-right: $spacing-25;
+    font-style: $font-style-normal;
+    opacity: 0.5;
+  }
+}
+
+.maintenance-title {
+  margin-bottom: $spacing-10;;
+  color: $site-primary-text-color;
+  position: $position-relative;
+}
+
+.notify {
+  padding: $spacing-30;
+  background: $white-background-color;
+  overflow: hidden;
+}
+
+.input-notify {
+  line-height: 18px;
+  width: 80%;
+  margin-right: $spacing-10;
+  border: 1px solid $site-primary-text-color;
+  padding: 8px;
+}
+
+.notify-text {
+  color: $site-primary-text-color;
+}
+.circle-input {
+  border-radius: 20px;
+}
+.notify{
+  .btn{
+    margin-bottom: 15px;
+    &.flat-buttons{
+      line-height: 18px;
+    }
+  }
+}
+/*---- START RESPONSIVE ----*/
+@media (max-width: $media-sm-width) {
+  .input-notify {
+    width: 75%;
+  }
+
+}
+
+@media (max-width: $media-xs-width) {
+  .page-icon {
+    right: -54px;
+    bottom: -38px;
+  }
+  .maintenance-title {
+    font-size: 24px;
+  }
+  .input-notify {
+    width: 100%;
+    margin-bottom: $spacing-10;
+  }
+  .maintenance-detail {
+    padding: $spacing-20;
+  }
+  .notify {
+    padding: $spacing-20;
+  }
+
+}
+
+/*---- END RESPONSIVE ----*/

@@ -1,0 +1,201 @@
+@import '../../../../global/css/_variables.scss';
+@import '../../../../global/css/_mixin.scss';
+@import '../../../../global/css/_rounded.scss';
+
+/* START FORGOT V1 ROUND CSS */
+.rounded-admin {
+  .forgot_input {
+      border-radius: $border-radius-default;
+  }
+}
+/* END FORGOT V1 ROUND CSS */
+
+.forgot-background {
+  background-image: url("../image/img_1570x1046.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  height: 100%;
+  opacity: 0.8;
+  color: $white-background-color;
+  overflow: auto;
+  position: $position-fixed;
+  width: 100%;
+
+  &:before {
+    background: rgba(0, 0, 0, 0.35);
+    position: $position-fixed;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+  }
+}
+
+.forgot-page {
+  display: table;
+  height: 100%;
+  margin: 0 auto;
+  min-width: 450px;
+  position: $position-relative;
+}
+
+.forgot_input {
+  margin-bottom: $spacing-25;
+  border: 1px solid $white-background-color;
+  @include border-radius($border-radius-3);
+  display: table;
+  width: 100%;
+  input {
+    border: none;
+    padding: $spacing-10 $spacing-15;
+    font-size: 15px;
+    width: 100%;
+  }
+  label{
+    position: $position-absolute;
+    font-size: 14px;
+    display: block;
+    margin-top: 3px;
+    color: $form-error-text-color;
+    font-weight: $bold-text;
+  }
+  .forgot-right-icon {
+    background: transparent;
+    color: $white-background-color;
+    border-left: 0;
+    padding: $spacing-10 $spacing-15;
+    font-size: 15px;
+    width: 1%;
+    display: table-cell;
+  }
+}
+
+
+.main-forgot-contain {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.forgot-circul {
+  @include border-radius($border-radius-circle);
+  margin: auto;
+  width: 90px;
+  height: 90px;
+  background: $form-top-circle-background-color;
+  position: $position-relative;
+  bottom: -40px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3) inset;
+  border-right: 0px solid rgba(255, 255, 255, 0.5);
+  border-left: 0px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 4px solid rgba(255, 255, 255, 0.5);
+
+  img {
+    border-radius: 45px;
+  }
+}
+
+.forgot-icon-circul {
+  font-size: 40px;
+  margin: auto;
+  line-height: 85px;
+}
+
+.forgot-form {
+  background: rgba(0, 0, 0, 0.5);
+  padding: $spacing-45 $spacing-50 $spacing-50 $spacing-50;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  h4 {
+    color: $white-background-color;
+    margin-bottom: $spacing-15;
+  }
+}
+
+.btn-forgot {
+  width: 100%;
+}
+
+.forgot-form-border {
+  background: transparent;
+  color: $white-background-color;
+
+  &:focus {
+    color: $white-background-color;
+    background-color: transparent;
+    border-color: $white-background-color;
+  }
+}
+
+.forgot-icon {
+  text-align: $text-right;
+  margin-top: $spacing-20;
+  display: table-cell;
+  a {
+    border: 1px solid $white-background-color;
+    @include border-radius($border-radius-20);
+    display: inline-block;
+    font-size: 16px;
+    height: $spacing-35;
+    line-height: $spacing-35;
+    margin-right: 3px;
+    text-align: $text-center;
+    width: $spacing-35;
+    &:hover{
+      border: 1px solid $white-background-color;
+    }
+  }
+  i {
+    color: $white-background-color;
+  }
+}
+
+.goto-forgot {
+  width: 100%;
+  display: table;
+  margin-top: $spacing-15;
+  font-size: 16px;
+  a {
+    color: $white-background-color;
+    cursor: $text-link;
+  }
+}
+
+/*---- START RESPONSIVE ----*/
+
+@media (max-width: $media-lg-width) {
+  .forgot {
+    background-position: right center;
+  }
+}
+
+@media (max-width: $media-sm-width) {
+  .forgot-form {
+    margin-bottom: $spacing-50;
+  }
+}
+
+@media (max-width: $media-xs-width) {
+  .forgot-page {
+    max-width: 480px;
+    min-width: 94%;
+  }
+  .forgot-icon-circul {
+    font-size: 26px;
+    line-height: 60px;
+  }
+  .forgot-circul {
+    width: 60px;
+    height: 60px;
+    bottom: -20px;
+  }
+  .forgot-form {
+    padding: $spacing-30 $spacing-20 $spacing-20;
+    margin: auto $spacing-15 $spacing-0;
+    h4 {
+      font-size: 20px;
+    }
+  }
+  .goto-forgot{
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,50 @@
+//Gray Background
+$default-background-color:   #F2784B !default;
+$main-site-background-color: #444444 !default;
+$secondary-background-color: #333333 !default;
+$primary-background-color:   #292929 !default;
+$black-background-color:     #000000 !default;
+$tabs-border-hover-back:     #444444 !default;
+
+//Color
+$default-text-color:         #F2784B !default;
+$primary-text-color:         #ffffff !default;
+$primary-text-light:         lighten($default-text-color, 10%);
+$secondary-text-color:       #a7a7a7 !default;
+$tabs-border-color:          #444444 !default;
+$code-tag-color:             #a7a7a7 !default;
+$profile-activity-time-color:#dddddd !default;
+$formcontrol-border-color:   #525252 !default;
+$alert-success-border-color: #48633e !default;
+$alert-info-border-color :   #49778e !default;
+$alert-warning-border-color :#9c915b !default;
+$alert-danger-border-color : #6d4b4b !default;
+$pricing-table-border-color:       #6f6f6f !default;
+$btn-secondary-background : #383737 !default;
+$btn-secondary-border-color : #4a4a4a !default;
+$success-color : #5cb85c !default;
+$info-color : #5bc0de !default;
+$warning-color : #f0ad4e !default;
+$danger-color : #d9534f !default;
+$precode-border-color: #808080 !default;
+$rightside-border-color: #565656 !default;
+$social-android-color: #9C0 !default;
+$social-edge-color: #0272BA !default;
+$social-jsfiddle-color: #0272BA !default;
+$social-opera-color: #F5182A !default;
+$social-reddit-color: #F16528 !default;
+$nice-select-disabled-color: #90a1b5 !default;
+$alert-success-color: #3c763d !default;
+$alert-info-color: #31708f !default;
+$alert-warning-color: #8a6d3b !default;
+$alert-danger-color: #a94442 !default;
+$ribbon-arrow-border-color: #8D96ED !default;
+$sidebar-menu-color: #a1a1a1 !default;
+$site-menu-color: #636363 !default;
+$buttons-curl-effects-background: #ccc !default;
+$buttons-curl-effects-background-1: #aaa !default;
+
+//responsive-media-width
+$media-xs-width: 479px;
+
+@import 'base';

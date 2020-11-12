@@ -1,0 +1,337 @@
+/*----------------------------------------------
+
+START SOCIAL-WIDGET-PAGE
+
+------------------------------------------------*/
+/* START SOCIAL WIDGET ROUND CSS */
+.rounded-admin {
+  .social-widget-content {
+    .social-profile-btn {
+      .icon-spacing {
+        width:40px;
+        height:40px;
+        line-height:40px;
+        text-align: $text-center;
+        padding:0;
+      }
+    }
+    .btn-sm {
+      &.btn-social {
+        padding-right: $spacing-10;
+      }
+    }
+  }
+}
+/* START SOCIAL WIDGET ROUND CSS */
+
+.contain-inner {
+  &.social-widget-content {
+    margin-top: 0;
+  }
+}
+.social-widget-box {
+  .content {
+    &.social-carousel {
+      padding-bottom: 35px;
+    }
+  }
+}
+
+.social-widget-content {
+  margin-bottom: $spacing-30;
+  .content {
+    margin: $spacing-20 0 0 0;
+  }
+  .profile-contain {
+    padding-bottom: 0;
+  }
+  .gallery-img {
+    margin: 0;
+  }
+  .icon-spacing {
+    margin-right: 8px;
+  }
+  .parallax-header-image {
+    .site-content-title {
+      padding: $spacing-15 0 $spacing-25 0;
+    }
+  }
+  .overlay-box-shadow {
+    margin: 0 1px $spacing-30 1px;
+  }
+}
+
+.parallax-right-btn {
+  position: $position-absolute;
+  right: 60px;
+  bottom: 25px;
+  button:first-child {
+    margin-right: 8px;
+  }
+}
+
+.parallax-left-btn {
+  position: $position-absolute;
+  left: 60px;
+  bottom: 25px;
+}
+
+.post-background-detail {
+  padding: $spacing-10 $spacing-10 0;
+  p {
+    padding-bottom: $spacing-15;
+  }
+  .widget-footer {
+    padding-bottom: 0;
+  }
+}
+
+.widget-footer {
+  padding-bottom: $spacing-15;
+}
+
+.widget-connect {
+  p {
+    padding-bottom: $spacing-15;
+  }
+  .connect-btn {
+    a:hover, a:focus {
+      color: $secondary-text-color;
+    }
+  }
+}
+
+.widget-message {
+  .message-profile {
+    textarea {
+      height: 55px;
+    }
+  }
+}
+
+.widget-icon {
+  font-size: 16px;
+  line-height: 30px;
+  i {
+    color: $widget-footer-icon-color;
+    margin-right: 3px;
+  }
+}
+
+.social-profile-btn {
+  margin-top: $spacing-15;
+}
+
+.social-icon-widget {
+  display: block;
+  padding: $spacing-15;
+  margin-right: -1px;
+  span {
+    display: block;
+  }
+}
+
+.social-icon-box {
+  a:hover, a:focus {
+    color: $secondary-text-color;
+  }
+}
+
+.social-icon-slider {
+  .social-icon {
+    padding: $spacing-20 0;
+    i {
+      font-size: 60px;
+      margin-bottom: $spacing-15;
+    }
+  }
+}
+
+.follow-widget-box {
+  .inner-follow-widget {
+    padding: $spacing-10 $spacing-10 0;
+    .follow-profile {
+      margin: -60px auto 0 auto;
+      z-index: 99;
+      width: 100px;
+      position: $position-relative;
+    }
+    .follow-detail {
+      margin: $spacing-10 0;
+      span {
+        display: block;
+      }
+      button {
+        margin-top: $spacing-10;
+      }
+      p {
+        margin-top: $spacing-10;
+        padding-bottom: $spacing-10;
+      }
+    }
+  }
+}
+
+.cover-widget {
+  background: url("../../../assets/global/image/img_1500x400.png") no-repeat top;
+  .cover-widget-detail {
+    @include background-rgba($black-background-color, 0.3);
+    margin: auto;
+    text-align: center;
+    padding: 60px;
+    span {
+      display: block;
+    }
+    button {
+      margin-top: $spacing-10;
+    }
+    .profile-image {
+      margin: auto;
+      width: 110px;
+      margin-bottom: $spacing-10;
+    }
+  }
+}
+.social-profile-btn, .parallax-right-btn, .parallax-left-btn, .connect-btn{
+  .btn.flat-buttons{
+    &:hover{
+      border: 1px solid transparent;
+    }
+  }
+}
+.social-widget-box {
+  .flatpickr-calendar {
+    &:before, &:after {
+      display:none;
+    }
+  }
+}
+/*----------------------------------------------
+
+END SOCIAL-WIDGET-PAGE
+
+------------------------------------------------*/
+/*---- START SOCIAL-WIDGET RESPONSIVE ----*/
+@media (min-width: 1199px) and (max-width: 1670px) {
+  .xl-social-widget {
+    width: 100%;
+    clear: both;
+    .social-widget-box {
+      width: 50%;
+    }
+    #datetimepicker12 {
+      .datepicker {
+        width: 100%;
+      }
+      .timepicker {
+        width: 100%;
+      }
+
+    }
+  }
+}
+
+@media (max-width: $media-lg-width) {
+  .social-widget-content {
+    .image-blockquote {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: $media-md-width) {
+  .social-widget-content {
+    .activities-count {
+      width: 33%;
+    }
+  }
+  .social-widget-box {
+    .content {
+      &.social-carousel {
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: $media-sm-width) {
+  .cover-widget {
+    background-position: top left;
+  }
+  .social-widget-content{
+    .bottom-space{
+      height:0;
+    }
+  }
+}
+
+@media (max-width: $media-xs-width) {
+  .social-icon-slider {
+    .social-icon {
+      i {
+        font-size: 50px;
+      }
+    }
+  }
+  .cover-widget {
+    .cover-widget-detail {
+      padding: $spacing-20;
+      .profile-image {
+        width: 85px;
+      }
+      h4 {
+        font-size: 20px;
+      }
+    }
+  }
+  .follow-widget-box {
+    .inner-follow-widget {
+      .follow-profile {
+        margin: -50px auto 0 auto;
+        width: 75px;
+      }
+      .follow-detail {
+        h4 {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .social-widget-content {
+    .activities-count {
+      width: 100%;
+    }
+
+    .connect-btn {
+      width: 235px;
+      margin: auto;
+      .social-twitter {
+        margin-top: 8px;
+      }
+    }
+    .profile-contain {
+      .accept-section {
+        padding: $spacing-30 15px;
+      }
+    }
+    .slider {
+      margin: 0 12px 0;
+    }
+    .parallax-header-image {
+      h2 {
+        line-height: 44px;
+      }
+      p {
+        line-height: 22px;
+      }
+      .site-content-title {
+        padding: $spacing-15 $spacing-15 44px $spacing-15;
+      }
+    }
+    .bottom-space{
+      height:0;
+    }
+  }
+}
+
+/*---- END SOCIAL-WIDGET RESPONSIVE ----*/

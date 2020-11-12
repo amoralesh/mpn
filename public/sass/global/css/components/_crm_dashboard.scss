@@ -1,0 +1,268 @@
+/*----------------------------------------------
+
+START CRM DASHBOARD
+
+------------------------------------------------*/
+
+.flot-chart{
+  height: $spacing-300;
+}
+#order-chart{
+  height: 380px;
+}
+.flot-tooltip{
+  position:$position-absolute;
+  color:$crm-dashboard-chart-color;
+  display:none;
+  font-size:12px;
+  padding:$spacing-5 $spacing-10;
+  background-color:$secondary-background-color;
+  z-index:99999;
+  border-radius:2px
+}
+
+.crm-dashboard{
+  &.contain-inner {
+    margin: $spacing-20 $spacing-20 $spacing-0 $spacing-20;
+  }
+  .content{
+    margin: $spacing-0 $spacing-0 $spacing-20;
+  }
+  .static-widget-content{
+    margin-bottom: $spacing-0;
+  }
+  .crl-dashboard-box{
+    margin-bottom: $spacing-20;
+    .widget-content{
+      min-height: $spacing-130;
+      .crm-title{
+        padding: $spacing-0 $spacing-0 $spacing-10;
+      }
+      .progress-title{
+        font-weight: $normal-text;
+        font-size: 14px;
+      }
+      .box-bottom-text{
+        background: rgba(0, 0, 0, 0) linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
+        padding: $spacing-10;
+        width: 100%;
+        position: $position-absolute;
+        margin-left: -$spacing-20;
+        i{
+          float: $text-right;
+          line-height: 22px;
+        }
+      }
+      .bg-icon{
+        i{
+          font-size: $spacing-60;
+        }
+      }
+    }
+    .widget-box{
+      border: none;
+      @include multi-box-shadow(rgba($black-background-color, 0.2) 0 0 4px);
+    }
+  }
+  #basic-area{
+    height: 390px;
+  }
+  #sales-data-chart{
+    height:395px
+  }
+  #left-right-chart{
+    height:370px
+  }
+  #straight-line-chart{
+    height: 392px;
+  }
+  #purely-chart2{
+    height: 365px;
+  }
+  #axis-chart{
+    height: 365px;
+  }
+  .crm-dashboard-message{
+    margin-bottom: $spacing-20;
+  }
+  .overlay-box-shadow{
+    margin-bottom: 20px;
+  }
+  .mapael{
+    .map {
+      height: 330px;
+      svg{
+        height: 330px;
+        margin: 0 10%;
+      }
+    }
+  }
+  #crm-chart{
+    height: 330px !important;
+  }
+  .map-right-section{
+    position: absolute;
+    display: block;
+    width: 100%;
+    padding: 0 45px 0 15px;
+    bottom: 0;
+    h4{
+      font-size: 20px;
+      line-height: 18px;
+    }
+    h2{
+      margin-bottom: 25px;
+    }
+    .crm-map-margin{
+      margin-bottom: 10px;
+    }
+  }
+}
+.legend{
+  table{
+    .legendLabel {
+      padding-left: $spacing-5;
+    }
+  }
+}
+.crm-chart{
+  #linestogglingLegend{
+    float: $right-division;
+    background: 0 0;
+    color: $primary-text-color;
+  }
+  #linestoggling{
+    height: 380px;
+  }
+}
+.crm-table{
+  td{
+    vertical-align: middle;
+  }
+}
+.crm-icon-dashboard{
+  .icon-spacing{
+    padding-right: 10px;
+    span{
+      padding-left: 3px;
+    }
+  }
+}
+
+/*---- ----*/
+@keyframes blink {
+  50% {
+    opacity: 0.0;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    opacity: 0.0;
+  }
+}
+.crm-mapcontainer circle:nth-child(4n+1){
+  animation: blink 1.5s step-start 0s infinite;
+  -webkit-animation: blink 1.5s step-start 0s infinite;
+}
+.crm-mapcontainer circle:nth-child(4n+2){
+  animation: blink 2s step-start 0s infinite;
+  -webkit-animation: blink 2s step-start 0s infinite;
+}
+
+.crm-mapcontainer circle:nth-child(4n+3){
+  animation: blink 2.5s step-start 0s infinite;
+  -webkit-animation: blink 2.5s step-start 0s infinite;
+}
+
+.crm-mapcontainer circle:nth-child(4n+4){
+  animation: blink 3s step-start 0s infinite;
+  -webkit-animation: blink 3s step-start 0s infinite;
+}
+
+/*----------------------------------------------
+
+END CRM DASHBOARD
+
+------------------------------------------------*/
+
+/*---- START CRM DASHBOARD RESPONSIVE ----*/
+@media (max-width: $media-xl-width) {
+  .crm-dashboard {
+    .mapael {
+      .map {
+        height: auto;
+        svg {
+          height: auto;
+          margin: 0;
+        }
+      }
+    }
+    .map-right-section{
+      h2 {
+        font-size: 23px;
+      }
+    }
+  }
+}
+
+@media (max-width: $media-lg-width) {
+  .crm-dashboard{
+    #crm-chart {
+      height: 270px !important;
+    }
+    .map-right-section{
+      h2 {
+        margin-bottom: 15px;
+      }
+    }
+    .static-widget-box{
+      .divider-lg-spacing{
+        height: 25px;
+        clear: both;
+      }
+    }
+  }
+}
+
+@media (max-width: $media-sm-width) {
+
+  .crm-dashboard{
+    #straight-line-chart, #sales-data-chart, #left-right-chart, #linestoggling {
+      height: 350px;
+    }
+    .static-widget-box{
+      .divider-lg-spacing{
+        height: 35px;
+        clear: both;
+      }
+    }
+  }
+
+}
+
+@media (max-width: $media-xs-width) {
+  .crm-dashboard{
+    .map-right-section{
+      h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+    }
+    #crm-chart {
+      height: 260px !important;
+    }
+    #straight-line-chart, #sales-data-chart, #left-right-chart, #linestoggling {
+      height: 300px;
+    }
+  }
+  .dashboard-header {
+    .page-content-title {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 170px;
+    }
+  }
+}
+
+/*---- End CRM DASHBOARD RESPONSIVE ----*/

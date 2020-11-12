@@ -1,0 +1,80 @@
+/*----------------------------------------------
+
+START SWEETALERT
+
+------------------------------------------------*/
+
+.swal2-modal {
+  .swal2-spacer {
+    margin: $spacing-20 $spacing-0;
+  }
+  .btn{
+    margin: $spacing-0 $spacing-5;
+  }
+}
+
+.swal2-container {
+  .animated {
+    visibility: visible;
+  }
+}
+
+.swal2-confirm {
+  &.btn-success {
+    margin-right: $spacing-10;
+  }
+}
+.swal2-progresssteps{
+  .swal2-progresscircle{
+    padding-left: 2px;
+  }
+}
+.swal2-container{
+  z-index: 9999;
+}
+
+/*----------------------------------------------
+
+END SWEETALERT
+
+------------------------------------------------*/
+
+/*---- START SWEETALERT RESPONSIVE ----*/
+@media (max-width: $media-md-width) {
+  .swal2-container{
+    .swal2-modal{
+      padding: $spacing-25 !important;
+      min-height: 150px !important;
+      .swal2-title{
+        line-height: 35px;
+        font-size: 24px;
+      }
+      .swal2-spacer {
+        margin: $spacing-5 $spacing-0;
+      }
+      .btn {
+        margin: $spacing-0 3px;
+      }
+    }
+  }
+}
+@media (max-width: $media-sm-width) {
+  .swal2-container{
+    .swal2-modal{
+      padding: $spacing-25 !important;
+      min-height: 180px !important;
+      .swal2-title{
+        line-height: 35px;
+        font-size: 22px;
+      }
+      .swal2-spacer {
+        margin: $spacing-5 $spacing-0;
+      }
+      .btn {
+        margin: $spacing-0 3px;
+      }
+    }
+  }
+}
+
+/*---- END SWEETALERT RESPONSIVE ----*/

@@ -1,0 +1,446 @@
+/*----------------------------------------------
+
+BOOTSTRAP TABLE PAGE STYLE
+
+------------------------------------------------*/
+/* START BUTTON ROUND CSS */
+.rounded-admin {
+  .basic_bootstrap_tbl {
+    button {
+      &.btn{
+        border-radius: $border-radius-tag-success !important;
+      }
+    }
+    .search{
+      input{
+        border-radius: $border-radius-tag-success !important;
+      }
+    }
+    .pagination {
+      .page-pre{
+        border-radius: $border-radius-default 0px 0px $border-radius-default;
+      }
+      .page-next{
+        border-radius: 0px $border-radius-default $border-radius-default 0px;
+      }
+    }
+  }
+}
+
+.modal-header{
+  .close {
+    margin-top: 2px;
+  }
+}
+
+/* START BUTTON ROUND CSS */
+
+.wrapper {
+  .basic_bootstrap_tbl {
+    table {
+      thead {
+        th {
+          font-weight: $bold-text;
+          border-left: none;
+          .desc {
+            background-image: none;
+            &::before {
+              content: "\22";
+              font-family: 'ElegantIcons';
+              float: $right-division;
+            }
+          }
+          .asc {
+            background-image: none;
+            &::before {
+              content: "\21";
+              font-family: 'ElegantIcons';
+              float: $right-division;
+            }
+          }
+          .both {
+            background-image: none;
+            &:before {
+              opacity: 0;
+              content: "\2a";
+              font-family: 'ElegantIcons';
+              float: $right-division;
+            }
+            &:hover {
+              &:before {
+                content: "\2a";
+                font-family: 'ElegantIcons';
+                float: $right-division;
+                opacity: 1;
+                transition: opacity 0.3s ease-in;
+              }
+            }
+            &.desc {
+              &:hover {
+                &::before {
+                  content: "\22";
+                  font-family: 'ElegantIcons';
+                  float: $right-division;
+                }
+              }
+            }
+            &.asc {
+              &:hover {
+                &::before {
+                  content: "\21";
+                  font-family: 'ElegantIcons';
+                  float: $right-division;
+                }
+              }
+            }
+          }
+          .sortable {
+            padding-right: $spacing-15;
+
+          }
+        }
+      }
+      tbody {
+        td {
+          border-left: none;
+        }
+      }
+    }
+    .bootstrap-table {
+      .table {
+        & > thead {
+          & > tr {
+            & > th {
+              border-bottom: none;
+              border-top: none;
+            }
+          }
+        }
+      }
+    }
+    .fixed-table-toolbar {
+      .btn-group {
+        > .btn-group {
+          &:last-child {
+            > .btn {
+              border-radius: 0;
+              color: #868686;
+              background: $white-background-color;
+              border: 1px solid $mail-border-color;
+              margin-right: 0;
+            }
+          }
+        }
+      }
+      .columns {
+        label {
+          padding: 7px 12px;
+          font-size: 14px;
+          line-height: 13px;
+          vertical-align: middle;
+          input {
+            float: $left-division;
+            margin-right: $spacing-5;
+          }
+        }
+      }
+      .dropdown-menu{
+        z-index: 999;
+      }
+    }
+    .dropdown-menu {
+      li {
+        padding: $spacing-0 $spacing-10;
+      }
+    }
+    .btn-group {
+      > .btn {
+        margin-right: $spacing-5;
+        background: $white-background-color;
+        border: 1px solid $mail-border-color;
+        color: $dropdown-toggle-color;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+    .btn {
+      color: $white-text-color;
+    }
+    .detail-view {
+      p {
+        padding-bottom: 2px;
+        b {
+          margin-right: $spacing-5;
+        }
+      }
+    }
+    .pagination {
+      li {
+        display: inline;
+        float: $left-division;
+        padding: 3px $spacing-0;
+        margin-right: $spacing-5;
+        a {
+          line-height: 25px;
+        }
+        &.page-number {
+          padding: $spacing-5 $spacing-15;
+        }
+        &.page-pre, &.page-next {
+          a {
+            i {
+              padding: $spacing-5 12px;
+              line-height: 30px;
+            }
+          }
+        }
+        &.active {
+          a {
+            color: $white-text-color;
+          }
+        }
+      }
+    }
+    .fixed-table-pagination {
+      .pagination {
+        a {
+          padding: 0;
+        }
+      }
+    }
+    .table-bordered {
+      border: 1px solid $bootstrap-tbl-border-color;
+      th, td {
+        border: none;
+        border-top: 1px solid $bootstrap-tbl-border-color;
+      }
+    }
+    .fixed-table-container {
+      @include border-radius($border-radius-0);
+      //border: none;
+      thead {
+        th {
+          &:first-child {
+            @include border-radius($border-radius-0);
+          }
+        }
+      }
+    }
+    .fixed-table-pagination {
+      div {
+        &.pagination {
+          margin-bottom: $spacing-0;
+          margin-top: $spacing-20;
+        }
+      }
+      .pagination-detail {
+        margin-bottom: $spacing-0;
+        margin-top: $spacing-20;
+      }
+    }
+    .fixed-table-container {
+      .bs-checkbox {
+        .th-inner {
+          padding: $spacing-5 $spacing-0;
+        }
+      }
+    }
+
+    .model_success_table {
+      thead {
+        tr {
+          th {
+            background: $success-background-color;
+          }
+        }
+      }
+      .card-views {
+        .card-view {
+          .title {
+            color: $success-color;
+          }
+        }
+      }
+    }
+    .model_danger_table {
+      thead {
+        tr {
+          th {
+            background: $danger-background-color;
+          }
+        }
+      }
+      .card-views {
+        .card-view {
+          .title {
+            color: $danger-color;
+          }
+        }
+      }
+    }
+    .model_info_table {
+      thead {
+        tr {
+          th {
+            background: $info-background-color;
+          }
+        }
+      }
+      .card-views {
+        .card-view {
+          .title {
+            color: $info-color;
+          }
+        }
+      }
+    }
+    .model_Warning_table {
+      thead {
+        tr {
+          th {
+            background: $warning-background-color;
+          }
+        }
+      }
+      .card-views {
+        .card-view {
+          .title {
+            color: $warning-color;
+          }
+        }
+      }
+    }
+    .modal-title {
+      font-size: 20px;
+    }
+  }
+
+  .table-fidex{
+    .fixed-table-body{
+      height: 210px !important ;
+    }
+  }
+
+  .custom-toolbar {
+    .fixed-table-container {
+      .fixed-table-body {
+        height: 100% !important;
+      }
+    }
+  }
+  .bootstrap_tbl_style {
+    table {
+      th {
+        i {
+          margin-right: $spacing-10;
+        }
+      }
+      .table_star {
+        i {
+          color: $bootstrap-tbl-star-icon-color;
+        }
+      }
+      .table_heart {
+        i {
+          color: $danger-color;
+        }
+      }
+    }
+  }
+  .bootstrap_tbl_format {
+    table {
+      td {
+        .icon_star {
+          color: $bootstrap-tbl-star-icon-color;
+          margin-right: $spacing-5;
+        }
+        .icon_star_alt {
+          color: $bootstrap-tbl-star-icon-color;
+          margin-right: $spacing-5;
+        }
+      }
+    }
+  }
+  .bootstrap_tbl_no_border {
+    .fixed-table-container {
+      border: none;
+
+    }
+  }
+  .fixed-table-toolbar {
+    .columns, .search, .bs-bars {
+      margin-top: $spacing-0;
+    }
+  }
+}
+
+/*----------------------------------------------
+
+END BOOTSTRAP TABLE PAGE STYLE
+
+------------------------------------------------*/
+
+/*---- START RESPONSIVE ----*/
+@media (min-width: 0) and (max-width: 562px) {
+  .fixed-table-body.ps-container, .pagination-tabel .fixed-table-container {
+    height: 286px !important;
+  }
+  .wrapper .table-fidex .fixed-table-body {
+    height: 291px !important;
+  }
+}
+
+@media (max-width: $media-sm-width) {
+  .wrapper {
+    .basic_bootstrap_tbl {
+      .fixed-table-body {
+        .card-view {
+          .title {
+            margin-right: $spacing-10;
+            min-width: 50%;
+            .icon_star {
+              color: $bootstrap-tbl-star-icon-color;
+              margin-right: $spacing-5;
+            }
+            .icon_heart {
+              color: $danger-color;
+              margin-right: $spacing-5;
+            }
+          }
+        }
+        .model_danger_table, .model_info_table, .model_Warning_table, .model_success_table {
+          margin-top: $spacing-0 !important;
+        }
+      }
+      .form-group {
+        margin-bottom: $spacing-0;
+      }
+      .btn-group {
+        > .btn {
+          padding: $spacing-10;
+        }
+      }
+      .modal-title {
+        font-size: 18px;
+      }
+    }
+    .checkbox_table{
+      .fixed-table-container {
+        height: 292px !important;
+      }
+    }
+  }
+}
+
+@media (max-width: $media-xs-width) {
+  .wrapper {
+    .fixed-table-toolbar {
+      .search {
+        width: 100%;
+      }
+    }
+  }
+}
+
+/*---- END RESPONSIVE ----*/

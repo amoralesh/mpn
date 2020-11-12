@@ -1,0 +1,191 @@
+/*----------------------------------------------
+
+START ECOMMERCE DASHBOARD
+
+------------------------------------------------*/
+.contain-inner {
+  &.ecommerce-dashboard {
+    margin: $spacing-0 $spacing-20 $spacing-20;
+    .content {
+      margin: $spacing-20 $spacing-0 $spacing-0;
+    }
+  }
+}
+.dashboard-chart-height {
+  height: $ecommerce-height-310;
+}
+
+.dashboard-weekly-chart-height {
+  height: $ecommerce-height-380;
+}
+
+.dashboard-table {
+  margin: $spacing-20 $spacing-0 $spacing-0 $spacing-0;
+}
+
+.dashboard-table-width {
+  width: 150px;
+}
+
+.dashboard-table-margin {
+  table {
+    margin-bottom: $spacing-0;
+  }
+}
+
+.product-name-width {
+  width: 100px;
+}
+
+.dashboard-table-search {
+  div.dataTables_wrapper {
+    div.dataTables_filter {
+      input {
+        width: calc(100% - 60px);
+      }
+    }
+  }
+}
+
+.ecommerce-dashboard {
+  a {
+    &.basic_table_icon {
+      color: $dropdown-toggle-color;
+      margin-right: $spacing-10;
+    }
+  }
+  .chart-height {
+    height: 350px;
+  }
+}
+.ecommarce_progress{
+  p{
+    padding-bottom: $spacing-5;
+  }
+}
+/* ecommerce dashboard rounded */
+.rounded-admin {
+  table.dataTable {
+    .tag {
+      border-radius: $border-radius-tag-warning;
+    }
+  }
+  .widget-content {
+    .search_ad {
+      border-radius: $border-radius-tag-warning;
+    }
+  }
+}
+.ecommarce_table_middle{
+  table.dataTable{
+    td {
+      vertical-align: middle;
+    }
+  }
+}
+.ecommerce-widget{
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0 4px;
+  padding: $spacing-20;
+  background: $white-background-color;
+  .ecommerce-widget-left-icon{
+    i{
+      font-size: 50px;
+      color: $light-gray-color;
+    }
+  }
+  h2{
+    font-size: 40px;
+    margin-bottom: $spacing-15;
+    i{
+      margin-right: 5px;
+    }
+  }
+  p{
+    font-size: 18px;
+    color: $light-gray-color;
+  }
+  progress{
+    margin-bottom: $spacing-0;
+  }
+}
+.dashboard-monthly-chart-height{
+  height: 365px;
+}
+/*----------------------------------------------
+
+END ECOMMERCE DASHBOARD
+
+------------------------------------------------*/
+
+/*---- START ECOMMERCE DASHBOARD RESPONSIVE ----*/
+@media (max-width: $media-xl-width) {
+  .ecommerce-widget{
+    .ecommerce-widget-left-icon{
+      i{
+        font-size: 40px;
+      }
+    }
+    h2{
+      font-size: 35px;
+      margin-bottom: $spacing-10;
+    }
+    p{
+      font-size: 15px;
+    }
+  }
+}
+@media (max-width: $media-lg-width) {
+  .ecommerce-widget{
+    .ecommerce-widget-left-icon{
+      i{
+        font-size: 50px;
+      }
+    }
+    h2{
+      font-size: 40px;
+      margin-bottom: $spacing-15;
+    }
+    p{
+      font-size: 18px;
+    }
+  }
+  .ecommerce-dashboard{
+    .divider-lg-spacing {
+      height: 25px;
+      clear: both;
+    }
+  }
+}
+@media (max-width: $media-sm-width) {
+  .ecommerce-mobile-margin{
+    margin-bottom: 25px;
+  }
+  .ecommerce-widget{
+    .ecommerce-widget-left-icon{
+      i{
+        font-size: 40px;
+      }
+    }
+    h2{
+      font-size: 35px;
+      margin-bottom: $spacing-10;
+    }
+    p{
+      font-size: 15px;
+    }
+  }
+}
+@media (max-width: $media-xs-width) {
+  .dashboard-chart-height {
+    height: $ecommerce-height-250;
+  }
+  .dashboard-weekly-chart-height {
+    height: $ecommerce-height-250;
+  }
+  .ecommarce_progress{
+    margin-bottom: $spacing-15;
+  }
+
+}
+
+/*---- END ECOMMERCE DASHBOARD RESPONSIVE ----*/

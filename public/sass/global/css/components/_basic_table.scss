@@ -1,0 +1,98 @@
+/*----------------------------------------------
+
+BASIC TABLE PAGE STYLE
+
+------------------------------------------------*/
+
+/* START BUTTON ROUND CSS */
+.rounded-admin {
+  .basic_table{
+    .tag{
+      border-radius: $border-radius-tag-warning;
+    }
+  }
+}
+
+.basic_table {
+  .table {
+    margin-bottom: 0;
+  }
+  .table-bordered {
+    border-color: $basic-tbl-border-color;
+    th, td {
+      border-color: $basic-tbl-border-color;
+    }
+    thead {
+      th {
+        border: none;
+      }
+    }
+  }
+  table {
+    tfoot {
+      tr {
+        th {
+          color: $white-text-color;
+        }
+      }
+    }
+  }
+  .table-responsive {
+    display: inline-table;
+  }
+  .basic_table_icon {
+    margin-right: $spacing-10;
+    color: #868686;
+    cursor: $text-link;
+  }
+  .table-reflow {
+    td, th {
+      padding:8px 12px;
+    }
+  }
+}
+
+/*----------------------------------------------
+
+END BASIC TABLE PAGE STYLE
+
+------------------------------------------------*/
+/*---- START RESPONSIVE ----*/
+@media (max-width: 1800px) {
+  .basic_table {
+    .table-reflow {
+      thead {
+        float: $without-float-division;
+      }
+      tbody {
+        display: table-row-group;
+      }
+      tr {
+        float: $without-float-division;
+        td, th {
+          display: table-cell !important;
+          border-top: none;
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $media-sm-width) {
+}
+
+@media (max-width: 610px) {
+  .basic_table {
+    .table-reflow {
+      &.table-responsive {
+        display: block;
+      }
+    }
+  }
+}
+
+@media (max-width: $media-xs-width) {
+}
+
+/*---- END RESPONSIVE ----*/

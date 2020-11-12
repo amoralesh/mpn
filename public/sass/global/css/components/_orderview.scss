@@ -1,0 +1,262 @@
+/*----------------------------------------------
+
+START ORDER VIEW
+
+------------------------------------------------*/
+.content-view-order {
+  table.dataTable {
+    margin-top: 0px !important;
+  }
+  .table {
+    td, th {
+      vertical-align: middle;
+      .site-btn {
+        margin-top: 0;
+      }
+    }
+    thead, tbody {
+      tr {
+        th, td {
+          &:last-child {
+            margin-bottom: -5px;
+            max-width: 100px;
+          }
+          td {
+            &:last-child {
+              text-align: $text-center;
+            }
+          }
+        }
+        .btn-action {
+          a {
+            margin: 0 $spacing-5 $spacing-5 0;
+          }
+        }
+      }
+    }
+  }
+  .dataTables_filter, .dataTables_length {
+    display: none;
+  }
+  .sub-total-order {
+    width: 100%;
+    float: $right-division;
+    font-size: 15px;
+    border: 1px solid #e1e1e1;
+    box-shadow: none;
+    margin-bottom: 0;
+    margin-right: 0;
+    .total-order-view {
+      float: $right-division;
+      width: 220px;
+      .title-order-view {
+        min-width: 155px;
+      }
+    }
+    .site-btn {
+      clear: both;
+    }
+    .divider10 {
+      clear: both;
+    }
+    .invoice-print {
+      margin-top: $spacing-15;
+      i {
+        margin-right: $spacing-5;
+      }
+    }
+  }
+  .table-striped {
+    .first-search {
+      input {
+        display: none;
+      }
+    }
+    tfoot {
+      tr {
+        th {
+          font-weight: $font-style-normal;
+          padding-bottom: 0;
+        }
+        .order-input {
+          input {
+            width: 92%;
+          }
+        }
+      }
+    }
+  }
+
+  .order-description {
+    p {
+      max-width: 700px !important;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      padding-bottom: 0;
+    }
+  }
+  .dataTables_paginate {
+    .pagination {
+      .page-item {
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .table {
+    margin-bottom: 0;
+  }
+  .icr-label {
+    margin: 0 5px 0px 0;
+  }
+}
+
+.content-order-memo {
+  .dataTables_filter {
+    display: none;
+  }
+  .icr-label {
+    margin: 0 5px 1px 0;
+  }
+}
+
+.content-order-shipment {
+  .dataTables_filter {
+    display: none;
+  }
+}
+
+.content-order-information {
+  .dataTables_filter {
+    display: none;
+  }
+}
+
+.content-order-invoice {
+  .dataTables_filter, .dataTables_length {
+    display: block;
+  }
+
+  thead, tbody {
+    tr {
+      th, td {
+        &:first-child {
+          width: 40px !important;
+        }
+        &:last-child {
+          width: 100px !important;
+        }
+      }
+    }
+    .invoice-print {
+      i {
+        margin-right: $spacing-5;
+      }
+    }
+  }
+  table.dataTable {
+    margin-top: 6px !important;
+  }
+}
+
+.action-vieworder {
+  a {
+    &.basic_table_icon {
+      color: $dropdown-toggle-color;
+      margin-right: $spacing-10;
+    }
+  }
+}
+.content-view-order{
+  .sub-total-order{
+    .flat-buttons.invoice-print{
+      &:hover{
+        font-size: 14px;
+      }
+    }
+  }
+}
+/*----------------------------------------------
+
+END ORDER VIEW
+
+------------------------------------------------*/
+
+/*---- START ORDER VIEW RESPONSIVE ----*/
+
+@media (min-width: 1200px) and (max-width: 1620px) {
+  .content-view-order {
+    .order-description {
+      p {
+        width: 300px !important;
+      }
+    }
+    .dataTables_wrapper {
+      tfoot {
+        tr {
+          .order-input {
+            width: 90%;
+          }
+
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $media-lg-width) {
+  .content-view-order {
+    table.dataTable {
+      > tbody > tr.child span.dtr-title {
+        min-width: 100px;
+      }
+      .dtr-data {
+        p {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $media-sm-width) {
+  .content-view-order {
+    .nav-tab-horizontal {
+      li {
+        padding-left: 0;
+        a {
+          padding: 6px;
+        }
+      }
+    }
+    .dataTables_wrapper {
+      .first-search {
+        input {
+          display: none;
+        }
+      }
+
+    }
+  }
+}
+
+@media (max-width: $media-xs-width) {
+  .content-view-order {
+    .nav-tab-horizontal {
+      li {
+        margin-bottom: 5px;
+        &:nth-child(4) {
+          margin-bottom: 0px;
+          clear: both;
+        }
+        &:nth-child(5) {
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+}
+
+/*---- END ORDER VIEW RESPONSIVE ----*/

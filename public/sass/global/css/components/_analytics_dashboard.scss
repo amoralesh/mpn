@@ -1,0 +1,693 @@
+/*----------------------------------------------
+
+ANALYTICS DASHBOARD PAGE STYLE
+
+------------------------------------------------*/
+.visibility-title{
+  display: inline-block;
+  float: $left-division;
+  width: 35%;
+}
+.visibility-icon{
+  font-size: 34px;
+  line-height: 68px;
+  opacity: 0.5;
+}
+.analytics-chart-height{
+  height:150px;
+}
+.analytics-dashbard-page{
+  margin: $spacing-20 $spacing-20 0 $spacing-20;
+  .map-size{
+    height: 428px;
+  }
+  .content {
+    margin: $spacing-0 $spacing-0 $spacing-20;
+  }
+  .fa-spin{
+    -webkit-animation: fa-spin 10s infinite linear;
+    animation: fa-spin 10s infinite linear;
+  }
+  .social-icon-slider{
+    .social-icon{
+      padding: $spacing-25 $spacing-50;
+    }
+  }
+  .social-icon-slider{
+    margin-bottom: $spacing-20;
+  }
+}
+.dahsboard-analytics{
+  margin-bottom: $spacing-20;
+}
+.box-dahsboard-analytics{
+  box-shadow: rgba(0,0,0,.2) 0 0 4px;
+  @include border-radius($border-radius-4);
+  &.primary-bg{
+    background: $primary-background-color;
+    canvas{
+      width: 100% !important;
+    }
+  }
+  &.spice-bg{
+    background: $site-spice-color;
+    canvas{
+      width: 100% !important;
+    }
+  }
+  &.soft-orange-bg{
+    background: $site-soft-orange-color;
+    canvas{
+      width: 100% !important;
+    }
+  }
+  &.golden-bg{
+    background: $site-golden-color;
+    canvas{
+      width: 100% !important;
+    }
+  }
+  &.purple-bg{
+    background: $site-purple-color;
+    canvas{
+      width: 100% !important;
+    }
+  }
+  &.dribbble-bg{
+    background: $social-dribbble-background-color;
+    canvas{
+      width: 100% !important;
+    }
+  }
+  .title-box{
+    font-size: 16px;
+    text-transform: $text-uppercase;
+    font-weight: $bold-text;
+    color: $white-text-color;
+    padding: $spacing-15 $spacing-0 $spacing-0 $spacing-15;
+  }
+}
+.advertize_box{
+  padding: $spacing-40 $spacing-20;
+  overflow: hidden;
+}
+.wrapper{
+  .advertize_contain{
+    h4,p{
+      color: $white-text-color;
+    }
+    .btn-outline-primary{
+      color: $white-text-color;
+      border-color: $white-background-color;
+      &:hover, &:focus{
+        background: transparent;
+        border-color: $white-text-color;
+        border-width:1px;
+        border-style:solid;
+      }
+    }
+  }
+}
+.advertize_box2{
+  color: $white-text-color;
+  margin-bottom: $spacing-20;
+}
+.advertize_contain2{
+  text-align: $text-left;
+  padding: $spacing-10 $spacing-20;
+  h4{
+    color: $white-text-color;
+  }
+}
+.advertize_icon{
+  display: inline-block;
+  float: $right-division;
+  padding: $spacing-10 $spacing-20;
+  opacity: 0.5;
+  i{
+    font-size: 50px;
+    line-height: 70px;
+  }
+}
+.analytics-chartist-height{
+  height: 250px;
+}
+.chart_section{
+  .content{
+    border: none;
+  }
+}
+.title_seprator{
+  background: $secondary-background-color;
+  width: 100px;
+  height: 2px;
+  margin: $spacing-5 $spacing-0 $spacing-10 $spacing-0;
+  &.success-text{
+    background: $success-background-color;
+  }
+  &.warning-text{
+    background: $warning-background-color;
+  }
+  &.danger-text{
+    background: $danger-background-color;
+  }
+}
+.chart_section_contain{
+  .success-text{
+    color: $success-color;
+  }
+  .warning-text{
+    color: $warning-color;
+  }
+  .danger-text{
+    color: $danger-color;
+  }
+}
+.analytics_user_section{
+  .content{
+    border: none;
+  }
+  .analytics_user_title{
+    color: $small-tag-text-color;
+
+  }
+  .user_process{
+    position: $position-absolute;
+    left: 35%;
+    top: 41%;
+    font-size: 25px;
+    &.angular{
+      left: 45%;
+      top: 45%;
+    }
+  }
+  .circle-bar{
+    position: $position-relative;
+  }
+}
+.analytics_like{
+  display: inline-block;
+  float: $left-division;
+  text-align: $text-center;
+  width: 50%;
+}
+.analytics_user_like{
+  color: $small-tag-text-color;
+  margin-bottom: $spacing-10;
+}
+.analytics_comment{
+  float: $left-division;
+  text-align: $text-center;
+  border-left: 1px solid $search-block-background-color;
+  width: 50%;
+}
+.analytics_views{
+  text-align: $text-center;
+  border-bottom: 1px solid $search-block-background-color;
+}
+.analytics_like_title{
+  color: $social-facebook-background-color;
+}
+.analytics_comment_title{
+  color: $social-googleplus-background-color;
+}
+.analytics-sale-height{
+  height:256px;
+}
+.sale_title{
+  margin-bottom: $spacing-15;
+  h1{
+    font-size:45px;
+    line-height: 60px;
+  }
+  h5{
+    color: $small-tag-text-color;
+  }
+}
+.daily_load_section{
+  overflow: hidden;
+  @include border-radius($border-radius-5);
+  margin-bottom: $spacing-20;
+}
+.daily_load_section-1{
+  padding: $spacing-30 $spacing-20;
+  h5,h3{
+    color: $white-text-color;
+  }
+}
+.daily_load_section-2{
+  padding: $spacing-20;
+  .chart_title{
+    color: $white-text-color;
+    display: inline-block;
+    float: $left-division;
+  }
+  .chart_per{
+    text-align: $text-right;
+    color: $white-text-color;
+  }
+}
+.daily_load_section_title-1{
+  margin-top:$spacing-15;
+}
+.revenue_count{
+  margin-bottom: $spacing-15;
+}
+.statistics-chart-height{
+  height: 253px !important;
+  margin-top:$spacing-15;
+  text{
+    fill:$primary-dark-background-color;
+  }
+}
+.analytics_userlist{
+  &.list-group{
+    margin-bottom: $spacing-20;
+  }
+  .list-group-item{
+    background: $warning-light-background-color;
+    border-color: $warning-background-color;
+    .user-list-detail{
+      h6{
+        color: $warning-color;
+      }
+    }
+  }
+}
+.analytics_table{
+  tbody{
+    tr{
+      td{
+        i{
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+.analytics_opera{
+  color: $danger-color;
+}
+.analytics_explorer{
+  color: $info-color;
+}
+.analytics_crome{
+  color: $warning-color;
+}
+.analytics_firefox{
+  color: $danger-color;
+}
+#myChart{
+  height:286px !important;
+}
+.analytics_live_chart{
+  .content{
+    border:none;
+    background: linear-gradient(rgba(217, 83, 79, 0.44), rgba(217, 83, 79, 0.76));
+    padding: $spacing-0;
+  }
+  .page-content-title{
+    margin-top: $spacing-20;
+    text-align: $text-center;
+    color: $danger-color;
+  }
+}
+.tweet_block{
+  text-align: $text-right;
+  padding: $spacing-0 $spacing-15;
+  border-right: 1px solid $light-gray-color;
+  p{
+    padding-bottom: $spacing-0;
+  }
+}
+.tweet_block2{
+  margin: $spacing-10 $spacing-0;
+  p{
+    padding-bottom: $spacing-0;
+  }
+}
+.tweet_count2{
+  display: inline-block;
+  float: $left-division;
+  margin-right: $spacing-10;
+}
+.tweet_icon{
+  font-size: 20px;
+  line-height: 26px;
+  color: $danger-color;
+}
+.tweet_desc2{
+  text-align: $text-left;
+  font-size: 12px;
+  clear: both;
+  //float: $left-division;
+  //display: inline-table;
+}
+.page_visit{
+  svg{
+    height:180px;
+  }
+}
+#traffic_overview_chart{
+  max-height: 335px !important;
+}
+.most_view_main{
+  .content{
+    border:none;
+  }
+  ul{
+    list-style: none;
+    padding-left: $spacing-0;
+    li{
+      overflow: hidden;
+      padding: $spacing-10 $spacing-0;
+    }
+  }
+  .page_name{
+    display: inline-block;
+    float: $left-division;
+    padding-bottom: $spacing-0;
+  }
+  .page_views{
+    float: $right-division;
+    font-weight: $bold-text;
+  }
+}
+.analytics-dashbard-page {
+  .activities-count{
+    width: 125px;
+  }
+}
+
+.sessions_count{
+  text-align: $text-center;
+  font-size: 40px;
+  line-height: 61px;
+}
+.google_analytics_block{
+  padding: $spacing-10 + 2 $spacing-0;
+  span{
+    font-size: 30px;
+    float: $right-division;
+    margin-right: $spacing-15;
+  }
+  .google_analytics_icon{
+    font-size: 50px;
+    color: $danger-color;
+    line-height: 50px;
+    position: $position-absolute;
+    top: 10px;
+    left: 32px;
+  }
+}
+.google_analytics{
+  .content{
+    padding: $spacing-25 $spacing-0;
+  }
+}
+.sparkline-google{
+  canvas {
+    width: 100% !important;
+  }
+}
+.mapael .map {
+  position: $position-relative;
+}
+.mapael .mapTooltip {
+  position: $position-absolute;
+  background-color: $white-background-color;
+  moz-opacity: 0.70;
+  opacity: 0.70;
+  filter: alpha(opacity=70);
+  border-radius: 10px;
+  padding: $spacing-10;
+  z-index: 1000;
+  max-width: 200px;
+  display: none;
+}
+/*----------------------------------------------
+
+ANALYTICS DASHBOARD PAGE STYLE
+
+------------------------------------------------*/
+/*---- START RESPONSIVE ----*/
+@media ( min-width: 1200px ) and ( max-width: 1620px ) {
+  .visibility-title {
+    width: 60%;
+  }
+  .box-dahsboard-analytics{
+    .title-box {
+      font-size: 13px;
+    }
+  }
+  .advertize_box{
+    padding: $spacing-20 $spacing-10;
+  }
+  .wrapper{
+    .advertize_contain{
+      h4{
+        font-size: 20px;
+      }
+      p{
+        font-size: 13px;
+      }
+    }
+  }
+  .advertize_contain2 {
+    h4{
+      font-size: 20px;
+    }
+  }
+  #myChart{
+    height: 270px !important;
+  }
+  .chart_section{
+    .content{
+      padding: $spacing-10 $spacing-5;
+    }
+  }
+  .chart_section_contain{
+    h4{
+      font-size: 20px;
+    }
+    p{
+      font-size: 13px;
+    }
+  }
+  .tweet_block{
+    padding: $spacing-0 $spacing-10 $spacing-0 $spacing-0;
+  }
+  .tweet_block2{
+    margin: 6px 0 0 -15px;
+  }
+  .daily_load_section-1{
+    h5{
+      font-size: 13px;
+    }
+    h3{
+      font-size: 21px;
+    }
+  }
+  .analytics_user_section{
+    .content{
+      padding: $spacing-15;
+    }
+    .user_process{
+      left: 35%;
+      top: 39%;
+      font-size: 20px;
+    }
+  }
+  .analytics-dashbard-page{
+    .activities-count{
+      width: 33.33%;
+      h5 , h6 , span{
+        font-size: 15px;
+      }
+    }
+  }
+  .analytics_views , .analytics_like , .analytics_comment{
+    h4{
+      font-size: 16px;
+    }
+  }
+  .sale_title{
+    h1{
+      font-size: 35px;
+      line-height: 50px;
+    }
+    h5{
+      font-size: 17px;
+    }
+  }
+  .most_view_main{
+    .page-content-title{
+      font-size: 14px;
+    }
+    ul{
+      li{
+        padding: $spacing-5 $spacing-0;
+      }
+    }
+    .content{
+      padding: $spacing-15;
+    }
+  }
+  .sessions_count{
+    font-size: 30px;
+    line-height: 41px;
+  }
+  .google_analytics {
+    .content{
+      padding: $spacing-10 $spacing-0;
+    }
+  }
+  .google_analytics_block{
+    .google_analytics_icon{
+      font-size: 37px;
+    }
+    span{
+      font-size: 18px;
+    }
+  }
+}
+@media ( max-width: $media-xl-width ) {
+}
+@media ( max-width: $media-lg-width ) {
+  .visibility-title{
+    width: 50%;
+  }
+  .daily_load_section-1{
+    h5{
+      font-size: 17px;
+    }
+    h3{
+      font-size: 26px;
+    }
+  }
+  .advertize_box{
+    padding: $spacing-35 $spacing-20;
+  }
+  .daily_load_section_title{
+    display: inline-block;
+    float: $left-division;
+    border-right: 1px solid $primary-light-background-color;
+    border-bottom: none;
+    padding-right: $spacing-15 - 2;
+  }
+  .daily_load_section_title-1{
+    margin: $spacing-0;
+    padding-left: 13px;
+    float: $left-division;
+  }
+  .analytics-dashbard-page {
+    .activities-count{
+      width: 122px;
+    }
+  }
+
+}
+@media ( max-width: $media-md-width ) {
+
+}
+@media ( max-width: $media-sm-width ) {
+  .analytics-dashbard-page {
+    .divider-lg-spacing {
+      height:0px;
+    }
+    .visibility-icon {
+      padding-bottom:$spacing-20;
+    }
+  }
+  .dahsboard-analytics{
+    .divider15{
+      height: 0;
+    }
+  }
+  .boxes-xs{
+    padding-bottom: $spacing-15;
+  }
+  .daily_load_section-1{
+    h5{
+      font-size: 15px;
+    }
+    h3{
+      font-size: 24px;
+    }
+  }
+  .analytics_user_section{
+    .user_process {
+      left: 33%;
+      top: 40%;
+      font-size: 20px;
+    }
+  }
+  .analytics_views , .analytics_like , .analytics_comment{
+    h4{
+      font-size: 20px;
+    }
+  }
+  .sale_title{
+    h1{
+      font-size: 35px;
+      line-height: 50px;
+    }
+    h5{
+      font-size: 17px;
+    }
+  }
+  .google_analytics_block{
+    .google_analytics_icon{
+      font-size: 40px;
+    }
+    span{
+      font-size: 21px;
+    }
+  }
+}
+@media ( max-width: $media-xs-width ) {
+  .daily_load_section_title{
+    display: block;
+    float: $without-float-division;
+    border-right: none;
+    border-bottom: 1px solid $primary-light-background-color;
+    padding-right: $spacing-0;
+  }
+  .daily_load_section_title-1{
+    padding-left: $spacing-0;
+    float: $without-float-division;
+    margin-top: $spacing-15;
+  }
+  .sessions_count{
+    font-size: 33px;
+  }
+}
+@media ( max-width: 575px ) {
+  .tweet_block{
+    border-right: none;
+    border-bottom: 1px solid #cccccc;
+  }
+  .tweet_block2{
+    overflow: hidden;
+  }
+  .tweet_desc2{
+    font-size: 13px;
+  }
+  .analytics-dashbard-page {
+    .activities-count{
+      width: 80px;
+      border-right: 1px dotted #999999;
+      border-bottom: none;
+      padding-bottom: $spacing-0;
+      margin-bottom: $spacing-0;
+      h5 , span{
+        font-size: 15px;
+      }
+      h6{
+        font-size: 13px;
+      }
+    }
+  }
+
+}
+/*---- END RESPONSIVE ----*/

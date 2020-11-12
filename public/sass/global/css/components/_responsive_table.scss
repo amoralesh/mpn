@@ -1,0 +1,257 @@
+/*----------------------------------------------
+
+RESPONSIVE TABLE PAGE STYLE
+
+------------------------------------------------*/
+
+/* START BUTTON ROUND CSS */
+.tablesaw-enhanced{
+  .rounded-admin{
+    .responsive_table_main {
+      .tablesaw-bar{
+        .btn.btn-select{
+          border-radius: $border-radius-tag-primary;
+        }
+        select {
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          background: url('../../../assets/global/image/arrow-dropdown.png') no-repeat 97% center !important;
+          padding-left:10px !important;
+          &[multiple] {
+            background: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* END BUTTON ROUND CSS */
+
+
+.responsive_table_main{
+  .table{
+    margin-bottom: $spacing-0;
+  }
+  table{
+    &.tablesaw{
+      thead{
+        th{
+          color: $white-text-color;
+          text-transform: capitalize;
+          font-family: "Open Sans", sans-serif;
+        }
+        tr{
+          &:first-child{
+            th{
+              border-right: none;
+              padding: $spacing-15 $spacing-10;
+              color: $white-text-color;
+            }
+          }
+        }
+      }
+      th,td{
+        font-size: 14px;
+      }
+    }
+  }
+  &.responsive_sortable{
+    table{
+      &.tablesaw{
+        thead{
+          tr{
+            &:first-child{
+              th{
+                padding: $spacing-5;
+                font-weight: $bold-text;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .tablesaw-bar {
+    .tablesaw-advance {
+      a {
+        &.tablesaw-nav-btn{
+          padding: $spacing-15 18px;
+          margin-bottom: $spacing-5;
+          @include border-radius($border-radius-0);
+
+          &.down,&.up{
+            &:before {
+              border-left: 6px solid transparent;
+              border-right: 6px solid transparent;
+              left: 12px;
+              top: 13px;
+            }
+          }
+          &.down {
+            &:before {
+              border-top: 6px solid $white-background-color;
+            }
+          }
+          &.up{
+            &:before{
+              border-bottom: 6px solid $white-background-color;
+            }
+          }
+          &.left,&.right{
+            &:before {
+              border-top: 6px solid transparent;
+              border-bottom: 6px solid transparent;
+              left: $spacing-15;
+              top: 9px;
+            }
+          }
+          &.left{
+            &:before {
+              border-right: 6px solid $white-background-color;
+            }
+          }
+          &.right{
+            &:before {
+              border-left: 6px solid $white-background-color;
+            }
+          }
+        }
+      }
+    }
+  }
+  .tablesaw-columntoggle-btnwrap {
+    &.visible {
+      .tablesaw-columntoggle-popup{
+        top: 40px;
+        padding: $spacing-5 $spacing-10;
+        .btn-group{
+          >label{
+            font-size: 14px;
+            line-height: 19px;
+            padding: $spacing-5 $spacing-25 $spacing-5 $spacing-5;
+            input{
+              float: $left-division;
+              margin-right: $spacing-5;
+            }
+          }
+        }
+      }
+    }
+  }
+  .tablesaw-advance-dots{
+    li{
+      i{
+        @include border-radius($border-radius-0);
+      }
+    }
+  }
+  .tablesaw-swipe{
+    .tablesaw-cell-persist{
+      box-shadow: none;
+      border-right: none;
+      font-size: 14px;
+      font-weight: $normal-text;
+    }
+  }
+  button{
+    &:focus{
+      outline: none;
+
+    }
+  }
+  .tablesaw-sortable-switch{
+    margin-right: $spacing-20;
+  }
+  .tablesaw-cell-label{
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+  }
+}
+.tablesaw-enhanced{
+  .tablesaw-bar {
+    .btn{
+      &.btn-select{
+        min-width: 0;
+        font-weight: $normal-text;
+        padding: $spacing-5 $spacing-25 $spacing-5 $spacing-10;
+        @include border-radius($border-radius-0);
+        margin-left: $spacing-5;
+        color: #55595c;
+        border: 1px solid #dedcdc;
+        &:after{
+          padding-right: $spacing-15;
+          padding-top: 8px;
+        }
+      }
+      &:active{
+        background-image: none;
+      }
+    }
+  }
+}
+.responsive_table_icon{
+  color: $dropdown-toggle-color;
+  margin-right: $spacing-5;
+  cursor:$text-link;
+}
+.tablesaw-sortable-head {
+  .tablesaw-sortable-btn {
+    &:after{
+      opacity: 0;
+      content: "\2a";
+      font-family: 'ElegantIcons';
+      position: absolute;
+      right: 4px;
+    }
+    &:hover {
+      &:after {
+        content: "\2a";
+        font-family: 'ElegantIcons';
+        opacity: 1;
+        transition: opacity 0.3s ease-in;
+        position: absolute;
+        right: 4px;
+      }
+    }
+  }
+}
+/*----------------------------------------------
+
+END RESPONSIVE TABLE PAGE STYLE
+
+------------------------------------------------*/
+/*---- START RESPONSIVE ----*/
+@media (min-width: 1200px) and (max-width: 1770px){
+  .tablesaw-enhanced{
+    .tablesaw-bar{
+      .btn{
+        &.btn-select{
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
+@media ( max-width: $media-sm-width ) {
+  .tablesaw-enhanced{
+    .tablesaw-bar{
+      .btn{
+        &.btn-select{
+          font-size: 10px;
+          margin-left: 3px;
+        }
+      }
+      label{
+        margin-right: 3px;
+      }
+    }
+  }
+  .tablesaw-advance {
+    &.minimap {
+      margin-right: $spacing-0;
+    }
+  }
+}
+/*---- END RESPONSIVE ----*/

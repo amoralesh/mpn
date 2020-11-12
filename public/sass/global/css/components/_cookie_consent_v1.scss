@@ -1,0 +1,58 @@
+/*----------------------------------------------
+
+START COOKIE-PAGE
+
+------------------------------------------------*/
+
+.cookie-message {
+  top: auto;
+  bottom: 0;
+  padding: 0 95px 0 $spacing-20;
+  z-index: 999;
+  border: none;
+
+  p {
+    color: $secondary-text-color;
+    font-size: 13px;
+    padding: 0;
+    line-height: 35px;
+    position: $position-relative;
+    .cookie-learn {
+      position: $position-relative;
+      color: $secondary-text-color;
+      text-decoration: underline;
+      font: inherit;
+      right: auto;
+    }
+  }
+
+  .close-cookie {
+    margin-top: 15px;
+    cursor: $text-link;
+  }
+}
+/*----------------------------------------------
+
+END COOKIE-PAGE
+
+------------------------------------------------*/
+
+/*---- START COOKIE-PAGE RESPONSIVE ----*/
+@media (max-width: $media-sm-width) {
+  .cookie-message {
+    padding: 0 $spacing-20;
+    a {
+      right: auto;
+    }
+    .close-cookie {
+      text-align: center;
+      width: 100%;
+      position: $position-relative;
+      right: 0;
+      margin: $spacing-5 0 $spacing-15 0
+    }
+  }
+
+}
+
+/*---- END COOKIE-PAGE RESPONSIVE ----*/
